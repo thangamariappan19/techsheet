@@ -37,7 +37,7 @@ function LikeBtn({ id }) {
         />
       ) : (
         <>
-          <button onClick={handelClick} disabled={loading ? true : false}>
+          {/* <button onClick={handelClick} disabled={loading ? true : false}>
             {data && data.hasUserLiked ? (
               <AiFillHeart
                 style={{ fontSize: "2rem", color: "rgba(220, 38, 38)" }}
@@ -48,7 +48,7 @@ function LikeBtn({ id }) {
           </button>
           <span style={{ fontSize: "1rem", paddingLeft: "16px" }}>
             {data && data.totalLikes}
-          </span>
+          </span> */}
         </>
       )}
     </div>

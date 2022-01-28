@@ -85,7 +85,7 @@ function Navbar() {
                     <BiTerminal className="text-xl" />
                   </span>
                   <span className="mx-3 font-semibold text-base md:text-base">
-                    Bits-0f-C0de
+                    Techsheet
                   </span>
                 </a>
               </Link>
@@ -107,7 +107,7 @@ function Navbar() {
 
               <a
                 className="flex items-center mx-2 lg:mx-4 text-gray-800 hover:text-indigo-600 dark:text-gray-50"
-                href="https://github.com/soumyajit4419"
+                href="https://github.com/thangamariappan19"
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -116,21 +116,6 @@ function Navbar() {
                 </span>
               </a>
 
-              <button className="flex items-center mx-2 lg:mx-4 text-base text-gray-800 hover:text-indigo-600 dark:text-gray-50">
-                <span className="text-lg">
-                  {isLogin ? (
-                    <IoLogOutOutline
-                      className="text-xl"
-                      onClick={handelSignOut}
-                    />
-                  ) : (
-                    <AiOutlineGoogle
-                      className="text-xl"
-                      onClick={handelSignIn}
-                    />
-                  )}
-                </span>
-              </button>
 
               <Link href="/about">
                 <a className="flex items-center mx-2  lg:mx-4 text-base text-gray-800 hover:text-indigo-600 dark:text-gray-50">
