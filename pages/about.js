@@ -26,9 +26,9 @@ function about() {
             <a
               rel="noopener noreferrer"
               target="_blank"
-              href="https://github.com/thangamariappan19"
+              href="https://www.linkedin.com/in/thanga-mariappan-p/"
             >
-              See My Works
+              Contact Profile
             </a>
           </button>
 
