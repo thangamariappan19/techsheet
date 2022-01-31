@@ -44,3 +44,10 @@ button:focus {
 .toc-inner {
   max-height: calc(100vh - 25vh);
 }
+
+@media only screen and (max-width: 767px) {
+  .prose {
+    color: #374151;
+    max-width: 37ch;
+  }
+}
