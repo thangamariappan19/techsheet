@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 import Link from "next/link";
 import { BiTerminal } from "react-icons/bi";
-import { RiCodeView } from "react-icons/ri";
+import { SiAzurefunctions } from "react-icons/si";
 import { BiSun, BiMoon } from "react-icons/bi";
 import { VscGithub } from "react-icons/vsc";
 import { AiOutlineGoogle } from "react-icons/ai";
@@ -120,7 +120,7 @@ function Navbar() {
               <Link href="/about">
                 <a className="flex items-center mx-2  lg:mx-4 text-base text-gray-800 hover:text-indigo-600 dark:text-gray-50">
                   <span className="text-xl ">
-                    <RiCodeView className="text-xl" />
+                    <SiAzurefunctions className="text-xl" />
                   </span>
                 </a>
               </Link>
