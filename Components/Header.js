@@ -12,7 +12,7 @@ function Header() {
 
         <p className="px-0 mb-8 text-lg text-gray-600 md:text-xl lg:px-24 dark:text-gray-400">
         Techsheets for popular programming languages, frameworks and development tools.
- They include everything you should know in one single file.
+ They include everything you should know in one single page.
         </p>
       </div>
     </div>
