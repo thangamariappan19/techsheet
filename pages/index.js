@@ -18,8 +18,8 @@ export default function Home({ blogs }) {
   return (
     <>
       <Head>
-        <title>TechSheet 🚀</title>
-        <meta name="title" content="Techsheet 🚀" />
+        <title>TechSheet </title>
+        <meta name="title" content="Techsheet" />
         <meta
           name="description"
           content="Tech blogs and articles on various topics related to Software Development"
@@ -27,7 +27,7 @@ export default function Home({ blogs }) {
 
         <meta property="og:type" content="website" />
         <meta property="og:url" content="" />
-        <meta property="og:title" content="Techsheet 🚀" />
+        <meta property="og:title" content="Techsheet" />
         <meta
           property="og:description"
           content="Tech blogs and articles on various topics related to Software Development"
@@ -36,7 +36,7 @@ export default function Home({ blogs }) {
 
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="" />
-        <meta property="twitter:title" content="Techsheet 🚀" />
+        <meta property="twitter:title" content="Techsheet" />
         <meta
           property="twitter:description"
           content="Tech blogs and articles on various topics related to Software Development"
