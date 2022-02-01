@@ -17,11 +17,11 @@ function about() {
           </span>{" "}
         </h2>
         <p className="text-gray-600 mt-4 dark:text-indigo-200">
-          I am a Front-end Developer I like to code things from scratch, and enjoy bringing ideas to life in the browser.
+          I am a Front-end Developer.I like to code things from scratch, I like dabbling in various parts of frontend development and like to learn about new technologies, write technical articles or simply play games in my free time.
         </p>
 
         <div className="text-center pt-8">
-          <button className="bg-indigo-500 px-3 py-1 font-semibold text-white inline-flex items-center space-x-2 rounded dark:bg-indigo-600">
+          {/* <button className="bg-indigo-500 px-3 py-1 font-semibold text-white inline-flex items-center space-x-2 rounded dark:bg-indigo-600">
             <FaLaptop />
             <a
               rel="noopener noreferrer"
@@ -30,7 +30,7 @@ function about() {
             >
               Contact Profile
             </a>
-          </button>
+          </button> */}
 
           <button className="bg-indigo-500 px-3 py-1 font-semibold text-white inline-flex items-center space-x-2 rounded ml-3 dark:bg-indigo-600">
             <FaTwitter />
