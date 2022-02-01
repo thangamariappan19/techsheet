@@ -1,13 +1,5 @@
 ## TechSheet
 
-
-
-<div align="center">
-  <img alt="Demo" src="./Extra/demo.gif" />
-</div>
-
-<br/>
-
 <center>
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) &nbsp;
