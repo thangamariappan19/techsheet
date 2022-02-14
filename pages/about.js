@@ -21,7 +21,7 @@ function about() {
         </p>
 
         <div className="text-center pt-8">
-          {/* <button className="bg-indigo-500 px-3 py-1 font-semibold text-white inline-flex items-center space-x-2 rounded dark:bg-indigo-600">
+          <button className="bg-indigo-500 px-3 py-1 font-semibold text-white inline-flex items-center space-x-2 rounded dark:bg-indigo-600">
             <FaLaptop />
             <a
               rel="noopener noreferrer"
@@ -30,7 +30,7 @@ function about() {
             >
               Contact Profile
             </a>
-          </button> */}
+          </button>
 
           <button className="bg-indigo-500 px-3 py-1 font-semibold text-white inline-flex items-center space-x-2 rounded ml-3 dark:bg-indigo-600">
             <FaTwitter />
