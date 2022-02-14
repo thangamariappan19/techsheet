@@ -26,7 +26,7 @@ function about() {
             <a
               rel="noopener noreferrer"
               target="_blank"
-              href="https://www.linkedin.com/in/thanga-mariappan-p/"
+              href="thangamariappan.vercel.app/"
             >
               Contact Profile
             </a>
