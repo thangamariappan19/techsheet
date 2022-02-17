@@ -28,7 +28,7 @@ function about() {
               target="_blank"
               href="https://thangamariappan.vercel.app"
             >
-              Contact Profile
+              Portfolio
             </a>
           </button>
 
