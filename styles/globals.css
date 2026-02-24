@@ -2,52 +2,99 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities {
-  @variants dark {
-    .bg-dark {
-      background: #070c17db;
-      backdrop-filter: blur(3px);
-    }
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 221.2 83.2% 53.3%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 221.2 83.2% 53.3%;
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 217.2 91.2% 59.8%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 224.3 76.3% 48%;
   }
 }
 
-html {
-  scroll-behavior: smooth;
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
 }
 
-/* width */
+/* Custom Scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 10px;
 }
-/* Track */
+
 ::-webkit-scrollbar-track {
-  background: #ffffff;
+  @apply bg-background;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #6264f3 !important;
-  border-radius: 5px !important;
+  @apply bg-muted-foreground/20 rounded-full border-2 border-solid border-transparent bg-clip-padding hover:bg-muted-foreground/40 transition-colors;
 }
 
-button:focus {
-  outline: 0 !important;
+/* Smooth Transitions */
+* {
+  @apply transition-colors duration-200;
 }
 
-@media (max-width: 1180px) {
-  .toc {
-    display: none;
-  }
+/* Typography Overrides */
+.prose {
+  @apply max-w-none;
 }
 
-.toc-inner {
-  max-height: calc(100vh - 25vh);
+.prose pre {
+  @apply shadow-premium rounded-xl border border-border;
 }
 
-@media only screen and (max-width: 767px) {
-  .prose {
-    color: #374151;
-    max-width: 37ch;
-  }
+.prose code {
+  @apply px-1.5 py-0.5 rounded-md bg-muted font-medium text-primary;
+}
+
+.prose h1, .prose h2, .prose h3 {
+  @apply scroll-mt-24 font-bold tracking-tight;
+}
+
+/* Glassmorphism utility */
+.glass {
+  @apply bg-background/80 backdrop-blur-md border border-white/10;
 }

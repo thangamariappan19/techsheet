@@ -1,83 +1,68 @@
-const { spacing, fontFamily } = require("tailwindcss/defaultTheme");
-
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./Components/**/*.{js,ts,jsx,tsx}"],
-  // darkMode: false, // or 'media' or 'class'
+  content: [
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./Components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
   darkMode: "class",
   theme: {
     extend: {
-      boxShadow: {
-        2: "0 1px 3px 0 rgb(11 17 29 / 98%), 0 1px 2px 0 rgb(9 18 35 / 90%)",
+      colors: {
+        background: "hsl(var(--background))",
+        foreground: "hsl(var(--foreground))",
+        card: {
+          DEFAULT: "hsl(var(--card))",
+          foreground: "hsl(var(--card-foreground))",
+        },
+        popover: {
+          DEFAULT: "hsl(var(--popover))",
+          foreground: "hsl(var(--popover-foreground))",
+        },
+        primary: {
+          DEFAULT: "hsl(var(--primary))",
+          foreground: "hsl(var(--primary-foreground))",
+        },
+        secondary: {
+          DEFAULT: "hsl(var(--secondary))",
+          foreground: "hsl(var(--secondary-foreground))",
+        },
+        muted: {
+          DEFAULT: "hsl(var(--muted))",
+          foreground: "hsl(var(--muted-foreground))",
+        },
+        accent: {
+          DEFAULT: "hsl(var(--accent))",
+          foreground: "hsl(var(--accent-foreground))",
+        },
+        destructive: {
+          DEFAULT: "hsl(var(--destructive))",
+          foreground: "hsl(var(--destructive-foreground))",
+        },
+        border: "hsl(var(--border))",
+        input: "hsl(var(--input))",
+        ring: "hsl(var(--ring))",
+        chart: {
+          1: "hsl(var(--chart-1))",
+          2: "hsl(var(--chart-2))",
+          3: "hsl(var(--chart-3))",
+          4: "hsl(var(--chart-4))",
+          5: "hsl(var(--chart-5))",
+        },
+      },
+      borderRadius: {
+        lg: "var(--radius)",
+        md: "calc(var(--radius) - 2px)",
+        sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
-        sans: ["Inter", ...fontFamily.sans],
+        sans: ["var(--font-sans)", "Inter", "sans-serif"],
       },
-      typography: (theme) => ({
-        DEFAULT: {
-          css: {
-            color: theme("colors.gray.700"),
-            a: {
-              color: theme("colors.blue.500"),
-              "&:hover": {
-                color: theme("colors.blue.700"),
-              },
-              code: { color: theme("colors.blue.400") },
-            },
-            "h2,h3,h4": {
-              "scroll-margin-top": spacing[32],
-            },
-            code: { color: theme("colors.pink.500") },
-            "blockquote p:first-of-type::before": false,
-            "blockquote p:last-of-type::after": false,
-          },
-        },
-        dark: {
-          css: {
-            color: theme("colors.gray.300"),
-            a: {
-              color: theme("colors.blue.400"),
-              "&:hover": {
-                color: theme("colors.blue.600"),
-              },
-              code: { color: theme("colors.blue.400") },
-            },
-            blockquote: {
-              borderLeftColor: theme("colors.gray.700"),
-              color: theme("colors.gray.300"),
-            },
-            "h2,h3,h4": {
-              color: theme("colors.gray.100"),
-              "scroll-margin-top": spacing[32],
-            },
-            hr: { borderColor: theme("colors.gray.700") },
-            ol: {
-              li: {
-                "&:before": { color: theme("colors.gray.500") },
-              },
-            },
-            ul: {
-              li: {
-                "&:before": { backgroundColor: theme("colors.gray.500") },
-              },
-            },
-            strong: { color: theme("colors.gray.300") },
-            thead: {
-              color: theme("colors.gray.100"),
-            },
-            tbody: {
-              tr: {
-                borderBottomColor: theme("colors.gray.700"),
-              },
-            },
-          },
-        },
-      }),
-    },
-  },
-  variants: {
-    extend: {
-      typography: ["dark"],
-      boxShadow: ["dark"],
+      boxShadow: {
+        'premium': '0 4px 20px -2px rgba(0, 0, 0, 0.1), 0 2px 10px -2px rgba(0, 0, 0, 0.05)',
+        'premium-hover': '0 10px 40px -4px rgba(0, 0, 0, 0.15), 0 4px 15px -4px rgba(0, 0, 0, 0.1)',
+      },
     },
   },
   plugins: [require("@tailwindcss/typography")],

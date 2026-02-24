@@ -1,43 +1,57 @@
-import { AiOutlineArrowRight } from "react-icons/ai";
-import Link from "next/link";
+"use client";
 
-function BlogHeader({ data, content, readTime }) {
+import Link from "next/link";
+import { ArrowRight, Clock, User } from "lucide-react";
+import { motion } from "framer-motion";
+
+function BlogHeader({ data, readTime }) {
+  const slug = data.Title.split(" ").join("-").toLowerCase();
+
   return (
-    <Link
-      href={`/blogs/${String(data.Title.split(" ").join("-").toLowerCase())}`}
+    <motion.div
+      whileHover={{ y: -5 }}
+      transition={{ duration: 0.2 }}
+      className="group relative flex flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-premium hover:shadow-premium-hover"
     >
-      <div className="cursor-pointer group px-6 py-6 md:px-10 md:w-1/3 flex flex-col items-start rounded transform">
-        <span className="inline-block py-1 px-2 rounded bg-gray-100 dark:bg-indigo-900 text-indigo-700 dark:text-gray-200 text-sm font-medium tracking-widest">
-          {data.Tags.split(" ")[0]}
-        </span>
-        <h2 className="sm:text-2xl text-xl title-font font-semibold text-gray-700 mt-4 mb-4 dark:text-gray-100 group-hover:text-indigo-800 dark:group-hover:text-indigo-400">
+      <Link href={`/blogs/${slug}`} className="flex flex-col h-full p-6 md:p-8">
+        <div className="flex items-center gap-2 mb-4">
+          {data.Tags && data.Tags.split(" ").slice(0, 2).map((tag, idx) => (
+            <span
+              key={idx}
+              className="inline-flex items-center rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-semibold text-primary transition-colors group-hover:bg-primary/20"
+            >
+              {tag}
+            </span>
+          ))}
+        </div>
+
+        <h3 className="text-xl font-bold leading-tight tracking-tight text-foreground sm:text-2xl group-hover:text-primary transition-colors mb-3">
           {data.Title}
-        </h2>
-        <p className="leading-relaxed mb-5 text-gray-800 dark:text-gray-200">
-          {data.Abstract}..
+        </h3>
+
+        <p className="line-clamp-3 text-muted-foreground text-sm flex-grow mb-6">
+          {data.Abstract}
         </p>
 
-        <div className="flex items-center flex-wrap pb-2 border-b-2 border-gray-300 mt-auto w-full justify-between dark:border-indigo-400">
-          <a className="text-indigo-700 inline-flex items-center dark:text-indigo-200 group-hover:text-indigo-800 dark:group-hover:text-indigo-400">
-            Learn More{" "}
-            <span className="pl-1">
-              <AiOutlineArrowRight />
-            </span>
-          </a>
+        <div className="mt-auto pt-6 border-t border-border flex items-center justify-between text-sm text-muted-foreground">
+          <div className="flex items-center gap-4">
+            <div className="flex items-center gap-1.5">
+              <User className="w-4 h-4" />
+              <span className="font-medium text-foreground/80">{data.Author}</span>
+            </div>
+            <div className="flex items-center gap-1.5">
+              <Clock className="w-4 h-4" />
+              <span>{readTime}</span>
+            </div>
+          </div>
 
-          <a className="inline-flex items-center">
-            <span className="flex-grow flex flex-col pl-4">
-              <span className="title-font font-medium text-sm text-gray-600 dark:text-indigo-200">
-                {data.Author}
-              </span>
-              <span className="text-gray-900 text-xs tracking-widest mt-0.5 dark:text-indigo-300">
-                {readTime}
-              </span>
-            </span>
-          </a>
+          <div className="flex items-center gap-1 font-semibold text-primary group-hover:translate-x-1 transition-transform">
+            <span>Read</span>
+            <ArrowRight className="w-4 h-4" />
+          </div>
         </div>
-      </div>
-    </Link>
+      </Link>
+    </motion.div>
   );
 }
 
