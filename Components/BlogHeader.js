@@ -35,9 +35,16 @@ function BlogHeader({ data, readTime }) {
 
         <div className="mt-auto pt-6 border-t border-border flex items-center justify-between text-sm text-muted-foreground">
           <div className="flex items-center gap-4">
-            <div className="flex items-center gap-1.5">
-              <User className="w-4 h-4" />
-              <span className="font-medium text-foreground/80">{data.Author}</span>
+            <div className="flex items-center gap-1.5 min-w-0">
+              <User className="w-4 h-4 flex-shrink-0" />
+              <span className="font-medium text-foreground/80 truncate flex items-center gap-1">
+                {data.Author}
+                {data.Author === "TechSheet AI" && (
+                  <span className="inline-flex items-center gap-0.5 px-1 py-0.5 rounded bg-primary/10 text-primary text-[8px] font-bold border border-primary/20">
+                    ✨ AI
+                  </span>
+                )}
+              </span>
             </div>
             <div className="flex items-center gap-1.5">
               <Clock className="w-4 h-4" />

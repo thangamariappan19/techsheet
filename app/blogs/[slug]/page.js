@@ -42,7 +42,7 @@ export default async function BlogPost({ params }) {
     }
 
     const headings = await getHeadings(post.content);
-    
+
     // Strip custom ID syntax {#...} which causes MDX compile errors
     const cleanedContent = post.content.replace(/\{#[^}]+\}/g, "");
 
@@ -79,7 +79,17 @@ export default async function BlogPost({ params }) {
                                 <div className="w-8 h-8 rounded-full bg-muted flex items-center justify-center">
                                     <User className="w-4 h-4" />
                                 </div>
-                                <span className="font-semibold text-foreground">{post.data.Author}</span>
+                                <span className="font-semibold text-foreground flex items-center gap-1.5">
+                                    {post.data.Author}
+                                    {post.data.Author === "TechSheet AI" && (
+                                        <span className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded-md bg-primary/10 text-primary text-[10px] font-bold uppercase tracking-wider border border-primary/20">
+                                            <svg className="w-2.5 h-2.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                                            </svg>
+                                            AI
+                                        </span>
+                                    )}
+                                </span>
                             </div>
                             <div className="flex items-center gap-2">
                                 <Clock className="w-4 h-4" />
@@ -103,8 +113,8 @@ export default async function BlogPost({ params }) {
                     )}
 
                     <div className="prose prose-lg dark:prose-invert prose-primary max-w-none">
-                        <MDXRemote 
-                            source={cleanedContent} 
+                        <MDXRemote
+                            source={cleanedContent}
                             options={{
                                 mdxOptions: {
                                     rehypePlugins: [rehypeSlug],
