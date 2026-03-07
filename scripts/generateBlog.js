@@ -32,8 +32,6 @@ async function generateBlog() {
         const selectedTopic = topics[Math.floor(Math.random() * topics.length)];
         console.log(`✨ Topic selected: ${selectedTopic}`);
 
-        const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
-
         const prompt = `
             You are a Senior Full-Stack Architect and Technical Blogger for "TechSheet".
             Write a detailed, high-quality technical blog post about: "${selectedTopic}".
@@ -61,7 +59,35 @@ async function generateBlog() {
             }
         `;
 
-        const result = await model.generateContent(prompt);
+        const possibleModels = [
+            "gemini-flash-latest", 
+            "gemini-pro-latest",
+            "gemini-1.5-flash", 
+            "gemini-pro", 
+            "gemini-1.5-pro", 
+            "gemini-2.0-flash"
+        ];
+        let result;
+        let success = false;
+
+        for (const modelName of possibleModels) {
+            try {
+                console.log(`🤖 Attempting to generate with model: ${modelName}...`);
+                const model = genAI.getGenerativeModel({ model: modelName });
+                result = await model.generateContent(prompt);
+                success = true;
+                console.log(`✅ Success with model: ${modelName}`);
+                break;
+            } catch (err) {
+                console.warn(`⚠️ Model ${modelName} failed: ${err.message}`);
+                // Continue to next model
+            }
+        }
+
+        if (!success) {
+            throw new Error("All generative models failed. Please check your API key/quota.");
+        }
+
         const response = await result.response;
         const rawText = response.text().trim();
         
