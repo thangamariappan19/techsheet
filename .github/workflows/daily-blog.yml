@@ -14,6 +14,9 @@ jobs:
     steps:
       - name: 🛡️ Checkout Repository
         uses: actions/checkout@v4
+        with:
+          # Fetch all history so rebase works correctly
+          fetch-depth: 0
 
       - name: ⚙️ Setup Node.js
         uses: actions/setup-node@v4
@@ -33,9 +36,17 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add content/blog/*.md
-          # Only commit if there are changes
-          git commit -m "chore(blog): auto-generate daily post [skip ci]" || echo "No changes to commit"
-          # Pull latest to avoid conflicts
-          git pull --rebase origin main
-          git push origin main
+          
+          # Add all changes (including package-lock.json if updated)
+          git add .
+          
+          # Only proceed if there are actual changes to commit
+          if [ -n "$(git status --porcelain)" ]; then
+            git commit -m "chore(blog): auto-post & update lockfile [skip ci]"
+            
+            # Pull latest changes from remote to avoid conflicts, then push
+            git pull --rebase origin main
+            git push origin main
+          else
+            echo "No changes detected."
+          fi
