@@ -38,5 +38,10 @@ export const getAllBlogPosts = async () => {
 
 export const getBlogPostBySlug = async (slug) => {
   const allBlogs = await getAllBlogPosts();
-  return allBlogs.find(blog => blog.data.slug === slug);
+  const cleanLookupSlug = slug.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+  return allBlogs.find(blog => 
+    blog.data.slug === slug || 
+    blog.data.slug === cleanLookupSlug ||
+    (blog.data.Title || "").toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '') === cleanLookupSlug
+  );
 };

@@ -5,7 +5,7 @@ import { ArrowRight, Clock, User } from "lucide-react";
 import { motion } from "framer-motion";
 
 function BlogHeader({ data, readTime }) {
-  const slug = data.Title.split(" ").join("-").toLowerCase();
+  const slug = data.slug || data.Title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 
   return (
     <motion.div
