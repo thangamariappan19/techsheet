@@ -60,12 +60,12 @@ async function generateBlog() {
         `;
 
         const possibleModels = [
+            "gemini-2.5-flash",
+            "gemini-2.5-pro",
             "gemini-flash-latest", 
             "gemini-pro-latest",
             "gemini-1.5-flash", 
-            "gemini-pro", 
-            "gemini-1.5-pro", 
-            "gemini-2.0-flash"
+            "gemini-pro"
         ];
         let result;
         let success = false;
@@ -91,8 +91,15 @@ async function generateBlog() {
         const response = await result.response;
         const rawText = response.text().trim();
         
-        // Clean potential markdown code blocks around JSON if the model included them
-        const cleanedJson = rawText.replace(/^```json/, '').replace(/```$/, '').trim();
+        // Robust JSON extraction: Find content between the first { and the last }
+        const startBrace = rawText.indexOf('{');
+        const endBrace = rawText.lastIndexOf('}');
+        
+        if (startBrace === -1 || endBrace === -1) {
+            throw new Error("No valid JSON structure found in response");
+        }
+        
+        const cleanedJson = rawText.substring(startBrace, endBrace + 1);
         
         let blogData;
         try {

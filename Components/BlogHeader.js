@@ -39,7 +39,7 @@ function BlogHeader({ data, readTime }) {
               <User className="w-4 h-4 flex-shrink-0" />
               <span className="font-medium text-foreground/80 truncate flex items-center gap-1">
                 {data.Author}
-                {data.Author === "TechSheet AI" && (
+                {(data.Author === "TechSheet AI" || data.Author === "TechSheet Bot") && (
                   <span className="inline-flex items-center gap-0.5 px-1 py-0.5 rounded bg-primary/10 text-primary text-[8px] font-bold border border-primary/20">
                     ✨ AI
                   </span>
