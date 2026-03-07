@@ -10,7 +10,7 @@ async function generateBlog() {
     console.log("🚀 Starting blog generation process...");
 
     if (!process.env.GEMINI_API_KEY) {
-        console.error("❌ GEMINI_API_KEY is not set. Please check your environment variables or GitHub secrets.");
+        console.error("❌ GEMINI_API_KEY is not set. Please check your .env.local file or GitHub secrets.");
         process.exit(1);
     }
 
@@ -97,6 +97,9 @@ title: "${blogData.title}"
 date: "${formattedDate}"
 description: "${blogData.description}"
 tags: ${JSON.stringify(blogData.tags)}
+headerImage: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1200&auto=format&fit=crop&keywords=${encodeURIComponent(blogData.title)}"
+author: "TechSheet AI"
+isPublished: true
 ---
 
 ${blogData.content}

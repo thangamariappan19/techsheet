@@ -22,8 +22,10 @@ export const getAllBlogPosts = async () => {
           Title: data.Title || data.title,
           Abstract: data.Abstract || data.description,
           Tags: Array.isArray(data.tags) ? data.tags.join(" ") : (data.Tags || ""),
-          Author: data.Author || "TechSheet AI",
+          Author: data.Author || data.author || "TechSheet AI",
           Date: data.date || data.Date,
+          HeaderImage: data.HeaderImage || data.headerImage,
+          isPublished: data.isPublished !== undefined ? data.isPublished : true,
           slug: data.slug || (data.Title || data.title || "").split(" ").join("-").toLowerCase() || file.replace('.md', '').replace('.mdx', '')
         },
         content,

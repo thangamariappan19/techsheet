@@ -14,8 +14,7 @@ import {
   Menu,
   X
 } from "lucide-react";
-import { auth, provider } from "../Firebase/Firebase";
-import { signInWithPopup, signOut } from "firebase/auth";
+import { auth } from "../Firebase/Firebase";
 import Alert from "./Alert";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -41,35 +40,6 @@ function Navbar() {
     }
   };
 
-  const handleSignOut = () => {
-    signOut(auth)
-      .then(() => {
-        setUser(null);
-        localStorage.removeItem("user");
-        setAlertMessage("Hope to see you again!");
-        setViewAlert(true);
-        setTimeout(() => setViewAlert(false), 2000);
-      })
-      .catch((error) => console.error(error));
-  };
-
-  const handleSignIn = () => {
-    signInWithPopup(auth, provider)
-      .then((res) => {
-        const userData = {
-          name: res.user.displayName,
-          photo: res.user.photoURL,
-          token: res.user.accessToken,
-          uid: res.user.uid,
-        };
-        localStorage.setItem("user", JSON.stringify(userData));
-        setUser(userData);
-        setAlertMessage(`Hello ${res.user.displayName}`);
-        setViewAlert(true);
-        setTimeout(() => setViewAlert(false), 2000);
-      })
-      .catch((err) => console.error(err));
-  };
 
   return (
     <>
@@ -122,32 +92,6 @@ function Navbar() {
                 )}
               </button>
 
-              {user ? (
-                <div className="flex items-center gap-3 ml-2">
-                  <div className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-muted border border-border">
-                    {user.photo ? (
-                      <img src={user.photo} alt={user.name} className="w-6 h-6 rounded-full" />
-                    ) : (
-                      <User className="w-4 h-4" />
-                    )}
-                    <span className="text-sm font-medium truncate max-w-[100px]">{user.name}</span>
-                  </div>
-                  <button
-                    onClick={handleSignOut}
-                    className="p-2 rounded-lg hover:bg-destructive/10 text-muted-foreground hover:text-destructive transition-all"
-                    title="Sign Out"
-                  >
-                    <LogOut className="w-5 h-5" />
-                  </button>
-                </div>
-              ) : (
-                <button
-                  onClick={handleSignIn}
-                  className="ml-2 px-4 py-2 rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 text-sm font-semibold transition-all shadow-premium"
-                >
-                  Sign In
-                </button>
-              )}
             </div>
 
             {/* Mobile Menu Button */}
@@ -202,34 +146,6 @@ function Navbar() {
 
                 <div className="h-px bg-border my-2" />
 
-                {user ? (
-                  <div className="flex flex-col gap-2">
-                    <div className="flex items-center gap-3 p-3">
-                      <img src={user.photo} alt={user.name} className="w-8 h-8 rounded-full" />
-                      <span className="font-medium">{user.name}</span>
-                    </div>
-                    <button
-                      onClick={() => {
-                        handleSignOut();
-                        setIsMenuOpen(false);
-                      }}
-                      className="flex items-center gap-3 p-3 rounded-xl hover:bg-destructive/10 text-destructive transition-all"
-                    >
-                      <LogOut className="w-5 h-5" />
-                      <span className="font-medium">Sign Out</span>
-                    </button>
-                  </div>
-                ) : (
-                  <button
-                    onClick={() => {
-                      handleSignIn();
-                      setIsMenuOpen(false);
-                    }}
-                    className="w-full flex justify-center items-center gap-2 p-4 rounded-xl bg-primary text-primary-foreground font-bold shadow-premium"
-                  >
-                    Sign In
-                  </button>
-                )}
               </div>
             </motion.div>
           )}
