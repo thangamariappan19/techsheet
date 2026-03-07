@@ -60,20 +60,23 @@ async function generateBlog() {
         `;
 
         const possibleModels = [
-            "gemini-2.5-flash",
-            "gemini-2.5-pro",
+            "gemini-2.0-flash", // Favored newest model
+            "gemini-1.5-flash",
             "gemini-flash-latest", 
             "gemini-pro-latest",
-            "gemini-1.5-flash", 
             "gemini-pro"
         ];
+        
         let result;
         let success = false;
 
         for (const modelName of possibleModels) {
             try {
                 console.log(`🤖 Attempting to generate with model: ${modelName}...`);
-                const model = genAI.getGenerativeModel({ model: modelName });
+                const model = genAI.getGenerativeModel({ 
+                    model: modelName,
+                    generationConfig: { responseMimeType: "application/json" }
+                });
                 result = await model.generateContent(prompt);
                 success = true;
                 console.log(`✅ Success with model: ${modelName}`);
@@ -91,23 +94,21 @@ async function generateBlog() {
         const response = await result.response;
         const rawText = response.text().trim();
         
-        // Robust JSON extraction: Find content between the first { and the last }
+        // Defensive JSON extraction logic
+        let cleanedJson = rawText;
         const startBrace = rawText.indexOf('{');
         const endBrace = rawText.lastIndexOf('}');
         
-        if (startBrace === -1 || endBrace === -1) {
-            throw new Error("No valid JSON structure found in response");
+        if (startBrace !== -1 && endBrace !== -1) {
+            cleanedJson = rawText.substring(startBrace, endBrace + 1);
         }
-        
-        const cleanedJson = rawText.substring(startBrace, endBrace + 1);
         
         let blogData;
         try {
             blogData = JSON.parse(cleanedJson);
         } catch (parseError) {
-            console.error("❌ Failed to parse Gemini response as JSON. Retrying with content-only format if possible...");
-            // Fallback: If JSON parsing fails, the model might have returned text. We'll try to extract manually or just fail.
-            throw new Error("Invalid Gemini response format");
+            console.error("❌ Failed to parse Gemini response as JSON. Content received:", rawText);
+            throw new Error(`Invalid JSON format: ${parseError.message}`);
         }
 
         const date = new Date();
