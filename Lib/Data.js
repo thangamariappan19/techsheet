@@ -26,7 +26,7 @@ export const getAllBlogPosts = async () => {
           Date: data.date || data.Date,
           HeaderImage: data.HeaderImage || data.headerImage,
           isPublished: data.isPublished !== undefined ? data.isPublished : true,
-          slug: data.slug || (data.Title || data.title || "").split(" ").join("-").toLowerCase() || file.replace('.md', '').replace('.mdx', '')
+          slug: data.slug || (data.Title || data.title || "").toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '') || file.replace('.md', '').replace('.mdx', '')
         },
         content,
         readTime
