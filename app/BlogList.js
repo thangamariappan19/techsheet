@@ -36,7 +36,7 @@ export default function BlogList({ initialBlogs }) {
                 Premium Content
               </span>
             </div>
-            <h2 className="text-5xl md:text-7xl font-black tracking-tighter text-foreground max-w-xl">
+            <h2 className="text-5xl md:text-7xl font-black tracking-tighter text-white max-w-xl">
               Latest{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-purple-400">
                 TechSheets

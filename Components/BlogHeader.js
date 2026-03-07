@@ -7,9 +7,18 @@ import { motion } from "framer-motion";
 function BlogHeader({ data, readTime }) {
   const slug = data.slug || data.Title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 
+  const getCategoryImage = (tags = "") => {
+    const t = tags.toLowerCase();
+    if (t.includes('ai') || t.includes('intelligence')) return "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=800&auto=format&fit=crop";
+    if (t.includes('cyber') || t.includes('security')) return "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=800&auto=format&fit=crop";
+    if (t.includes('cloud') || t.includes('aws') || t.includes('azure')) return "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=800&auto=format&fit=crop";
+    if (t.includes('devops') || t.includes('pipeline')) return "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=800&auto=format&fit=crop";
+    return "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=800&auto=format&fit=crop";
+  };
+
   const imageSource = (data.HeaderImage && data.HeaderImage !== "/placeholder-tech.jpg") 
     ? data.HeaderImage 
-    : (data.headerImage || `https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=800&auto=format&fit=crop&keywords=${encodeURIComponent(data.Title || 'coding')}`);
+    : getCategoryImage(data.Tags?.toString() || data.tags?.toString() || "");
 
   return (
     <motion.div
