@@ -3,7 +3,7 @@ import path from "path";
 import matter from "gray-matter";
 import readingTime from "reading-time";
 
-const dir = path.join(process.cwd(), "_content");
+const dir = path.join(process.cwd(), "content", "blog");
 
 export const getAllBlogPosts = async () => {
   if (!fs.existsSync(dir)) return [];
@@ -19,7 +19,12 @@ export const getAllBlogPosts = async () => {
       return {
         data: {
           ...data,
-          slug: data.Title ? data.Title.split(" ").join("-").toLowerCase() : file.replace('.md', '').replace('.mdx', '')
+          Title: data.Title || data.title,
+          Abstract: data.Abstract || data.description,
+          Tags: Array.isArray(data.tags) ? data.tags.join(" ") : (data.Tags || ""),
+          Author: data.Author || "TechSheet AI",
+          Date: data.date || data.Date,
+          slug: data.slug || (data.Title || data.title || "").split(" ").join("-").toLowerCase() || file.replace('.md', '').replace('.mdx', '')
         },
         content,
         readTime

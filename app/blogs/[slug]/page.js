@@ -97,7 +97,7 @@ export default async function BlogPost({ params }) {
                             </div>
                             <div className="flex items-center gap-2">
                                 <Calendar className="w-4 h-4" />
-                                <span>Feb 24, 2026</span>
+                                <span>{post.data.Date ? new Date(post.data.Date).toLocaleDateString("en-US", { year: 'numeric', month: 'short', day: 'numeric' }) : 'Mar 07, 2026'}</span>
                             </div>
                         </div>
                     </header>
