@@ -2,8 +2,8 @@ name: Daily Tech Blog Automation
 
 on:
   schedule:
-    # Runs at 12:00 AM UTC (approx midnight IST)
-    - cron: '0 0 * * *'
+    # Runs at 12:00 AM, 8:00 AM, and 4:00 PM UTC
+    - cron: '0 0,8,16 * * *'
   workflow_dispatch: # Allows manual triggering from GitHub UI
 
 jobs:
@@ -34,8 +34,8 @@ jobs:
 
       - name: 🚀 Commit and Push Changes
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "Thanga Mariappan"
+          git config --global user.email "thangamariappancse@gmail.com"
           
           # Add all changes (including package-lock.json if updated)
           git add .
