@@ -35,6 +35,7 @@ async function generateBlog() {
             Target length: 800-1200 words.
             Style: Informative, professional, and developer-focused.
             Format: Clean Markdown.
+            CRITICAL MDX RULE: Do not use unescaped "<" or ">" symbols outside of code blocks (e.g., do not write "<16ms", write "under 16ms" instead) as it breaks MDX parsers.
 
             The blog must include:
             1. An SEO-optimized title that clearly states the unique topic.

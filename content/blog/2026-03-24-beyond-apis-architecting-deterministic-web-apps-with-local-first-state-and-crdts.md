@@ -90,7 +90,7 @@ Imagine a tool like Linear or Trello. In a traditional SPA, moving a card from "
 4. Updating the UI.
 
 In a **Local-First** version:
-1. The user drags the card. The local SQLite DB updates immediately. The UI reflects this in <16ms.
+1. The user drags the card. The local SQLite DB updates immediately. The UI reflects this in less than 16ms.
 2. A background process pushes a small binary blob representing the CRDT change.
 3. A colleague on the other side of the world receives this blob via a WebSocket relay. Their local DB updates, and their React component re-renders. 
 4. If both users moved the same card to different columns simultaneously, the CRDT logic ensures that both screens land on the same column (determined by a deterministic tie-breaker) without any "Merge Conflict" modals.
