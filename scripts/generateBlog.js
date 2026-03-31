@@ -143,6 +143,30 @@ ${blogData.content}
         fs.writeFileSync(path.join(outputDir, filename), blogFileContent);
         console.log(`✅ Success! New blog post created: ${filename}`);
 
+        // Generate a human-like commit message for the automation
+        if (process.env.GITHUB_ENV) {
+            const safeTitle = blogData.title.replace(/"/g, "'"); 
+            const humanCommitMessages = [
+                `Added new blog post: ${safeTitle}`,
+                `New article: ${safeTitle}`,
+                `Just published a post about ${safeTitle}`,
+                `Fresh content: ${safeTitle}`,
+                `Writing: ${safeTitle} 📝`,
+                `New post on ${safeTitle} is out!`,
+                `Sharing my latest thoughts on ${safeTitle}`,
+                `Updated the blog with "${safeTitle}"`,
+                `Check out the new post: ${safeTitle}`,
+                `Blog update: ${safeTitle}`,
+                `Added "${safeTitle}" to the blog`,
+                `New blog article live! - ${safeTitle}`,
+                `Published: ${safeTitle}`,
+                `Finally finished the post on ${safeTitle}`
+            ];
+            const randomMsg = humanCommitMessages[Math.floor(Math.random() * humanCommitMessages.length)];
+            fs.appendFileSync(process.env.GITHUB_ENV, `BLOG_COMMIT_MSG=${randomMsg}\n`);
+            console.log(`📝 Set commit message: ${randomMsg}`);
+        }
+
     } catch (error) {
         console.error("❌ Error generating blog:", error.message);
         process.exit(1);

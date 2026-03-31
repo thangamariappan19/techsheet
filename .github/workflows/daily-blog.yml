@@ -42,7 +42,7 @@ jobs:
           
           # Only proceed if there are actual changes to commit
           if [ -n "$(git status --porcelain)" ]; then
-            git commit -m "chore(blog): auto-post & update lockfile [skip ci]"
+            git commit -m "${{ env.BLOG_COMMIT_MSG || 'chore(blog): auto-post blog and update logs' }}" -m "Automated daily blog post update [skip ci]"
             
             # Pull latest changes from remote to avoid conflicts, then push
             git pull --rebase origin main
