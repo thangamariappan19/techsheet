@@ -2,8 +2,8 @@ name: Daily Tech Blog Automation
 
 on:
   schedule:
-    # Runs at 12:00 AM, 8:00 AM, and 4:00 PM UTC
-    - cron: '0 0,8,16 * * *'
+    # Runs at 12:00 AM UTC once daily to generate all 3 blogs
+    - cron: '0 0 * * *'
   workflow_dispatch: # Allows manual triggering from GitHub UI
 
 jobs:
