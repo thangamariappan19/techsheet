@@ -39,13 +39,12 @@ export default function AboutPage() {
                                 Hi, I'm <span className="text-primary italic">Thanga</span>
                             </h1>
                             <p className="text-xl font-medium text-muted-foreground uppercase tracking-widest text-sm">
-                                Front-end Developer & Tech Enthusiast
+                                Senior Front-End Architect
                             </p>
                         </div>
 
                         <p className="text-lg text-muted-foreground leading-relaxed">
-                            I am a passionate Front-end Developer dedicated to building beautiful, functional, and user-centric web applications.
-                            I love deep-diving into new technologies, creating simplified resources for developers, and staying ahead of the curve in the rapidly evolving tech landscape.
+                            With over 10 years of experience in the tech industry, I am a passionate Front-End Architect dedicated to designing scalable systems and building beautiful, highly functional, and user-centric web applications. I love deep-diving into complex architectural patterns, creating simplified resources for developers, and leading technical initiatives to stay ahead of the curve in a rapidly evolving landscape.
                         </p>
 
                         <div className="grid grid-cols-2 gap-4 mt-4">

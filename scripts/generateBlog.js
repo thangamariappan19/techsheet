@@ -11,7 +11,7 @@ async function generateSingleBlog(blogConfig) {
     console.log(`\n🚀 Generating blog for type: ${blogConfig.type}...`);
     
     const prompt = `
-        You are a Senior Full-Stack Architect, Engineering Manager, and Technical Blogger.
+        You are a highly experienced Senior Front-End Architect and Technical Blogger.
         Your task is to write a highly unique and engaging blog post focusing on: "${blogConfig.type}".
         
         ${blogConfig.instructions}
@@ -129,16 +129,16 @@ async function generateAllBlogs() {
             Content rules: Include real-world examples, code snippets, problem-solving. Beginner to advanced explanation. Make it SEO optimized.`
         },
         {
-            type: "Engineering Management & Leadership",
-            prefix: "manager",
-            instructions: `Topic Focus: A developer transitioning into an Associate Manager role.
-            Content rules: Team handling, stakeholder management, sprint planning, conflict resolution, delivery pressure, career growth. Write as real experience + lessons (even if simulated). Make it relatable for IT professionals. SEO optimized.`
+            type: "Frontend Architecture & Systems",
+            prefix: "architecture",
+            instructions: `Topic Focus: Advanced frontend architecture, scaling web apps, micro-frontends, state management, and technical leadership.
+            Content rules: Write as an experienced Architect sharing lessons on designing scalable systems. Focus on patterns, trade-offs, and technical debt. Make it relatable for engineers. SEO optimized.`
         },
         {
             type: "AI News & Trends",
             prefix: "ai",
             instructions: `Topic Focus: Latest updates from OpenAI, Anthropic (Claude), Google Gemini, etc.
-            Content rules: Explain what changed, why it matters, and how it impacts developers/managers. Keep it short, viral, and easy to read. SEO optimized.`
+            Content rules: Explain what changed, why it matters, and how it impacts developers/architects. Keep it short, viral, and easy to read. SEO optimized.`
         }
     ];
 
