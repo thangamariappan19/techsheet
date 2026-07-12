@@ -22,7 +22,7 @@ To optimize INP, we must first understand what the browser does when an interact
 2. **Processing Time:** The duration of the event handler's execution, including any rendering and reconciliation triggered by state updates.
 3. **Presentation Delay:** The time it takes for the browser to recalculate layout, paint the pixels, and actually composite the frame onto the screen.
 
-$$\text{Total INP} = \text{Input Delay} + \text{Processing Time} + \text{Presentation Delay}$$
+**Total INP = Input Delay + Processing Time + Presentation Delay**
 
 In traditional React applications, a state update triggers a synchronous render cycle. If you are rendering a large list or performing heavy calculations, the main thread is completely blocked during this "Processing Time," driving your INP scores through the roof.
 
