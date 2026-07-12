@@ -1,65 +1,56 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
-import { getAllBlogPosts } from "../../../Lib/Data";
-
-const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
+import { getAllBlogMetadata } from "../../../Lib/Data";
 
 function scoreRelevance(query, post) {
     const words = query.toLowerCase().split(/\s+/).filter(w => w.length > 3);
     if (!words.length) return 0;
-    const haystack = [
-        post.data.Title,
-        post.data.Abstract,
-        post.data.Tags,
-        post.content.slice(0, 600),
-    ].join(" ").toLowerCase();
+    const haystack = [post.title, post.description, post.tags.join(' '), post.excerpt].join(' ').toLowerCase();
     return words.filter(w => haystack.includes(w)).length;
 }
 
 export async function POST(req) {
+    // Clear error when key is not configured in Vercel env vars
+    if (!process.env.GEMINI_API_KEY) {
+        return new Response(
+            "TechSheet AI is not configured yet. Add GEMINI_API_KEY to your Vercel environment variables (Project Settings → Environment Variables), then redeploy.",
+            { status: 503 }
+        );
+    }
+
     try {
         const { message, history = [] } = await req.json();
-        if (!message?.trim()) {
-            return new Response("Missing message", { status: 400 });
-        }
+        if (!message?.trim()) return new Response("Missing message", { status: 400 });
 
-        const allPosts = await getAllBlogPosts();
-        const published = allPosts.filter(p => p.data.isPublished);
+        // Lightweight metadata load — no full content, won't timeout in serverless
+        const posts = await getAllBlogMetadata();
 
-        // Pick top 5 most relevant posts by keyword overlap
-        const scored = published
+        const scored = posts
             .map(p => ({ post: p, score: scoreRelevance(message, p) }))
             .sort((a, b) => b.score - a.score)
             .slice(0, 5);
 
-        // If nothing relevant found, fall back to 3 most recent posts
-        const contextPosts = scored[0]?.score > 0
-            ? scored.map(s => s.post)
-            : published
-                .sort((a, b) => new Date(b.data.Date) - new Date(a.data.Date))
-                .slice(0, 3);
+        const contextPosts = scored[0]?.score > 0 ? scored.map(s => s.post) : posts.slice(0, 3);
 
-        const context = contextPosts.map(p => {
-            const tags = Array.isArray(p.data.tags) ? p.data.tags.join(", ") : (p.data.Tags || "");
-            const excerpt = p.content.replace(/#+\s/g, '').replace(/\*\*/g, '').slice(0, 500);
-            return `TITLE: ${p.data.Title}\nTAGS: ${tags}\nSUMMARY: ${p.data.Abstract}\nEXCERPT: ${excerpt}`;
-        }).join("\n\n---\n\n");
+        const context = contextPosts.map(p =>
+            `TITLE: ${p.title}\nTAGS: ${p.tags.join(', ')}\nSUMMARY: ${p.description}\nEXCERPT: ${p.excerpt}`
+        ).join('\n\n---\n\n');
 
-        const systemPrompt = `You are TechSheet AI, a helpful assistant for the TechSheet developer blog. Answer questions using the blog content below as your primary source. Be concise and practical. If asked about a specific topic, reference the relevant article title. If the blog doesn't cover something, say so and give a brief general answer.
+        const systemPrompt = `You are TechSheet AI, a helpful assistant for the TechSheet developer blog. Answer based on the blog content below. Be concise and practical. Reference article titles when relevant.
 
 BLOG CONTENT:
 ${context}`;
 
-        // Build conversation for Gemini
-        const conversationHistory = history.slice(-6).map(msg => ({
-            role: msg.role === "user" ? "user" : "model",
-            parts: [{ text: msg.content }],
+        const conversationHistory = history.slice(-6).map(m => ({
+            role: m.role === 'user' ? 'user' : 'model',
+            parts: [{ text: m.content }],
         }));
 
+        const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
         const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
         const chat = model.startChat({
             history: [
-                { role: "user", parts: [{ text: systemPrompt }] },
-                { role: "model", parts: [{ text: "Understood. I'm TechSheet AI, ready to help with questions about the blog content." }] },
+                { role: 'user', parts: [{ text: systemPrompt }] },
+                { role: 'model', parts: [{ text: "Understood. I'm TechSheet AI, ready to help." }] },
                 ...conversationHistory,
             ],
         });
@@ -78,13 +69,13 @@ ${context}`;
         });
 
         return new Response(stream, {
-            headers: {
-                "Content-Type": "text/plain; charset=utf-8",
-                "Cache-Control": "no-cache",
-            },
+            headers: { 'Content-Type': 'text/plain; charset=utf-8', 'Cache-Control': 'no-cache' },
         });
     } catch (err) {
-        console.error("[chat/route]", err);
-        return new Response("Something went wrong. Please try again.", { status: 500 });
+        console.error('[chat/route]', err.message);
+        const msg = err.message?.includes('API_KEY') || err.message?.includes('403')
+            ? "API key error — check GEMINI_API_KEY in Vercel environment variables."
+            : "Something went wrong. Please try again.";
+        return new Response(msg, { status: 500 });
     }
 }

@@ -40,10 +40,10 @@ function BlogHeader({ data, readTime }) {
           <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-60" />
           
           <div className="absolute top-4 left-4 flex gap-2">
-            {(data.Tags || data.tags || "TECH").toString().split(/[ ,]+/).slice(0, 2).map((tag, idx) => (
+            {(data.Tags || data.tags || "TECH").toString().split(/[ ,]+/).filter(Boolean).slice(0, 2).map((tag, idx) => (
               <span
                 key={idx}
-                className="px-3 py-1 rounded-full bg-background/80 backdrop-blur-md text-primary text-[10px] font-black uppercase tracking-wider border border-white/10 shadow-lg"
+                className="px-3 py-1 rounded-full bg-black/65 backdrop-blur-md text-white text-[10px] font-black uppercase tracking-wider border border-white/20 shadow-lg"
               >
                 {tag}
               </span>

@@ -55,7 +55,10 @@ export default function ChatWidget() {
                 }),
             });
 
-            if (!res.ok) throw new Error("Request failed");
+            if (!res.ok) {
+                const errText = await res.text();
+                throw new Error(errText || "Request failed");
+            }
 
             const reader = res.body.getReader();
             const decoder = new TextDecoder();
@@ -70,10 +73,10 @@ export default function ChatWidget() {
                     { role: "assistant", content: accumulated },
                 ]);
             }
-        } catch {
+        } catch (err) {
             setMessages(prev => [
                 ...prev.slice(0, -1),
-                { role: "assistant", content: "Sorry, something went wrong. Please try again." },
+                { role: "assistant", content: err.message || "Sorry, something went wrong. Please try again." },
             ]);
         } finally {
             setStreaming(false);

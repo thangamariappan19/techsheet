@@ -36,6 +36,30 @@ export const getAllBlogPosts = async () => {
   return allBlogs;
 };
 
+// Lightweight version — reads only frontmatter + 300-char excerpt.
+// Used by the chat API route so serverless functions don't timeout loading 200+ full posts.
+export const getAllBlogMetadata = async () => {
+  if (!fs.existsSync(dir)) return [];
+  return fs.readdirSync(dir)
+    .filter(f => f.endsWith('.md') || f.endsWith('.mdx'))
+    .map((file) => {
+      const raw = fs.readFileSync(path.join(dir, file), "utf-8");
+      const { data, content } = matter(raw);
+      const slug = data.slug ||
+        (data.title || data.Title || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '') ||
+        file.replace(/\.mdx?$/, '');
+      return {
+        slug,
+        title: data.title || data.Title || '',
+        description: data.description || data.Abstract || '',
+        tags: Array.isArray(data.tags) ? data.tags : (data.Tags || '').split(/[ ,]+/).filter(Boolean),
+        isPublished: data.isPublished !== false,
+        excerpt: content.replace(/```[\s\S]*?```/g, '').replace(/[#*`\[\]]/g, '').replace(/\s+/g, ' ').slice(0, 300),
+      };
+    })
+    .filter(p => p.isPublished);
+};
+
 export const getRelatedPosts = async (slug, count = 3) => {
   const all = await getAllBlogPosts();
   const current = all.find(b => b.data.slug === slug);

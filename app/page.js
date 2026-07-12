@@ -11,7 +11,7 @@ export default async function Page() {
     const blogs = await getAllBlogPosts();
 
     return (
-        <div className="relative isolate overflow-hidden bg-[#030712] min-h-screen">
+        <div className="relative isolate overflow-hidden bg-background min-h-screen">
             {/* Background decoration */}
             <div className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80">
                 <div
