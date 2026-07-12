@@ -1,4 +1,4 @@
-import { getBlogPostBySlug, getAllBlogPosts } from "../../../Lib/Data";
+import { getBlogPostBySlug, getAllBlogPosts, getRelatedPosts } from "../../../Lib/Data";
 import { getHeadings } from "../../../Lib/GetHeadings";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import rehypeSlug from "rehype-slug";
@@ -6,6 +6,8 @@ import Toc from "../../../Components/Toc";
 import LikeBtn from "../../../Components/LikeBtn";
 import BlogShare from "../../../Components/BlogShare";
 import Comments from "../../../Components/Comments";
+import RelatedPosts from "../../../Components/RelatedPosts";
+import ReadingProgress from "../../../Components/ReadingProgress";
 import { notFound } from "next/navigation";
 import { Clock, User, Calendar, ArrowLeft } from "lucide-react";
 import Link from "next/link";
@@ -44,7 +46,10 @@ export default async function BlogPost({ params }) {
         notFound();
     }
 
-    const headings = await getHeadings(post.content);
+    const [headings, relatedPosts] = await Promise.all([
+        getHeadings(post.content),
+        getRelatedPosts(slug, 3),
+    ]);
 
     // Strip custom ID syntax {#...} which causes MDX compile errors
     const cleanedContent = post.content.replace(/\{#[^}]+\}/g, "");
@@ -56,6 +61,7 @@ export default async function BlogPost({ params }) {
 
     return (
         <div className="relative min-h-screen overflow-hidden">
+            <ReadingProgress />
             {/* Background Blobs for Visual Consistency */}
             <div className="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
                 <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/4" />
@@ -76,12 +82,13 @@ export default async function BlogPost({ params }) {
                         <header className="mb-12">
                             <div className="flex flex-wrap gap-2 mb-8">
                                 {(post.data.Tags || post.data.tags || "TECH").toString().split(/[ ,]+/).map((tag) => (
-                                    <span
+                                    <Link
                                         key={tag}
-                                        className="px-4 py-1.5 rounded-full bg-primary/10 text-primary text-[10px] font-black uppercase tracking-[0.1em] border border-primary/20"
+                                        href={`/tags/${encodeURIComponent(tag.toLowerCase().trim())}`}
+                                        className="px-4 py-1.5 rounded-full bg-primary/10 text-primary text-[10px] font-black uppercase tracking-[0.1em] border border-primary/20 hover:bg-primary/20 transition-colors"
                                     >
                                         {tag}
-                                    </span>
+                                    </Link>
                                 ))}
                             </div>
 
@@ -147,6 +154,8 @@ export default async function BlogPost({ params }) {
                                     <BlogShare data={post.data} />
                                 </div>
                             </div>
+
+                            <RelatedPosts posts={relatedPosts} />
 
                             <div className="bg-card/50 backdrop-blur-sm rounded-[3rem] border border-border/50 p-8 md:p-14 shadow-2xl relative overflow-hidden group/discussion">
                                 <div className="absolute -top-12 -right-12 w-64 h-64 bg-primary/5 rounded-full blur-[80px] group-hover/discussion:bg-primary/10 transition-colors duration-700" />

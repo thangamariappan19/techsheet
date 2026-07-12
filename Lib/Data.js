@@ -36,6 +36,34 @@ export const getAllBlogPosts = async () => {
   return allBlogs;
 };
 
+export const getRelatedPosts = async (slug, count = 3) => {
+  const all = await getAllBlogPosts();
+  const current = all.find(b => b.data.slug === slug);
+  if (!current) return [];
+
+  const currentTags = new Set(
+    (Array.isArray(current.data.tags) ? current.data.tags : (current.data.Tags || '').split(/[ ,]+/))
+      .map(t => t.toLowerCase().trim())
+      .filter(Boolean)
+  );
+
+  return all
+    .filter(b => b.data.slug !== slug && b.data.isPublished)
+    .map(b => {
+      const bTags = new Set(
+        (Array.isArray(b.data.tags) ? b.data.tags : (b.data.Tags || '').split(/[ ,]+/))
+          .map(t => t.toLowerCase().trim())
+          .filter(Boolean)
+      );
+      const overlap = [...currentTags].filter(t => bTags.has(t)).length;
+      return { post: b, score: overlap };
+    })
+    .filter(({ score }) => score > 0)
+    .sort((a, b) => b.score - a.score)
+    .slice(0, count)
+    .map(({ post }) => post);
+};
+
 export const getBlogPostBySlug = async (slug) => {
   const allBlogs = await getAllBlogPosts();
   const cleanLookupSlug = slug.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');

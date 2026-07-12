@@ -7,6 +7,44 @@ const path = require('path');
 // Initialize Gemini API
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 
+// Sanitizes MDX content to prevent acorn/MDX parse errors at build time.
+// Handles LaTeX math blocks, bare HTML angle brackets, and raw curly braces.
+function sanitizeMDXContent(content) {
+    // Remove LaTeX display math $$...$$  — replace with bold plain text
+    content = content.replace(/\$\$([\s\S]*?)\$\$/g, (_, inner) => {
+        const plain = inner
+            .replace(/\\text\{([^}]*)\}/g, '$1')
+            .replace(/\\[a-zA-Z]+\{([^}]*)\}/g, '$1')
+            .replace(/\\[a-zA-Z]+/g, '')
+            .replace(/[{}]/g, '')
+            .replace(/\s+/g, ' ')
+            .trim();
+        return `**${plain}**`;
+    });
+
+    // Remove inline LaTeX $...$ — replace with code span
+    content = content.replace(/\$([^$\n]{1,120})\$/g, (_, inner) => {
+        const plain = inner
+            .replace(/\\text\{([^}]*)\}/g, '$1')
+            .replace(/\\[a-zA-Z]+\{([^}]*)\}/g, '$1')
+            .replace(/\\[a-zA-Z]+/g, '')
+            .replace(/[{}]/g, '')
+            .trim();
+        return `\`${plain}\``;
+    });
+
+    // Escape stray < / > that are outside code fences (MDX treats them as JSX)
+    const parts = content.split(/(```[\s\S]*?```|`[^`]+`)/g);
+    const sanitized = parts.map((part, i) => {
+        if (i % 2 === 1) return part; // inside a code block, leave as-is
+        return part
+            .replace(/<(?![a-zA-Z/])/g, '&lt;')
+            .replace(/(?<![a-zA-Z"'=])>/g, '&gt;');
+    });
+
+    return sanitized.join('');
+}
+
 async function generateSingleBlog(blogConfig) {
     console.log(`\n🚀 Generating blog for type: ${blogConfig.type}...`);
     
@@ -106,7 +144,7 @@ author: "Thanga Mariappan"
 isPublished: true
 ---
 
-${blogData.content}
+${sanitizeMDXContent(blogData.content)}
 `;
     fs.writeFileSync(path.join(outputDir, filename), blogFileContent);
     console.log(`✅ Success! New blog post created: ${filename}`);

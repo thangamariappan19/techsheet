@@ -2,6 +2,7 @@ import "../styles/globals.css";
 import { ThemeProvider } from "../Components/ThemeProvider";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
+import ChatWidget from "../Components/ChatWidget";
 import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
@@ -22,6 +23,7 @@ export default function RootLayout({ children }) {
                             {children}
                         </main>
                         <Footer />
+                        <ChatWidget />
                     </div>
                 </ThemeProvider>
             </body>
