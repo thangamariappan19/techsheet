@@ -197,6 +197,30 @@ function formatNews(items, fallback) {
         .join('\n\n');
 }
 
+// ─── Human-looking commit message ─────────────────────────────────────────────
+function humanCommitMessage(titles) {
+    const first = titles[0] || 'new article';
+
+    // Shorten a title to the first meaningful clause (before any colon or dash)
+    const short = (t) => t.split(/[:\-–—]/)[0].trim().replace(/^(the|a|an)\s+/i, '');
+
+    const templates = [
+        () => `Add article: ${short(first)}`,
+        () => `New post on ${short(first)}`,
+        () => `Wrote about ${short(first)}`,
+        () => `Published: ${short(first)}`,
+        () => `${short(first)} — new article`,
+        () => `Post: ${short(first)}`,
+        () => `${short(titles[0] || first)} + ${titles.length - 1} more`,
+        () => `Added ${titles.length} new articles`,
+        () => `Update blog — ${short(first)}`,
+        () => `New write-up: ${short(first)}`,
+    ];
+
+    const pick = templates[Math.floor(Math.random() * templates.length)];
+    return pick();
+}
+
 // ─── Blog Generator ────────────────────────────────────────────────────────────
 async function generateSingleBlog(blogConfig) {
     console.log(`\n🚀 Generating: ${blogConfig.type}...`);
@@ -366,9 +390,9 @@ THIS IS A NEWS ANALYSIS BLOG. Rules:
         }
 
         if (process.env.GITHUB_ENV) {
-            const msg = `chore: Daily Drop — Tech, Architecture & Live AI News (${new Date().toISOString().slice(0, 10)})`;
+            const msg = humanCommitMessage(titles);
             fs.appendFileSync(process.env.GITHUB_ENV, `BLOG_COMMIT_MSG=${msg}\\n`);
-            console.log(`\n📝 Commit message set: ${msg}`);
+            console.log(`\n📝 Commit message: ${msg}`);
         }
 
         console.log(`\n🎉 Done! Generated ${titles.length} posts:\n${titles.map((t, i) => `  ${i + 1}. ${t}`).join('\n')}`);
