@@ -39,6 +39,24 @@ function sanitizeMDXContent(content) {
     }).join('');
 }
 
+// ─── JSON Repairer ─────────────────────────────────────────────────────────────
+// Fixes unescaped newlines/tabs inside JSON string values (common with Gemini output)
+function repairJSON(jsonStr) {
+    let result = '';
+    let inString = false;
+    let escaped = false;
+    for (let i = 0; i < jsonStr.length; i++) {
+        const ch = jsonStr[i];
+        if (escaped) { result += ch; escaped = false; continue; }
+        if (ch === '\\') { result += ch; escaped = true; continue; }
+        if (ch === '"') { inString = !inString; result += ch; continue; }
+        if (inString && (ch === '\n' || ch === '\r')) { result += ' '; continue; }
+        if (inString && ch === '\t') { result += ' '; continue; }
+        result += ch;
+    }
+    return result;
+}
+
 // ─── RSS Parser ────────────────────────────────────────────────────────────────
 function parseRSSItems(xml, maxItems = 6) {
     const items = [];
@@ -248,7 +266,7 @@ CONTENT REQUIREMENTS:
 - CRITICAL MDX RULE: Never use bare < or > outside code blocks. Never use LaTeX math syntax ($$...$$). Never use {expression} patterns outside code blocks.
 `;
 
-    const possibleModels = ["gemini-2.0-flash", "gemini-1.5-flash", "gemini-flash-latest", "gemini-pro-latest"];
+    const possibleModels = ["gemini-flash-latest", "gemini-2.5-flash", "gemini-2.0-flash", "gemini-pro-latest"];
     let result;
     let success = false;
 
@@ -274,6 +292,9 @@ CONTENT REQUIREMENTS:
     let cleanedJson = rawText;
     const s = rawText.indexOf('{'), e = rawText.lastIndexOf('}');
     if (s !== -1 && e !== -1) cleanedJson = rawText.substring(s, e + 1);
+
+    // Repair unescaped newlines/tabs inside JSON string values
+    cleanedJson = repairJSON(cleanedJson);
 
     let blogData;
     try {
