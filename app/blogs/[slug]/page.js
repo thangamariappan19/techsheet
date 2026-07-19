@@ -106,133 +106,137 @@ export default async function BlogPost({ params }) {
                 <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-purple-500/5 rounded-full blur-[120px] translate-y-1/2 -translate-x-1/4" />
             </div>
 
-            <article className="container mx-auto px-4 py-8 md:py-20 max-w-5xl relative z-10">
+            <article className="container mx-auto px-4 py-6 md:py-10 max-w-7xl relative z-10">
                 <Link
                     href="/"
-                    className="inline-flex items-center gap-2 text-sm font-medium text-muted-foreground hover:text-primary mb-12 transition-all group"
+                    className="inline-flex items-center gap-2 text-sm font-medium text-muted-foreground hover:text-primary mb-6 transition-all group"
                 >
                     <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
                     Back to TechSheets
                 </Link>
 
-                <div className="flex flex-col lg:flex-row gap-16">
+                <div className="flex flex-col lg:flex-row gap-8 xl:gap-12">
+                    {/* ── Main content ── */}
                     <div className="flex-1 min-w-0">
-                        <header className="mb-12">
-                            <div className="flex flex-wrap gap-2 mb-8">
-                                {(post.data.Tags || post.data.tags || "TECH").toString().split(/[ ,]+/).map((tag) => (
+
+                        {/* Hero image — full width, above the fold */}
+                        <div className="relative aspect-[2/1] mb-6 overflow-hidden rounded-2xl border border-border/40 bg-muted/30 shadow-lg group/image">
+                            <img
+                                src={imageSource}
+                                alt={post.data.Title || post.data.title}
+                                className="object-cover w-full h-full transition-transform duration-700 group-hover/image:scale-105"
+                            />
+                        </div>
+
+                        <header className="mb-8">
+                            {/* Tags */}
+                            <div className="flex flex-wrap gap-1.5 mb-4">
+                                {(post.data.Tags || post.data.tags || "TECH").toString().split(/[ ,]+/).slice(0, 4).map((tag) => (
                                     <Link
                                         key={tag}
                                         href={`/tags/${encodeURIComponent(tag.toLowerCase().trim())}`}
-                                        className="px-4 py-1.5 rounded-full bg-primary/10 text-primary text-[10px] font-black uppercase tracking-[0.1em] border border-primary/20 hover:bg-primary/20 transition-colors"
+                                        className="px-3 py-1 rounded-full bg-primary/10 text-primary text-[10px] font-bold uppercase tracking-wider border border-primary/20 hover:bg-primary/20 transition-colors"
                                     >
                                         {tag}
                                     </Link>
                                 ))}
                             </div>
 
-                            <h1 className="text-4xl font-black tracking-tight text-foreground sm:text-6xl lg:text-7xl mb-10 leading-[1.1]">
+                            {/* Title */}
+                            <h1 className="text-2xl font-black tracking-tight text-foreground sm:text-3xl lg:text-4xl xl:text-5xl mb-5 leading-[1.2]">
                                 {post.data.Title || post.data.title}
                             </h1>
 
-                            <div className="flex flex-wrap items-center gap-6 text-sm text-muted-foreground border-b border-border/50 pb-10">
-                                <div className="flex items-center gap-4">
-                                    <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-primary/20 to-purple-500/20 flex items-center justify-center border border-primary/20 text-primary shadow-inner">
-                                        <User className="w-6 h-6" />
+                            {/* Author / meta row */}
+                            <div className="flex flex-wrap items-center gap-3 text-sm text-muted-foreground border-b border-border/50 pb-5">
+                                <div className="flex items-center gap-2.5">
+                                    <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-primary/20 to-purple-500/20 flex items-center justify-center border border-primary/20 text-primary">
+                                        <User className="w-4 h-4" />
                                     </div>
-                                    <div className="flex flex-col">
-                                        <span className="font-bold text-foreground text-base tracking-tight flex items-center gap-2">
+                                    <div className="flex flex-col leading-tight">
+                                        <span className="font-semibold text-foreground text-sm flex items-center gap-1.5">
                                             {post.data.Author || post.data.author || "TechSheet AI"}
                                             {(post.data.Author === "TechSheet AI" || post.data.Author === "TechSheet Bot" || !post.data.Author) && (
-                                                <span className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded bg-primary/10 text-primary text-[9px] font-black uppercase border border-primary/20">
-                                                    ✨ AI
-                                                </span>
+                                                <span className="px-1.5 py-0.5 rounded bg-primary/10 text-primary text-[9px] font-bold uppercase border border-primary/20">AI</span>
                                             )}
                                         </span>
-                                        <span className="text-xs font-medium text-muted-foreground/80">Senior Architect</span>
+                                        <span className="text-[11px] text-muted-foreground/70">Senior Architect</span>
                                     </div>
                                 </div>
-                                <div className="flex items-center gap-2 bg-muted/30 px-4 py-2 rounded-xl border border-border/50">
-                                    <Clock className="w-4 h-4 text-primary" />
-                                    <span className="font-bold text-foreground/70 lowercase">{post.readTime?.text || '5 min read'}</span>
+                                <div className="w-px h-4 bg-border/60 mx-1" />
+                                <div className="flex items-center gap-1.5">
+                                    <Clock className="w-3.5 h-3.5 text-primary" />
+                                    <span className="text-xs font-medium">{post.readTime?.text || '5 min read'}</span>
                                 </div>
-                                <div className="flex items-center gap-2 bg-muted/30 px-4 py-2 rounded-xl border border-border/50">
-                                    <Calendar className="w-4 h-4 text-primary" />
-                                    <span className="font-bold text-foreground/70">{post.data.Date ? new Date(post.data.Date).toLocaleDateString("en-US", { year: 'numeric', month: 'short', day: 'numeric' }) : 'Mar 07, 2026'}</span>
+                                <div className="flex items-center gap-1.5">
+                                    <Calendar className="w-3.5 h-3.5 text-primary" />
+                                    <span className="text-xs font-medium">
+                                        {post.data.Date ? new Date(post.data.Date).toLocaleDateString("en-US", { year: 'numeric', month: 'short', day: 'numeric' }) : 'Mar 07, 2026'}
+                                    </span>
                                 </div>
                             </div>
                         </header>
 
-                        <div className="relative aspect-[21/9] mb-20 overflow-hidden rounded-[2.5rem] border border-border/50 bg-muted/30 shadow-2xl group/image">
-                            <img
-                                src={imageSource}
-                                alt={post.data.Title || post.data.title}
-                                className="object-cover w-full h-full transition-all duration-1000 group-hover/image:scale-105"
-                            />
-                            <div className="absolute inset-0 ring-1 ring-inset ring-white/10 rounded-[2.5rem]" />
-                        </div>
-
-                        {/* Top-of-content ad — highest viewability placement */}
-                        <AdUnit slot="auto" format="auto" className="mb-10 rounded-2xl overflow-hidden" />
-
-                        <div className="prose prose-xl dark:prose-invert prose-primary max-w-none prose-headings:font-black prose-headings:tracking-tight prose-a:text-primary prose-pre:bg-secondary/50 prose-pre:border prose-pre:border-border/50 prose-pre:rounded-[1.5rem] prose-pre:shadow-2xl prose-img:rounded-3xl">
+                        {/* Article body */}
+                        <div className="prose prose-base lg:prose-lg dark:prose-invert prose-primary max-w-none prose-headings:font-bold prose-headings:tracking-tight prose-a:text-primary prose-pre:bg-muted/60 prose-pre:border prose-pre:border-border/50 prose-pre:rounded-xl prose-img:rounded-xl prose-code:text-primary">
                             <MDXRemote
                                 source={cleanedContent}
-                                options={{
-                                    mdxOptions: {
-                                        rehypePlugins: [rehypeSlug],
-                                    },
-                                }}
+                                options={{ mdxOptions: { rehypePlugins: [rehypeSlug] } }}
                             />
                         </div>
 
-                        <div className="my-24 h-px bg-gradient-to-r from-transparent via-border to-transparent" />
+                        <div className="my-10 h-px bg-gradient-to-r from-transparent via-border to-transparent" />
 
-                        {/* Bottom-of-content ad */}
-                        <AdUnit slot="auto" format="auto" className="my-8 rounded-2xl overflow-hidden" />
+                        {/* Bottom ad */}
+                        <AdUnit slot="auto" format="auto" className="mb-8 rounded-xl overflow-hidden" />
 
-                        <div className="flex flex-col gap-16">
-                            <div className="flex items-center justify-between flex-wrap gap-8 bg-card/30 backdrop-blur-sm p-8 rounded-[2rem] border border-border/50 shadow-premium">
+                        <div className="flex flex-col gap-8">
+                            {/* Like + Share */}
+                            <div className="flex items-center justify-between flex-wrap gap-4 bg-card/40 backdrop-blur-sm p-5 rounded-2xl border border-border/50">
                                 <LikeBtn id={slug} />
-                                <div className="flex items-center gap-4">
-                                    <span className="text-sm font-bold text-muted-foreground uppercase tracking-wider">Share this techsheet</span>
+                                <div className="flex items-center gap-3">
+                                    <span className="text-xs font-bold text-muted-foreground uppercase tracking-wider">Share</span>
                                     <BlogShare data={post.data} />
                                 </div>
                             </div>
 
                             <RelatedPosts posts={relatedPosts} />
 
-                            <div className="bg-card/50 backdrop-blur-sm rounded-[3rem] border border-border/50 p-8 md:p-14 shadow-2xl relative overflow-hidden group/discussion">
-                                <div className="absolute -top-12 -right-12 w-64 h-64 bg-primary/5 rounded-full blur-[80px] group-hover/discussion:bg-primary/10 transition-colors duration-700" />
-                                <h3 className="text-4xl font-black mb-12 tracking-tight">Discussion</h3>
+                            {/* Discussion */}
+                            <div className="bg-card/40 backdrop-blur-sm rounded-2xl border border-border/50 p-6 md:p-10">
+                                <h3 className="text-2xl font-bold mb-8 tracking-tight">Discussion</h3>
                                 <Comments id={slug} />
                             </div>
                         </div>
                     </div>
 
-                    <aside className="hidden lg:block w-80 flex-shrink-0">
-                        <div className="sticky top-28 space-y-12">
-                            <div className="bg-card/30 backdrop-blur-sm rounded-3xl border border-border/50 p-8 shadow-premium group/toc">
-                                <h3 className="font-black text-xl mb-8 tracking-tighter flex items-center gap-3">
-                                    <div className="w-1.5 h-6 bg-primary rounded-full group-hover/toc:scale-y-125 transition-transform origin-top" />
+                    {/* ── Sidebar ── */}
+                    <aside className="hidden lg:block w-64 xl:w-72 flex-shrink-0">
+                        <div className="sticky top-24 space-y-6">
+
+                            {/* TOC */}
+                            <div className="bg-card/40 backdrop-blur-sm rounded-2xl border border-border/50 p-5">
+                                <h3 className="font-bold text-sm mb-4 tracking-tight flex items-center gap-2 text-foreground">
+                                    <div className="w-1 h-4 bg-primary rounded-full" />
                                     Contents
                                 </h3>
                                 <Toc headings={headings} />
                             </div>
 
-                            {/* Sidebar sticky ad */}
-                            <AdUnit slot="auto" format="auto" className="rounded-2xl overflow-hidden" />
+                            {/* Sidebar ad */}
+                            <AdUnit slot="auto" format="auto" className="rounded-xl overflow-hidden" />
 
-                            <div className="bg-gradient-to-br from-primary/[0.08] to-purple-500/[0.08] backdrop-blur-sm rounded-[2.5rem] border border-primary/20 p-10 relative overflow-hidden group/news">
-                                <div className="absolute -top-20 -right-20 w-48 h-48 bg-primary/10 rounded-full blur-[60px] group-hover/news:scale-150 transition-transform duration-1000" />
-                                <h4 className="font-black text-2xl mb-4 tracking-tighter text-foreground">Join the Hub</h4>
-                                <p className="text-sm font-medium text-muted-foreground/80 mb-10 leading-relaxed">Exclusive insights for 5,500+ top-tier software engineers.</p>
-                                <div className="flex flex-col gap-4">
+                            {/* Newsletter */}
+                            <div className="bg-card/40 backdrop-blur-sm rounded-2xl border border-border/50 p-5">
+                                <h4 className="font-bold text-sm mb-1 text-foreground">Stay Updated</h4>
+                                <p className="text-xs text-muted-foreground mb-4">Daily articles for senior engineers.</p>
+                                <div className="flex flex-col gap-2">
                                     <input
                                         type="email"
                                         placeholder="your@email.com"
-                                        className="w-full bg-background border border-border/50 rounded-2xl px-5 py-4 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all shadow-inner"
+                                        className="w-full bg-background border border-border/50 rounded-xl px-3 py-2.5 text-xs font-medium focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all"
                                     />
-                                    <button className="w-full bg-primary text-primary-foreground px-5 py-4 rounded-2xl text-sm font-black shadow-premium hover:shadow-premium-hover active:scale-[0.98] transition-all tracking-wider uppercase">
+                                    <button className="w-full bg-primary text-primary-foreground px-3 py-2.5 rounded-xl text-xs font-bold tracking-wider uppercase hover:opacity-90 transition-all">
                                         Subscribe
                                     </button>
                                 </div>
