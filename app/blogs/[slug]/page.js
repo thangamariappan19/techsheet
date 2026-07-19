@@ -8,6 +8,7 @@ import BlogShare from "../../../Components/BlogShare";
 import Comments from "../../../Components/Comments";
 import RelatedPosts from "../../../Components/RelatedPosts";
 import ReadingProgress from "../../../Components/ReadingProgress";
+import AdUnit from "../../../Components/AdUnit";
 import { notFound } from "next/navigation";
 import { Clock, User, Calendar, ArrowLeft } from "lucide-react";
 import Link from "next/link";
@@ -26,14 +27,29 @@ export async function generateMetadata({ params }) {
 
     const title = post.data.Title || post.data.title;
     const description = post.data.Abstract || post.data.description;
+    const image = post.data.HeaderImage || post.data.headerImage || `https://picsum.photos/seed/${slug}/1200/630`;
+    const publishedTime = post.data.Date ? new Date(post.data.Date).toISOString() : undefined;
 
     return {
-        title: `${title} | TechSheet`,
+        title: title,
         description: description,
+        alternates: {
+            canonical: `/blogs/${slug}`,
+        },
         openGraph: {
             title: title,
             description: description,
             type: "article",
+            url: `/blogs/${slug}`,
+            publishedTime: publishedTime,
+            authors: [post.data.Author || "Thanga Mariappan"],
+            images: [{ url: image, width: 1200, height: 630, alt: title }],
+        },
+        twitter: {
+            card: "summary_large_image",
+            title: title,
+            description: description,
+            images: [image],
         },
     };
 }
@@ -145,6 +161,9 @@ export default async function BlogPost({ params }) {
                         </div>
 
                         <div className="my-24 h-px bg-gradient-to-r from-transparent via-border to-transparent" />
+
+                        {/* In-content ad — slot ID from your AdSense dashboard */}
+                        <AdUnit slot="1234567890" format="auto" className="my-8 rounded-2xl overflow-hidden" />
 
                         <div className="flex flex-col gap-16">
                             <div className="flex items-center justify-between flex-wrap gap-8 bg-card/30 backdrop-blur-sm p-8 rounded-[2rem] border border-border/50 shadow-premium">
