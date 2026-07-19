@@ -267,8 +267,8 @@ CONTENT REQUIREMENTS:
 `;
 
     const possibleModels = ["gemini-flash-latest", "gemini-2.5-flash", "gemini-2.0-flash", "gemini-pro-latest"];
+    let successModel = null;
     let result;
-    let success = false;
 
     for (const modelName of possibleModels) {
         try {
@@ -278,7 +278,7 @@ CONTENT REQUIREMENTS:
                 generationConfig: { responseMimeType: "application/json" },
             });
             result = await model.generateContent(prompt);
-            success = true;
+            successModel = modelName;
             console.log(`  ✅ Success with: ${modelName}`);
             break;
         } catch (err) {
@@ -286,22 +286,34 @@ CONTENT REQUIREMENTS:
         }
     }
 
-    if (!success) throw new Error(`All models failed for: ${blogConfig.type}`);
+    if (!successModel) throw new Error(`All models failed for: ${blogConfig.type}`);
 
-    const rawText = result.response.text().trim();
-    let cleanedJson = rawText;
-    const s = rawText.indexOf('{'), e = rawText.lastIndexOf('}');
-    if (s !== -1 && e !== -1) cleanedJson = rawText.substring(s, e + 1);
-
-    // Repair unescaped newlines/tabs inside JSON string values
-    cleanedJson = repairJSON(cleanedJson);
+    function extractAndRepair(raw) {
+        const s = raw.indexOf('{'), e = raw.lastIndexOf('}');
+        const json = (s !== -1 && e !== -1) ? raw.substring(s, e + 1) : raw;
+        return repairJSON(json);
+    }
 
     let blogData;
-    try {
-        blogData = JSON.parse(cleanedJson);
-    } catch (parseError) {
-        console.error("❌ JSON parse failed:", rawText.slice(0, 300));
-        throw new Error(`Invalid JSON: ${parseError.message}`);
+    let parseAttempts = 3;
+    while (parseAttempts > 0) {
+        const cleaned = extractAndRepair(result.response.text().trim());
+        try {
+            blogData = JSON.parse(cleaned);
+            break;
+        } catch (parseError) {
+            parseAttempts--;
+            if (parseAttempts === 0) {
+                console.error("❌ JSON parse failed after 3 attempts:", cleaned.slice(0, 300));
+                throw new Error(`Invalid JSON: ${parseError.message}`);
+            }
+            console.warn(`  ⚠️  JSON parse failed (${parseError.message}), retrying generation...`);
+            const model = genAI.getGenerativeModel({
+                model: successModel,
+                generationConfig: { responseMimeType: "application/json" },
+            });
+            result = await model.generateContent(prompt);
+        }
     }
 
     const date = new Date();
