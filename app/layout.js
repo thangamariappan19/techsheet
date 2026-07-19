@@ -6,7 +6,8 @@ import ChatWidget from "../Components/ChatWidget";
 import GoogleAnalytics from "../Components/GoogleAnalytics";
 import { Inter } from "next/font/google";
 import Script from "next/script";
-import { ADSENSE_PUBLISHER_ID } from "../Components/AdUnit";
+
+const ADSENSE_PUBLISHER_ID = "ca-pub-6762060430561818";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
@@ -73,15 +74,12 @@ export default function RootLayout({ children }) {
             </head>
             <body className={`${inter.variable} font-sans antialiased`}>
                 <GoogleAnalytics />
-                {/* AdSense — replace XXXXXXXXXXXXXXXX in Components/AdUnit.js with your publisher ID */}
-                {ADSENSE_PUBLISHER_ID !== 'ca-pub-XXXXXXXXXXXXXXXX' && (
-                    <Script
-                        async
-                        src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_PUBLISHER_ID}`}
-                        crossOrigin="anonymous"
-                        strategy="afterInteractive"
-                    />
-                )}
+                <Script
+                    async
+                    src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_PUBLISHER_ID}`}
+                    crossOrigin="anonymous"
+                    strategy="afterInteractive"
+                />
                 <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
                     <div className="flex min-h-screen flex-col">
                         <Navbar />
