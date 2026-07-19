@@ -5,7 +5,6 @@ import Footer from "../Components/Footer";
 import ChatWidget from "../Components/ChatWidget";
 import GoogleAnalytics from "../Components/GoogleAnalytics";
 import { Inter } from "next/font/google";
-import Script from "next/script";
 
 const ADSENSE_PUBLISHER_ID = "ca-pub-6762060430561818";
 
@@ -71,15 +70,15 @@ export default function RootLayout({ children }) {
         <html lang="en" suppressHydrationWarning>
             <head>
                 <link rel="alternate" type="application/rss+xml" title="TechSheet RSS Feed" href={`${BASE_URL}/feed.xml`} />
-            </head>
-            <body className={`${inter.variable} font-sans antialiased`}>
-                <GoogleAnalytics />
-                <Script
+                {/* AdSense script in <head> so crawlers can detect it */}
+                <script
                     async
                     src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_PUBLISHER_ID}`}
                     crossOrigin="anonymous"
-                    strategy="afterInteractive"
                 />
+            </head>
+            <body className={`${inter.variable} font-sans antialiased`}>
+                <GoogleAnalytics />
                 <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
                     <div className="flex min-h-screen flex-col">
                         <Navbar />
