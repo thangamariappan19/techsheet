@@ -13,11 +13,16 @@ import { notFound } from "next/navigation";
 import { Clock, User, Calendar, ArrowLeft } from "lucide-react";
 import Link from "next/link";
 
+// Only pre-build the 50 most recent posts; older posts are generated on-demand via ISR
+export const dynamicParams = true;
+export const revalidate = 86400; // revalidate cached pages every 24 hours
+
 export async function generateStaticParams() {
     const posts = await getAllBlogPosts();
-    return posts.map((post) => ({
-        slug: post.data.slug,
-    }));
+    return posts
+        .sort((a, b) => new Date(b.data.Date || 0) - new Date(a.data.Date || 0))
+        .slice(0, 50)
+        .map((post) => ({ slug: post.data.slug }));
 }
 
 export async function generateMetadata({ params }) {

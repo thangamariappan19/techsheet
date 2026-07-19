@@ -4,16 +4,12 @@ import Link from "next/link";
 import { Tag, ArrowLeft } from "lucide-react";
 import { notFound } from "next/navigation";
 
+// Tag pages generated on-demand — too many tags to pre-build all of them
+export const dynamicParams = true;
+export const revalidate = 86400;
+
 export async function generateStaticParams() {
-    const posts = await getAllBlogPosts();
-    const tagSet = new Set();
-    posts.forEach(p => {
-        const tags = Array.isArray(p.data.tags)
-            ? p.data.tags
-            : (p.data.Tags || "").split(/[ ,]+/).filter(Boolean);
-        tags.forEach(t => tagSet.add(t.toLowerCase().trim()));
-    });
-    return [...tagSet].map(tag => ({ tag: encodeURIComponent(tag) }));
+    return [];
 }
 
 export async function generateMetadata({ params }) {
