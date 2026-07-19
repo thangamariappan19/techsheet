@@ -80,8 +80,25 @@ export default async function BlogPost({ params }) {
         ? post.data.HeaderImage 
         : (post.data.headerImage || `https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=1200&keywords=${encodeURIComponent(post.data.Title || 'technology')}`);
 
+    const articleSchema = {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": post.data.Title || post.data.title,
+        "description": post.data.Abstract || post.data.description,
+        "image": [imageSource],
+        "datePublished": post.data.Date ? new Date(post.data.Date).toISOString() : undefined,
+        "dateModified": post.data.Date ? new Date(post.data.Date).toISOString() : undefined,
+        "author": [{ "@type": "Person", "name": post.data.Author || "Thanga Mariappan" }],
+        "publisher": { "@type": "Organization", "name": "TechSheet", "url": "https://techsheet.vercel.app" },
+        "mainEntityOfPage": { "@type": "WebPage", "@id": `https://techsheet.vercel.app/blogs/${slug}` },
+    };
+
     return (
         <div className="relative min-h-screen overflow-hidden">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+            />
             <ReadingProgress />
             {/* Background Blobs for Visual Consistency */}
             <div className="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
@@ -154,6 +171,9 @@ export default async function BlogPost({ params }) {
                             <div className="absolute inset-0 ring-1 ring-inset ring-white/10 rounded-[2.5rem]" />
                         </div>
 
+                        {/* Top-of-content ad — highest viewability placement */}
+                        <AdUnit slot="auto" format="auto" className="mb-10 rounded-2xl overflow-hidden" />
+
                         <div className="prose prose-xl dark:prose-invert prose-primary max-w-none prose-headings:font-black prose-headings:tracking-tight prose-a:text-primary prose-pre:bg-secondary/50 prose-pre:border prose-pre:border-border/50 prose-pre:rounded-[1.5rem] prose-pre:shadow-2xl prose-img:rounded-3xl">
                             <MDXRemote
                                 source={cleanedContent}
@@ -167,8 +187,8 @@ export default async function BlogPost({ params }) {
 
                         <div className="my-24 h-px bg-gradient-to-r from-transparent via-border to-transparent" />
 
-                        {/* In-content ad — slot ID from your AdSense dashboard */}
-                        <AdUnit slot="1234567890" format="auto" className="my-8 rounded-2xl overflow-hidden" />
+                        {/* Bottom-of-content ad */}
+                        <AdUnit slot="auto" format="auto" className="my-8 rounded-2xl overflow-hidden" />
 
                         <div className="flex flex-col gap-16">
                             <div className="flex items-center justify-between flex-wrap gap-8 bg-card/30 backdrop-blur-sm p-8 rounded-[2rem] border border-border/50 shadow-premium">
@@ -198,6 +218,9 @@ export default async function BlogPost({ params }) {
                                 </h3>
                                 <Toc headings={headings} />
                             </div>
+
+                            {/* Sidebar sticky ad */}
+                            <AdUnit slot="auto" format="auto" className="rounded-2xl overflow-hidden" />
 
                             <div className="bg-gradient-to-br from-primary/[0.08] to-purple-500/[0.08] backdrop-blur-sm rounded-[2.5rem] border border-primary/20 p-10 relative overflow-hidden group/news">
                                 <div className="absolute -top-20 -right-20 w-48 h-48 bg-primary/10 rounded-full blur-[60px] group-hover/news:scale-150 transition-transform duration-1000" />

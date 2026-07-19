@@ -3,6 +3,7 @@
 import { useState, useMemo } from "react";
 import { Search, X, SlidersHorizontal } from "lucide-react";
 import BlogHeader from "../Components/BlogHeader";
+import AdUnit from "../Components/AdUnit";
 
 const FILTERS = ["All", "React", "AI", "Architecture", "TypeScript", "Next.js", "DevOps"];
 
@@ -112,17 +113,30 @@ export default function BlogList({ initialBlogs }) {
                         />
                     )}
 
-                    {/* Rest of posts — 3-column grid */}
+                    {/* Ad between hero and grid */}
+                    <AdUnit slot="auto" format="auto" className="rounded-2xl overflow-hidden" />
+
+                    {/* Rest of posts — 3-column grid with ad every 6 cards */}
                     {rest.length > 0 && (
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-                            {rest.map(blog => (
-                                <BlogHeader
-                                    key={blog.data.slug}
-                                    data={blog.data}
-                                    content={blog.content}
-                                    readTime={blog.readTime?.text || "5 min read"}
-                                />
-                            ))}
+                            {rest.reduce((acc, blog, index) => {
+                                acc.push(
+                                    <BlogHeader
+                                        key={blog.data.slug}
+                                        data={blog.data}
+                                        content={blog.content}
+                                        readTime={blog.readTime?.text || "5 min read"}
+                                    />
+                                );
+                                if ((index + 1) % 6 === 0 && index < rest.length - 1) {
+                                    acc.push(
+                                        <div key={`ad-${index}`} className="col-span-full">
+                                            <AdUnit slot="auto" format="auto" className="rounded-2xl overflow-hidden" />
+                                        </div>
+                                    );
+                                }
+                                return acc;
+                            }, [])}
                         </div>
                     )}
 

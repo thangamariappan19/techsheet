@@ -3,8 +3,23 @@ import Header from "../Components/Header";
 import BlogList from "./BlogList";
 
 export const metadata = {
-    title: "TechSheet | Premium Developer Resources",
-    description: "Master software development with our comprehensive tech sheets and articles.",
+    title: "TechSheet - Frontend Architecture, AI & Software Engineering Blog",
+    description: "Daily expert blogs on React, Next.js, TypeScript, frontend architecture, and AI for senior developers. Real code, real patterns, no fluff.",
+    keywords: [
+        "frontend architecture", "react tutorials", "next.js blog", "typescript tips",
+        "software engineering", "AI for developers", "web performance", "tech blog",
+        "developer resources", "javascript", "fullstack", "devops"
+    ],
+    openGraph: {
+        title: "TechSheet - Frontend Architecture, AI & Software Engineering Blog",
+        description: "Daily expert blogs on React, Next.js, TypeScript, and AI for senior developers.",
+        type: "website",
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "TechSheet - Frontend Architecture, AI & Software Engineering Blog",
+        description: "Daily expert blogs on React, Next.js, TypeScript, and AI for senior developers.",
+    },
 };
 
 export default async function Page() {
@@ -12,7 +27,6 @@ export default async function Page() {
 
     return (
         <div className="relative isolate overflow-hidden bg-background min-h-screen">
-            {/* Background decoration */}
             <div className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80">
                 <div
                     className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-primary/20 to-purple-600/20 opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
@@ -21,12 +35,8 @@ export default async function Page() {
                     }}
                 />
             </div>
-
             <Header />
-
             <BlogList initialBlogs={blogs} />
-            
-            {/* Simple Footer Decoration */}
             <div className="absolute inset-x-0 bottom-0 -z-10 transform-gpu overflow-hidden blur-3xl">
                 <div
                     className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-primary/10 to-accent/10 opacity-20 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"

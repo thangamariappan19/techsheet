@@ -8,10 +8,9 @@ import Script from "next/script";
 import { Inter } from "next/font/google";
 
 const ADSENSE_PUBLISHER_ID = "ca-pub-6762060430561818";
+const BASE_URL = "https://techsheet.vercel.app";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
-
-const BASE_URL = "https://techsheet.vercel.app";
 
 export const metadata = {
     metadataBase: new URL(BASE_URL),
@@ -31,20 +30,11 @@ export const metadata = {
         siteName: "TechSheet",
         title: "TechSheet - Modern Developer Hub",
         description: "Daily tech blogs on frontend architecture, AI, and software engineering for senior developers.",
-        images: [
-            {
-                url: "/og-image.png",
-                width: 1200,
-                height: 630,
-                alt: "TechSheet - Modern Developer Hub",
-            },
-        ],
     },
     twitter: {
         card: "summary_large_image",
         title: "TechSheet - Modern Developer Hub",
         description: "Daily tech blogs on frontend architecture, AI, and software engineering.",
-        images: ["/og-image.png"],
     },
     robots: {
         index: true,
@@ -57,9 +47,25 @@ export const metadata = {
         },
     },
     alternates: {
-        types: {
-            "application/rss+xml": `${BASE_URL}/feed.xml`,
-        },
+        types: { "application/rss+xml": `${BASE_URL}/feed.xml` },
+    },
+};
+
+const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "TechSheet",
+    "url": BASE_URL,
+    "description": "Daily tech blogs on frontend architecture, AI, and software engineering.",
+    "publisher": {
+        "@type": "Organization",
+        "name": "TechSheet",
+        "url": BASE_URL,
+    },
+    "potentialAction": {
+        "@type": "SearchAction",
+        "target": `${BASE_URL}/?search={search_term_string}`,
+        "query-input": "required name=search_term_string",
     },
 };
 
@@ -67,12 +73,17 @@ export default function RootLayout({ children }) {
     return (
         <html lang="en" suppressHydrationWarning>
             <body className={`${inter.variable} font-sans antialiased`}>
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+                />
                 <GoogleAnalytics />
+                {/* afterInteractive = non-blocking, better Core Web Vitals & ad quality score */}
                 <Script
                     async
                     src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_PUBLISHER_ID}`}
                     crossOrigin="anonymous"
-                    strategy="beforeInteractive"
+                    strategy="afterInteractive"
                 />
                 <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
                     <div className="flex min-h-screen flex-col">
