@@ -16,20 +16,27 @@ function LikeBtn({ id }) {
   useEffect(() => {
     const docRef = doc(db, "likes", id);
 
-    // Check if user has already liked in this session/localstorage
     const likedPosts = JSON.parse(localStorage.getItem("likedPosts") || "[]");
     setHasLiked(likedPosts.includes(id));
 
-    const unsubscribe = onSnapshot(docRef, (docSnap) => {
-      if (docSnap.exists()) {
-        setLikes(docSnap.data().count || 0);
-      } else {
-        setLikes(0);
-      }
-      setLoading(false);
-    });
+    // Fallback: stop spinning after 5s if Firebase never responds
+    const timeout = setTimeout(() => setLoading(false), 5000);
 
-    return () => unsubscribe();
+    const unsubscribe = onSnapshot(
+      docRef,
+      (docSnap) => {
+        clearTimeout(timeout);
+        setLikes(docSnap.exists() ? docSnap.data().count || 0 : 0);
+        setLoading(false);
+      },
+      (error) => {
+        clearTimeout(timeout);
+        console.error("LikeBtn Firestore error:", error.message);
+        setLoading(false);
+      }
+    );
+
+    return () => { unsubscribe(); clearTimeout(timeout); };
   }, [id]);
 
   const handleLike = async () => {
