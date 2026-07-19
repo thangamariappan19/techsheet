@@ -8,6 +8,7 @@ const PAGES = [
     { label: "All Articles", href: "/" },
     { label: "About", href: "/about" },
     { label: "RSS Feed", href: "/feed.xml" },
+    { label: "Privacy Policy", href: "/privacy" },
 ];
 const SOCIALS = [
     { icon: Twitter,  href: "https://twitter.com/iamthangam",                        label: "Twitter" },
