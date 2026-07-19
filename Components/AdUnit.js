@@ -2,7 +2,7 @@
 import { useEffect, useRef } from 'react';
 
 // Replace with your AdSense publisher ID from adsense.google.com
-export const ADSENSE_PUBLISHER_ID = 'ca-pub-XXXXXXXXXXXXXXXX';
+export const ADSENSE_PUBLISHER_ID = 'ca-pub-6762060430561818';
 
 export default function AdUnit({ slot, format = 'auto', className = '' }) {
     const adRef = useRef(null);
