@@ -4,6 +4,7 @@ import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import ChatWidget from "../Components/ChatWidget";
 import GoogleAnalytics from "../Components/GoogleAnalytics";
+import Script from "next/script";
 import { Inter } from "next/font/google";
 
 const ADSENSE_PUBLISHER_ID = "ca-pub-6762060430561818";
@@ -55,9 +56,6 @@ export const metadata = {
             "max-snippet": -1,
         },
     },
-    // Replace with your actual Google Search Console verification code
-    // Get it at: https://search.google.com/search-console
-    // verification: { google: "YOUR_GOOGLE_SITE_VERIFICATION_CODE" },
     alternates: {
         types: {
             "application/rss+xml": `${BASE_URL}/feed.xml`,
@@ -68,17 +66,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html lang="en" suppressHydrationWarning>
-            <head>
-                <link rel="alternate" type="application/rss+xml" title="TechSheet RSS Feed" href={`${BASE_URL}/feed.xml`} />
-                {/* AdSense script in <head> so crawlers can detect it */}
-                <script
+            <body className={`${inter.variable} font-sans antialiased`}>
+                <GoogleAnalytics />
+                <Script
                     async
                     src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_PUBLISHER_ID}`}
                     crossOrigin="anonymous"
+                    strategy="beforeInteractive"
                 />
-            </head>
-            <body className={`${inter.variable} font-sans antialiased`}>
-                <GoogleAnalytics />
                 <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
                     <div className="flex min-h-screen flex-col">
                         <Navbar />
