@@ -47,7 +47,7 @@ export default function CookieConsent() {
           animate={{ y: 0, opacity: 1 }}
           exit={{ y: 100, opacity: 0 }}
           transition={{ type: 'spring', damping: 25, stiffness: 200 }}
-          className="fixed bottom-4 right-4 left-4 sm:left-auto sm:w-80 z-50 bg-card border border-border shadow-2xl rounded-2xl p-5"
+          className="fixed bottom-4 left-4 right-4 sm:right-auto sm:w-80 z-50 bg-card border border-border shadow-2xl rounded-2xl p-5"
         >
           {/* Header */}
           <div className="flex items-start gap-3 mb-4">
