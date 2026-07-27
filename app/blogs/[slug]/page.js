@@ -35,9 +35,14 @@ export async function generateMetadata({ params }) {
     const image = post.data.HeaderImage || post.data.headerImage || `https://picsum.photos/seed/${slug}/1200/630`;
     const publishedTime = post.data.Date ? new Date(post.data.Date).toISOString() : undefined;
 
+    const authorName = (!post.data.Author || post.data.Author === "TechSheet AI" || post.data.Author === "TechSheet Bot")
+        ? "Thanga Mariappan Pandian"
+        : post.data.Author;
+
     return {
         title: title,
         description: description,
+        authors: [{ name: "Thanga Mariappan Pandian", url: "https://thangamariappan.vercel.app" }],
         alternates: {
             canonical: `/blogs/${slug}`,
         },
@@ -47,11 +52,13 @@ export async function generateMetadata({ params }) {
             type: "article",
             url: `/blogs/${slug}`,
             publishedTime: publishedTime,
-            authors: [post.data.Author || "Thanga Mariappan"],
+            authors: [authorName],
             images: [{ url: image, width: 1200, height: 630, alt: title }],
         },
         twitter: {
             card: "summary_large_image",
+            site: "@iamthangam",
+            creator: "@iamthangam",
             title: title,
             description: description,
             images: [image],
@@ -80,17 +87,49 @@ export default async function BlogPost({ params }) {
         ? post.data.HeaderImage 
         : (post.data.headerImage || `https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=1200&keywords=${encodeURIComponent(post.data.Title || 'technology')}`);
 
+    const title = post.data.Title || post.data.title;
+    const datePublished = post.data.Date ? new Date(post.data.Date).toISOString() : undefined;
+
     const articleSchema = {
         "@context": "https://schema.org",
         "@type": "Article",
-        "headline": post.data.Title || post.data.title,
+        "headline": title,
         "description": post.data.Abstract || post.data.description,
         "image": [imageSource],
-        "datePublished": post.data.Date ? new Date(post.data.Date).toISOString() : undefined,
-        "dateModified": post.data.Date ? new Date(post.data.Date).toISOString() : undefined,
-        "author": [{ "@type": "Person", "name": post.data.Author || "Thanga Mariappan" }],
-        "publisher": { "@type": "Organization", "name": "TechSheet", "url": "https://techsheet.vercel.app" },
+        "datePublished": datePublished,
+        "dateModified": post.data.updatedAt ? new Date(post.data.updatedAt).toISOString() : datePublished,
+        "author": [{
+            "@type": "Person",
+            "name": "Thanga Mariappan Pandian",
+            "url": "https://thangamariappan.vercel.app",
+            "sameAs": [
+                "https://twitter.com/iamthangam",
+                "https://www.linkedin.com/in/thanga-mariappan-p/",
+                "https://github.com/thangamariappan19",
+            ],
+        }],
+        "publisher": {
+            "@type": "Organization",
+            "name": "TechSheet",
+            "url": "https://techsheet.vercel.app",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://techsheet.vercel.app/opengraph-image",
+                "width": 1200,
+                "height": 630,
+            },
+        },
         "mainEntityOfPage": { "@type": "WebPage", "@id": `https://techsheet.vercel.app/blogs/${slug}` },
+    };
+
+    const breadcrumbSchema = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home",    "item": "https://techsheet.vercel.app" },
+            { "@type": "ListItem", "position": 2, "name": "Blog",    "item": "https://techsheet.vercel.app" },
+            { "@type": "ListItem", "position": 3, "name": title,     "item": `https://techsheet.vercel.app/blogs/${slug}` },
+        ],
     };
 
     return (
@@ -98,6 +137,10 @@ export default async function BlogPost({ params }) {
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
             />
             <ReadingProgress />
             {/* Background Blobs for Visual Consistency */}

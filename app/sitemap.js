@@ -20,15 +20,16 @@ export default async function sitemap() {
     )];
 
     const tagUrls = allTags.map(tag => ({
-        url: `${BASE_URL}/tags/${tag.toLowerCase().trim()}`,
+        url: `${BASE_URL}/tags/${encodeURIComponent(tag.toLowerCase().trim())}`,
         lastModified: new Date(),
         changeFrequency: 'daily',
         priority: 0.6,
     }));
 
     return [
-        { url: BASE_URL, lastModified: new Date(), changeFrequency: 'daily', priority: 1.0 },
-        { url: `${BASE_URL}/about`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.5 },
+        { url: BASE_URL,                     lastModified: new Date(), changeFrequency: 'daily',   priority: 1.0 },
+        { url: `${BASE_URL}/about`,          lastModified: new Date('2025-01-01'), changeFrequency: 'monthly', priority: 0.9 },
+        { url: `${BASE_URL}/privacy`,        lastModified: new Date('2025-01-01'), changeFrequency: 'yearly',  priority: 0.3 },
         ...blogUrls,
         ...tagUrls,
     ];

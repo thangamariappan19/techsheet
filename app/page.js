@@ -3,22 +3,28 @@ import Header from "../Components/Header";
 import BlogList from "./BlogList";
 
 export const metadata = {
-    title: "TechSheet - Frontend Architecture, AI & Software Engineering Blog",
-    description: "Daily expert blogs on React, Next.js, TypeScript, frontend architecture, and AI for senior developers. Real code, real patterns, no fluff.",
+    title: "TechSheet - Frontend Architecture, AI & Software Engineering Blog by Thanga Mariappan Pandian",
+    description: "Daily expert blogs on React, Next.js, TypeScript, frontend architecture, and AI — written by Thanga Mariappan Pandian, Senior Front-End Architect with 10+ years of experience.",
     keywords: [
-        "frontend architecture", "react tutorials", "next.js blog", "typescript tips",
-        "software engineering", "AI for developers", "web performance", "tech blog",
-        "developer resources", "javascript", "fullstack", "devops"
+        "Thanga Mariappan Pandian", "Thanga Mariappan", "frontend architecture",
+        "react tutorials", "next.js blog", "typescript tips",
+        "software engineering", "AI for developers", "web performance",
+        "tech blog", "developer resources", "senior front-end architect",
     ],
+    alternates: {
+        canonical: "https://techsheet.vercel.app",
+    },
     openGraph: {
         title: "TechSheet - Frontend Architecture, AI & Software Engineering Blog",
-        description: "Daily expert blogs on React, Next.js, TypeScript, and AI for senior developers.",
+        description: "Daily expert blogs on React, Next.js, TypeScript, and AI by Thanga Mariappan Pandian.",
         type: "website",
     },
     twitter: {
         card: "summary_large_image",
+        site: "@iamthangam",
+        creator: "@iamthangam",
         title: "TechSheet - Frontend Architecture, AI & Software Engineering Blog",
-        description: "Daily expert blogs on React, Next.js, TypeScript, and AI for senior developers.",
+        description: "Daily expert blogs on React, Next.js, TypeScript, and AI by Thanga Mariappan Pandian.",
     },
 };
 

@@ -1,8 +1,10 @@
 import { ImageResponse } from "next/og";
 import { getBlogPostBySlug } from "../../../Lib/Data";
 
+export const runtime = "edge";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
+export const alt = "TechSheet blog post by Thanga Mariappan Pandian";
 
 export default async function Image({ params }) {
     const { slug } = await params;
@@ -153,7 +155,7 @@ export default async function Image({ params }) {
                         T
                     </div>
                     <span style={{ color: "rgba(255,255,255,0.6)", fontSize: "14px", fontWeight: "700" }}>
-                        Thanga Mariappan · techsheet.vercel.app
+                        Thanga Mariappan Pandian · techsheet.vercel.app
                     </span>
                 </div>
             </div>
