@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { Github, Twitter, Linkedin, Mail, Rss, Terminal, ArrowUpRight } from "lucide-react";
+import VisitorCount from "./VisitorCount";
 
 const TOPICS = ["React", "Next.js", "AI", "Architecture", "TypeScript", "DevOps"];
 const PAGES = [
@@ -102,9 +103,18 @@ function Footer() {
                             Thanga Mariappan
                         </a>
                     </p>
-                    <p className="text-xs text-muted-foreground/60 font-medium">
-                        Powered by Next.js · Gemini AI · Deployed on Vercel
-                    </p>
+                    <div className="flex items-center gap-4 flex-wrap justify-center sm:justify-end">
+                        <VisitorCount />
+                        <button
+                            onClick={() => window.dispatchEvent(new CustomEvent('open-cookie-settings'))}
+                            className="text-xs text-muted-foreground/60 hover:text-muted-foreground transition-colors font-medium"
+                        >
+                            Cookie Settings
+                        </button>
+                        <p className="text-xs text-muted-foreground/60 font-medium">
+                            Powered by Next.js · Gemini AI · Deployed on Vercel
+                        </p>
+                    </div>
                 </div>
             </div>
         </footer>

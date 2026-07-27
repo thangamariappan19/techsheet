@@ -3,11 +3,10 @@ import { ThemeProvider } from "../Components/ThemeProvider";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import ChatWidget from "../Components/ChatWidget";
-import GoogleAnalytics from "../Components/GoogleAnalytics";
-import Script from "next/script";
+import ConsentScripts from "../Components/ConsentScripts";
+import CookieConsent from "../Components/CookieConsent";
 import { Inter } from "next/font/google";
 
-const ADSENSE_PUBLISHER_ID = "ca-pub-6762060430561818";
 const BASE_URL = "https://techsheet.vercel.app";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
@@ -77,14 +76,29 @@ export default function RootLayout({ children }) {
                     type="application/ld+json"
                     dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
                 />
-                <GoogleAnalytics />
-                {/* afterInteractive = non-blocking, better Core Web Vitals & ad quality score */}
-                <Script
-                    async
-                    src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_PUBLISHER_ID}`}
-                    crossOrigin="anonymous"
-                    strategy="afterInteractive"
-                />
+                {/* Google Consent Mode v2 defaults — must run before GA initializes */}
+                <script dangerouslySetInnerHTML={{ __html: `
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('consent', 'default', {
+                        analytics_storage: 'denied',
+                        ad_storage: 'denied',
+                        ad_user_data: 'denied',
+                        ad_personalization: 'denied',
+                        wait_for_update: 500
+                    });
+                    try {
+                        var c = JSON.parse(localStorage.getItem('techsheet-cookie-consent') || 'null');
+                        if (c) gtag('consent', 'update', {
+                            analytics_storage: c.analytics ? 'granted' : 'denied',
+                            ad_storage: c.advertising ? 'granted' : 'denied',
+                            ad_user_data: c.advertising ? 'granted' : 'denied',
+                            ad_personalization: c.advertising ? 'granted' : 'denied',
+                        });
+                    } catch(e) {}
+                `}} />
+                <ConsentScripts />
+                <CookieConsent />
                 <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
                     <div className="flex min-h-screen flex-col">
                         <Navbar />
