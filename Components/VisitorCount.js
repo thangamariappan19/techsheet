@@ -1,6 +1,10 @@
 'use client';
 import { useEffect, useState } from 'react';
 import { Eye } from 'lucide-react';
+import { db } from '../Firebase/Firebase';
+import { doc, getDoc, setDoc, increment } from 'firebase/firestore';
+
+const statsRef = doc(db, 'meta', 'siteStats');
 
 function formatCount(n) {
   if (n >= 1_000_000) return `${(n / 1_000_000).toFixed(1)}M`;
@@ -20,20 +24,12 @@ export default function VisitorCount() {
         const alreadyCounted = localStorage.getItem(visitKey);
         if (!alreadyCounted) {
           localStorage.setItem(visitKey, '1');
-          const res = await fetch('/api/visitor-count', { method: 'POST' });
-          if (res.ok) {
-            const data = await res.json();
-            setCount(data.count);
-          }
-        } else {
-          const res = await fetch('/api/visitor-count');
-          if (res.ok) {
-            const data = await res.json();
-            setCount(data.count);
-          }
+          await setDoc(statsRef, { visitorCount: increment(1) }, { merge: true });
         }
+        const snap = await getDoc(statsRef);
+        setCount(snap.exists() ? (snap.data().visitorCount ?? 0) : 0);
       } catch {
-        // silently fail — visitor count is non-critical
+        // silently fail — non-critical feature
       }
     }
     run();
