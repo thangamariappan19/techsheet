@@ -5,11 +5,16 @@ import Footer from "../Components/Footer";
 import ChatWidget from "../Components/ChatWidget";
 import ConsentScripts from "../Components/ConsentScripts";
 import CookieConsent from "../Components/CookieConsent";
-import { Inter } from "next/font/google";
+import { Inter, JetBrains_Mono } from "next/font/google";
 
 const BASE_URL = "https://techsheet.vercel.app";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
+const jetbrainsMono = JetBrains_Mono({
+    subsets: ["latin"],
+    variable: "--font-mono",
+    weight: ["400", "500", "600", "700"],
+});
 
 export const metadata = {
     metadataBase: new URL(BASE_URL),
@@ -94,7 +99,7 @@ const websiteSchema = {
 export default function RootLayout({ children }) {
     return (
         <html lang="en" suppressHydrationWarning>
-            <body className={`${inter.variable} font-sans antialiased`}>
+            <body className={`${inter.variable} ${jetbrainsMono.variable} font-sans antialiased`}>
                 <script
                     type="application/ld+json"
                     dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}

@@ -1,125 +1,157 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Rss, ArrowRight, Zap } from "lucide-react";
+import { Rss, ArrowRight, Cpu, Database, Layers, Infinity } from "lucide-react";
 import Link from "next/link";
 
 const STATS = [
-    { value: "200+", label: "Articles" },
-    { value: "3", label: "New daily" },
-    { value: "10+", label: "Topics" },
-    { value: "Free", label: "Forever" },
+    { value: "200+", label: "Articles",   icon: Layers },
+    { value: "3",    label: "Daily drops", icon: Cpu },
+    { value: "10+",  label: "Topics",      icon: Database },
+    { value: "∞",    label: "Free",         icon: Infinity },
 ];
 
 const TOPICS = ["React", "Next.js", "AI", "Architecture", "TypeScript", "DevOps"];
 
+const fadeUp = (delay = 0) => ({
+    initial:    { opacity: 0, y: 20 },
+    animate:    { opacity: 1, y: 0 },
+    transition: { duration: 0.5, delay, ease: [0.22, 0.61, 0.36, 1] },
+});
+
 function Header() {
     return (
-        <div className="relative px-6 pt-16 pb-10 mx-auto max-w-7xl overflow-hidden">
+        <div className="relative px-4 md:px-6 pt-14 pb-12 mx-auto max-w-7xl overflow-hidden">
 
-            {/* Ambient blobs */}
-            <div className="absolute inset-0 -z-10 pointer-events-none overflow-hidden">
-                <div className="absolute -top-20 left-1/4 w-96 h-96 bg-primary/15 rounded-full blur-[140px]" />
-                <div className="absolute top-10 right-1/4 w-80 h-80 bg-purple-500/10 rounded-full blur-[120px]" />
+            {/* ── Dot-grid pattern (hero-scoped, visible in light too) ─── */}
+            <div
+                aria-hidden="true"
+                className="absolute inset-0 -z-20 pointer-events-none opacity-40 dark:opacity-100"
+                style={{
+                    backgroundImage: "radial-gradient(circle at 1px 1px, hsl(186 100% 50% / 0.07) 1px, transparent 0)",
+                    backgroundSize: "36px 36px",
+                }}
+            />
+
+            {/* ── Ambient glow orbs ────────────────────────────────────── */}
+            <div aria-hidden="true" className="absolute inset-0 -z-10 pointer-events-none overflow-hidden">
+                {/* Top-center cyan bloom */}
+                <div className="absolute -top-32 left-1/2 -translate-x-1/2 w-[700px] h-[500px] bg-primary/10 dark:bg-primary/14 rounded-full blur-[140px]" />
+                {/* Right violet accent */}
+                <div className="absolute top-16 right-0 w-[350px] h-[350px] bg-secondary/8 dark:bg-secondary/12 rounded-full blur-[120px]" />
+                {/* Bottom-left trace */}
+                <div className="absolute bottom-0 left-0 w-[280px] h-[280px] bg-primary/6 dark:bg-primary/10 rounded-full blur-[100px]" />
             </div>
 
             <div className="flex flex-col items-center text-center gap-8">
 
-                {/* Badge */}
-                <motion.div
-                    initial={{ opacity: 0, y: 12 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.4 }}
-                    className="flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/25 text-primary text-xs font-black uppercase tracking-[0.15em]"
-                >
-                    <Zap className="w-3 h-3 fill-primary" />
-                    Updated daily with live AI news
+                {/* ── Live status badge ────────────────────────────────── */}
+                <motion.div {...fadeUp(0)} className="flex items-center gap-2.5">
+                    <div className="flex items-center gap-2 px-4 py-2 rounded-full border border-primary/30 bg-primary/8 dark:bg-primary/10 backdrop-blur-sm">
+                        {/* Pulsing live dot */}
+                        <span className="relative flex h-2 w-2">
+                            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75" />
+                            <span className="relative inline-flex rounded-full h-2 w-2 bg-primary" />
+                        </span>
+                        <span className="font-mono text-[11px] font-bold uppercase tracking-[0.18em] text-primary">
+                            Live — Updated daily
+                        </span>
+                    </div>
                 </motion.div>
 
-                {/* Headline */}
-                <motion.h1
-                    initial={{ opacity: 0, y: 16 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, delay: 0.1 }}
-                    className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter leading-[0.95] max-w-4xl"
-                >
-                    <span className="text-foreground">The dev blog that</span>
-                    <br />
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-violet-500 to-purple-500">
-                        ships knowledge.
-                    </span>
-                </motion.h1>
+                {/* ── Headline ─────────────────────────────────────────── */}
+                <motion.div {...fadeUp(0.08)} className="flex flex-col items-center gap-2">
+                    <h1 className="text-5xl md:text-7xl lg:text-[88px] font-black tracking-tighter leading-[0.92] max-w-5xl">
+                        <span className="block text-foreground">The dev blog that</span>
+                        <span
+                            className="block text-transparent bg-clip-text"
+                            style={{
+                                backgroundImage: "linear-gradient(135deg, hsl(186 100% 50%) 0%, hsl(186 100% 65%) 30%, hsl(268 85% 65%) 70%, hsl(268 85% 75%) 100%)",
+                            }}
+                        >
+                            ships knowledge.
+                        </span>
+                    </h1>
+                </motion.div>
 
-                {/* Subtext */}
+                {/* ── Subtext ──────────────────────────────────────────── */}
                 <motion.p
-                    initial={{ opacity: 0, y: 12 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, delay: 0.2 }}
-                    className="max-w-xl text-base md:text-lg text-muted-foreground leading-relaxed"
+                    {...fadeUp(0.15)}
+                    className="max-w-lg text-base md:text-lg text-muted-foreground leading-relaxed"
                 >
-                    Deep-dives on React, architecture, and AI — written by engineers,
-                    enriched with live news every morning.
+                    Deep-dives on React, architecture & AI —{" "}
+                    <span className="font-mono text-primary/80 text-sm bg-primary/8 px-1.5 py-0.5 rounded-md">
+                        written by engineers
+                    </span>
+                    , enriched with live news every morning.
                 </motion.p>
 
-                {/* CTA row */}
+                {/* ── CTA row ──────────────────────────────────────────── */}
                 <motion.div
-                    initial={{ opacity: 0, y: 12 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, delay: 0.3 }}
+                    {...fadeUp(0.22)}
                     className="flex flex-wrap items-center justify-center gap-3"
                 >
                     <a
                         href="#articles"
-                        className="flex items-center gap-2 px-6 py-3 rounded-2xl bg-primary text-primary-foreground font-black text-sm hover:opacity-90 active:scale-95 transition-all shadow-lg shadow-primary/25"
+                        className="group relative flex items-center gap-2 px-6 py-3 rounded-2xl font-black text-sm overflow-hidden transition-all duration-300"
+                        style={{ background: "hsl(var(--primary))", color: "hsl(var(--primary-foreground))" }}
                     >
-                        Browse Articles
-                        <ArrowRight className="w-4 h-4" />
+                        {/* Shimmer layer */}
+                        <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/15 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-in-out" />
+                        <span className="relative">Browse Articles</span>
+                        <ArrowRight className="relative w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" />
                     </a>
                     <a
                         href="/feed.xml"
                         target="_blank"
-                        className="flex items-center gap-2 px-6 py-3 rounded-2xl bg-card border border-border text-foreground font-black text-sm hover:border-primary/40 hover:bg-primary/5 transition-all"
+                        className="flex items-center gap-2 px-6 py-3 rounded-2xl bg-card border border-border text-foreground font-black text-sm hover:border-primary/40 hover:bg-primary/5 transition-all duration-200"
                     >
                         <Rss className="w-4 h-4 text-orange-400" />
                         RSS Feed
                     </a>
                 </motion.div>
 
-                {/* Stats */}
+                {/* ── Stats row ────────────────────────────────────────── */}
                 <motion.div
-                    initial={{ opacity: 0, y: 12 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, delay: 0.4 }}
-                    className="flex flex-wrap items-center justify-center gap-px rounded-2xl border border-border/60 overflow-hidden bg-border/30 mt-2"
+                    {...fadeUp(0.30)}
+                    className="flex items-stretch gap-px rounded-2xl border border-border/60 overflow-hidden bg-border/20 backdrop-blur-sm"
                 >
-                    {STATS.map((s, i) => (
-                        <div
-                            key={i}
-                            className="flex flex-col items-center px-8 py-4 bg-card/80 backdrop-blur-sm gap-0.5 min-w-[90px]"
-                        >
-                            <span className="text-2xl font-black text-foreground">{s.value}</span>
-                            <span className="text-[11px] font-bold text-muted-foreground uppercase tracking-wider">{s.label}</span>
-                        </div>
-                    ))}
+                    {STATS.map((s, i) => {
+                        const Icon = s.icon;
+                        return (
+                            <div
+                                key={i}
+                                className="flex flex-col items-center px-7 py-4 bg-card/70 backdrop-blur-sm gap-1 min-w-[90px] group hover:bg-primary/8 transition-colors duration-200"
+                            >
+                                <Icon className="w-3.5 h-3.5 text-primary/60 group-hover:text-primary mb-0.5 transition-colors duration-200" />
+                                <span className="text-2xl font-black text-foreground group-hover:text-primary transition-colors duration-200 dark:neon-text">
+                                    {s.value}
+                                </span>
+                                <span className="font-mono text-[10px] font-bold text-muted-foreground uppercase tracking-wider">
+                                    {s.label}
+                                </span>
+                            </div>
+                        );
+                    })}
                 </motion.div>
 
-                {/* Topic pills */}
+                {/* ── Topic pills ──────────────────────────────────────── */}
                 <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 0.5, delay: 0.5 }}
+                    {...fadeUp(0.38)}
                     className="flex flex-wrap items-center justify-center gap-2"
                 >
                     {TOPICS.map(topic => (
                         <Link
                             key={topic}
-                            href={`/tags/${topic.toLowerCase().replace(/\./g, '').replace(/\s+/g, '-')}`}
-                            className="px-4 py-1.5 rounded-xl bg-secondary/60 hover:bg-primary/10 border border-border/60 hover:border-primary/30 text-muted-foreground hover:text-primary text-xs font-bold transition-all"
+                            href={`/tags/${topic.toLowerCase().replace(/\./g, "").replace(/\s+/g, "-")}`}
+                            className="group flex items-center gap-1.5 px-4 py-1.5 rounded-xl border border-border/60 bg-card/60 hover:border-primary/40 hover:bg-primary/8 text-muted-foreground hover:text-primary font-mono text-xs font-semibold transition-all duration-200"
                         >
+                            <span className="w-1.5 h-1.5 rounded-full bg-current opacity-40 group-hover:opacity-100 transition-opacity" />
                             {topic}
                         </Link>
                     ))}
                 </motion.div>
+
             </div>
         </div>
     );
