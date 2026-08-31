@@ -45,8 +45,10 @@ function Navbar() {
       <Alert show={viewAlert} type="success" message={alertMessage} />
 
       <nav
-        className={`fixed top-0 left-0 right-0 z-50 glass transition-all duration-300 ${
-          scrolled ? "border-b" : "border-b border-transparent"
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+          scrolled
+            ? "bg-background/97 backdrop-blur-xl border-b border-border/50 shadow-sm"
+            : "glass border-b border-transparent"
         }`}
       >
         {/* Gradient top line */}
