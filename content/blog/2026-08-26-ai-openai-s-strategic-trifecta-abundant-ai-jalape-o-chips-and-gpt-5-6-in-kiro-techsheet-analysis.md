@@ -78,9 +78,9 @@ GPT-5.6 in Kiro is a direct upgrade to our daily toolkit, promising both efficie
     *   **Test Case Generation:** Automatically generate unit tests for your front-end logic or integration tests for UI components.
     *   **Documentation:** Auto-generate JSDoc comments or API documentation based on your code.
 
-    Here's a conceptual example using a hypothetical Kiro SDK for code generation:
+Here's a conceptual example using a hypothetical Kiro SDK for code generation:
 
-    ```javascript
+```javascript
 // Hypothetical Kiro SDK usage with GPT-5.6 for code generation
 import { KiroAI } from '@openai/kiro';
 
@@ -105,7 +105,7 @@ async function generateReactComponent(description) {
 
 // Example usage on Wednesday, August 26, 2026
 generateReactComponent("A responsive hero section with a title, subtitle, call-to-action button, and a background image that adapts to dark mode.");
-    ```
+```
 
 *   **Evaluate Return on Investment (ROI):** Quantify the time savings and quality improvements that GPT-5.6 brings to your team's development lifecycle. Use these metrics to advocate for wider adoption.
 *   **Explore Kiro's Full Feature Set:** Understand the specific tools, integrations, and functionalities that Kiro offers to maximize the utility of GPT-5.6 within your existing development environment.
