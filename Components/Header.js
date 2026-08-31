@@ -51,7 +51,7 @@ function Header() {
                             <span className="relative inline-flex rounded-full h-2 w-2 bg-primary" />
                         </span>
                         <span className="font-mono text-[11px] font-bold uppercase tracking-[0.18em] text-primary">
-                            Live &mdash; Updated daily
+                            Live — Updated daily
                         </span>
                     </div>
                 </motion.div>
@@ -77,7 +77,7 @@ function Header() {
                     {...fadeUp(0.15)}
                     className="max-w-lg text-base md:text-lg text-muted-foreground leading-relaxed"
                 >
-                    Deep-dives on React, architecture &amp; AI &mdash;{" "}
+                    Deep-dives on React, architecture & AI —{" "}
                     <span className="font-mono text-sm text-primary/80 bg-primary/10 px-1.5 py-0.5 rounded-md">
                         written by engineers
                     </span>
