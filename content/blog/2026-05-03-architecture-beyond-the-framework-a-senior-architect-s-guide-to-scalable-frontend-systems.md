@@ -1,10 +1,10 @@
----
+﻿---
 title: "Beyond the Framework: A Senior Architect’s Guide to Scalable Frontend Systems"
 date: "2026-05-03"
 description: "Master the art of frontend architecture. Learn about micro-frontends, strategic state management, and how to lead engineering teams through complex technical debt."
 tags: ["FrontendArchitecture","WebDevelopment","SoftwareEngineering","Scalability","SystemDesign"]
 headerImage: "https://picsum.photos/seed/beyond-the-framework-a-senior-architect-s-guide-to-scalable-frontend-systems-90703/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

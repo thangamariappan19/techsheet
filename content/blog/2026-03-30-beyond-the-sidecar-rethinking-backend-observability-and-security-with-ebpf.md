@@ -1,10 +1,10 @@
----
+﻿---
 title: "Beyond the Sidecar: Rethinking Backend Observability and Security with eBPF"
 date: "2026-03-30"
 description: "Discover how eBPF is revolutionizing backend architecture by eliminating sidecar overhead, optimizing network performance, and providing deep kernel-level observability."
 tags: ["eBPF","Backend Architecture","Kubernetes","Observability","Cloud Native"]
 headerImage: "https://picsum.photos/seed/beyond-the-sidecar-rethinking-backend-observability-and-security-with-ebpf-58645/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

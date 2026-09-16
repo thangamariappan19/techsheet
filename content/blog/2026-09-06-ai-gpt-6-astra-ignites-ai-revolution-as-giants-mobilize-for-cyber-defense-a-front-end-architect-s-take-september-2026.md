@@ -1,10 +1,10 @@
----
+﻿---
 title: "GPT-6 Astra Ignites AI Revolution as Giants Mobilize for Cyber Defense: A Front-End Architect's Take, September 2026"
 date: "2026-09-06"
 description: "September 2026 sees OpenAI launch GPT-6 Astra, boosting dev productivity & cybersecurity. Google & OpenAI commit to AI cyber defense. What this means for developers."
 tags: ["AI","GPT-6 Astra","Cybersecurity","OpenAI","Google AI","Developer Productivity","Front-End","Tech Analysis"]
 headerImage: "https://picsum.photos/seed/gpt-6-astra-ignites-ai-revolution-as-giants-mobilize-for-cyber-defense-a-front-end-architect-s-take-september-2026-93608/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

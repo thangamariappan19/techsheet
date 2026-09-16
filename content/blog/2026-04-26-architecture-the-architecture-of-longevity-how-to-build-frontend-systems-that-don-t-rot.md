@@ -1,10 +1,10 @@
----
+﻿---
 title: "The Architecture of Longevity: How to Build Frontend Systems That Don't Rot"
 date: "2026-04-26"
 description: "Master the art of scalable frontend architecture. Learn how to manage complexity, choose the right state management patterns, and lead technical teams through the fog of technical debt."
 tags: ["Frontend Architecture","System Design","Technical Leadership","Micro-Frontends","Web Development"]
 headerImage: "https://picsum.photos/seed/the-architecture-of-longevity-how-to-build-frontend-systems-that-don-t-rot-38195/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

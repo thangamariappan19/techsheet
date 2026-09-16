@@ -1,10 +1,10 @@
----
+﻿---
 title: "Architecting Frontend Systems for the Agent Era: How Staff Engineers Build for Synthetic Velocity"
 date: "2026-08-14"
 description: "When AI agents author half your PRs, legacy frontend patterns break. Here is how Staff Engineers design agent-verifiable, robust frontend systems in 2026."
 tags: ["Frontend Architecture","Engineering Leadership","System Design","TypeScript","Technical Debt"]
 headerImage: "https://picsum.photos/seed/architecting-frontend-systems-for-the-agent-era-how-staff-engineers-build-for-synthetic-velocity-98759/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

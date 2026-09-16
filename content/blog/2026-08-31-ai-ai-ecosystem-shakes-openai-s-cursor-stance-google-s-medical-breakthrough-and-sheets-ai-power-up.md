@@ -1,10 +1,10 @@
----
+﻿---
 title: "AI Ecosystem Shakes: OpenAI's Cursor Stance, Google's Medical Breakthrough, and Sheets AI Power Up"
 date: "2026-08-31"
 description: "Monday, August 31, 2026: Analyzing OpenAI's tough call on Cursor post-SpaceX, Google's AMIE medical AI, and Sheets Canvas for developers."
 tags: ["AI News","Developer Strategy","OpenAI","Google AI","Health Tech","Productivity Tools","AI Ethics","Front-End Architecture"]
 headerImage: "https://picsum.photos/seed/ai-ecosystem-shakes-openai-s-cursor-stance-google-s-medical-breakthrough-and-sheets-ai-power-up-82199/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

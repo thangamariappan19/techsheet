@@ -1,10 +1,10 @@
----
+﻿---
 title: "Frontend Architecture Beyond the Hype: Building Systems That Outlive Their Frameworks"
 date: "2026-05-19"
 description: "Learn how to architect scalable frontend systems that balance technical debt, performance, and modularity. Discover when to use micro-frontends versus modular monoliths."
 tags: ["Frontend Architecture","Web Development","Software Engineering","Technical Leadership","Micro-frontends"]
 headerImage: "https://picsum.photos/seed/frontend-architecture-beyond-the-hype-building-systems-that-outlive-their-frameworks-368/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

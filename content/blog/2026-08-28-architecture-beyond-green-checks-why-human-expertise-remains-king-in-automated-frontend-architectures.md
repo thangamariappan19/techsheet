@@ -1,10 +1,10 @@
----
+﻿---
 title: "Beyond Green Checks: Why Human Expertise Remains King in Automated Frontend Architectures"
 date: "2026-08-28"
 description: "Relying on automation alone for frontend quality is a a trap. Learn to blend AI and tools with human expertise for truly robust, scalable, and accessible frontend architectures. Go beyond green checks."
 tags: ["Frontend Architecture","Automation","Technical Debt","Developer Experience","Accessibility","Scaling","Engineering Leadership","AI in Frontend","Quality Assurance"]
 headerImage: "https://picsum.photos/seed/beyond-green-checks-why-human-expertise-remains-king-in-automated-frontend-architectures-48223/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

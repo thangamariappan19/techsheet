@@ -1,10 +1,10 @@
----
+﻿---
 title: "Mastering Island Architecture: How to Achieve 100 Lighthouse Scores with Astro and React"
 date: "2026-05-06"
 description: "A deep-dive into Island Architecture and Partial Hydration. Learn how to optimize web performance by shipping less JavaScript without sacrificing interactivity."
 tags: ["Astro","Web Performance","React","Frontend Architecture","JavaScript"]
 headerImage: "https://picsum.photos/seed/mastering-island-architecture-how-to-achieve-100-lighthouse-scores-with-astro-and-react-22638/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

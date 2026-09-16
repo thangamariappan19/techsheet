@@ -1,10 +1,10 @@
----
+﻿---
 title: "The Death of the Monolithic SPA: Architecting Resilient, Self-Healing Micro-Frontends"
 date: "2026-05-24"
 description: "Stop letting single typos crash your entire frontend. Learn how to architect resilient, self-healing micro-frontends using Module Federation and event-driven state."
 tags: ["Frontend Architecture","Micro Frontends","System Design","Web Performance"]
 headerImage: "https://picsum.photos/seed/the-death-of-the-monolithic-spa-architecting-resilient-self-healing-micro-frontends-3923/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

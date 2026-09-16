@@ -1,10 +1,10 @@
----
+﻿---
 title: "Deep-Dive into Project HydraFusion: Beating Frontier Monoliths via Multi-Model Orchestration"
 date: "2026-09-16"
 description: "GitHub's HydraFusion matches Opus 5 quality at a fraction of the cost. Here is an architectural deep-dive into how multi-model orchestration works in practice."
 tags: ["ai-engineering","system-design","github-copilot","software-architecture","typescript"]
 headerImage: "https://picsum.photos/seed/deep-dive-into-project-hydrafusion-beating-frontier-monoliths-via-multi-model-orchestration-76121/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

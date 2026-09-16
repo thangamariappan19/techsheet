@@ -1,10 +1,10 @@
----
+﻿---
 title: "Beyond the Virtual DOM: Mastering the Signal Pattern for High-Performance UI"
 date: "2026-05-03"
 description: "Discover why the industry is moving from Virtual DOM diffing to Signals. A deep dive into fine-grained reactivity, its performance benefits, and how to implement it."
 tags: ["Frontend Architecture","Signals","Performance Optimization","JavaScript"]
 headerImage: "https://picsum.photos/seed/beyond-the-virtual-dom-mastering-the-signal-pattern-for-high-performance-ui-95114/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

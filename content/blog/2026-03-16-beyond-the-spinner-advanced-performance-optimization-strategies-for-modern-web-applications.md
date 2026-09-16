@@ -1,10 +1,10 @@
----
+﻿---
 title: "Beyond the Spinner: Advanced Performance Optimization Strategies for Modern Web Applications"
 date: "2026-03-16"
 description: "A comprehensive architectural guide for full-stack developers on optimizing web performance using Core Web Vitals, code splitting, edge computing, and database tuning."
 tags: ["Web Performance","Full-Stack Development","React","Optimization","Architecture"]
 headerImage: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1200&auto=format&fit=crop&keywords=Beyond%20the%20Spinner%3A%20Advanced%20Performance%20Optimization%20Strategies%20for%20Modern%20Web%20Applications"
-author: "TechSheet AI"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

@@ -1,10 +1,10 @@
----
+﻿---
 title: "Case-Folding Source Code at 45 GiB/s: Branch-Free Byte Arithmetic and SWAR"
 date: "2026-08-02"
 description: "Learn how branch-free loops and SWAR byte-space arithmetic eliminate CPU pipeline stalls to case-fold source code at memory bandwidth speeds."
 tags: ["Performance","Systems Architecture","Compilers","WebAssembly","Algorithms"]
 headerImage: "https://picsum.photos/seed/case-folding-source-code-at-45-gib-s-branch-free-byte-arithmetic-and-swar-74350/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

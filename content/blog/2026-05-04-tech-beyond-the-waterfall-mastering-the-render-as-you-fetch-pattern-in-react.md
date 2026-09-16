@@ -1,10 +1,10 @@
----
+﻿---
 title: "Beyond the Waterfall: Mastering the Render-as-You-Fetch Pattern in React"
 date: "2026-05-04"
 description: "Stop data fetching waterfalls in your React applications. Learn how to leverage React Suspense and Server Components to build blazing-fast, non-blocking user interfaces."
 tags: ["React","Performance","Frontend Architecture","Web Development","JavaScript"]
 headerImage: "https://picsum.photos/seed/beyond-the-waterfall-mastering-the-render-as-you-fetch-pattern-in-react-69079/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

@@ -1,10 +1,10 @@
----
+﻿---
 title: "Beyond Hydration: Architecting Hyper-Resilient UIs with the Isomorphic Signal-Bridge Pattern"
 date: "2026-03-28"
 description: "Discover how the Isomorphic Signal-Bridge pattern eliminates the 'Uncanny Valley' of hydration by unifying server-side state snapshots with client-side fine-grained reactivity."
 tags: ["Frontend Architecture","Signals","Resumability","Performance Tuning"]
 headerImage: "https://picsum.photos/seed/beyond-hydration-architecting-hyper-resilient-uis-with-the-isomorphic-signal-bridge-pattern-34796/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

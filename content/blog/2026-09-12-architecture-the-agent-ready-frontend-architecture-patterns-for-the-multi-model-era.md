@@ -1,10 +1,10 @@
----
+﻿---
 title: "The Agent-Ready Frontend: Architecture Patterns for the Multi-Model Era"
 date: "2026-09-12"
 description: "How to architect front-end systems so parallel autonomous coding agents can build, refactor, and ship features without breaking production."
 tags: ["Frontend Architecture","AI Engineering","Design Systems","State Machines","Developer Experience"]
 headerImage: "https://picsum.photos/seed/the-agent-ready-frontend-architecture-patterns-for-the-multi-model-era-19686/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

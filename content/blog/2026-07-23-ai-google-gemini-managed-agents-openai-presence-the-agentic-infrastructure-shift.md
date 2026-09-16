@@ -1,10 +1,10 @@
----
+﻿---
 title: "Google Gemini Managed Agents & OpenAI Presence: The Agentic Infrastructure Shift"
 date: "2026-07-23"
 description: "An architectural breakdown of Google's Gemini API Managed Agents update with Remote MCP and OpenAI Presence launch on July 23, 2026."
 tags: ["AI Architecture","Gemini API","OpenAI Presence","MCP Protocol","Front-End Engineering"]
 headerImage: "https://picsum.photos/seed/google-gemini-managed-agents-openai-presence-the-agentic-infrastructure-shift-23178/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

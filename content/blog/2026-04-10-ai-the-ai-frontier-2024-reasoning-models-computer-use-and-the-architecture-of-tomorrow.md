@@ -1,10 +1,10 @@
----
+﻿---
 title: "The AI Frontier 2024: Reasoning Models, Computer Use, and the Architecture of Tomorrow"
 date: "2026-04-10"
 description: "A deep dive into the latest AI shifts from OpenAI, Anthropic, and Google. Explore how reasoning models and agentic workflows are redefining front-end architecture."
 tags: ["Artificial Intelligence","Software Architecture","OpenAI","Claude","Web Development"]
 headerImage: "https://picsum.photos/seed/the-ai-frontier-2024-reasoning-models-computer-use-and-the-architecture-of-tomorrow-22239/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

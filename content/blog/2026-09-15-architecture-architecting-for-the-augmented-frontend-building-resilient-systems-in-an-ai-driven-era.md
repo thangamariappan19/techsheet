@@ -1,10 +1,10 @@
----
+﻿---
 title: "Architecting for the Augmented Frontend: Building Resilient Systems in an AI-Driven Era"
 date: "2026-09-15"
 description: "As AI transforms development, frontend architects must pivot. Discover strategies for designing agent-native systems, mitigating technical debt, and ensuring resilience in an AI-accelerated world. Real-world insights from a Staff Engineer."
 tags: ["Frontend Architecture","AI Development","System Design","Technical Debt","Resilience","Scaling","Developer Experience"]
 headerImage: "https://picsum.photos/seed/architecting-for-the-augmented-frontend-building-resilient-systems-in-an-ai-driven-era-18236/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

@@ -1,10 +1,10 @@
----
+﻿---
 title: "Project HydraFusion: Orchestrating AI Models for Frontier-Quality Code Generation"
 date: "2026-09-12"
 description: "Dive deep into GitHub's Project HydraFusion, a groundbreaking multi-model orchestration approach delivering superior AI-generated code. Explore its architecture, benefits, and how it redefines developer workflows."
 tags: ["AI","GitHub Copilot","HydraFusion","Multi-Model AI","Code Generation","Developer Tools","AI Architecture","Front-End Development"]
 headerImage: "https://picsum.photos/seed/project-hydrafusion-orchestrating-ai-models-for-frontier-quality-code-generation-4975/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

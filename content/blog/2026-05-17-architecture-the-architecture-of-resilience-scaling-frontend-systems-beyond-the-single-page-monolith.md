@@ -1,10 +1,10 @@
----
+﻿---
 title: "The Architecture of Resilience: Scaling Frontend Systems Beyond the Single-Page Monolith"
 date: "2026-05-17"
 description: "Discover how senior architects design scalable frontend systems. Learn the secrets of micro-frontends, state ownership, and managing technical debt in high-growth web applications."
 tags: ["Frontend Architecture","Software Engineering","Microfrontends","Technical Leadership"]
 headerImage: "https://picsum.photos/seed/the-architecture-of-resilience-scaling-frontend-systems-beyond-the-single-page-monolith-37707/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

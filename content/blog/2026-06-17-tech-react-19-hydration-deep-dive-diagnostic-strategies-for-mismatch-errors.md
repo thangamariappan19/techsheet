@@ -1,10 +1,10 @@
----
+﻿---
 title: "React 19 Hydration Deep-Dive: Diagnostic Strategies for Mismatch Errors"
 date: "2026-06-17"
 description: "Stop guessing why your React SSR application is failing hydration. Learn how to leverage React 19's new diagnostics, implement defensive code patterns, and debug mismatches."
 tags: ["react","nextjs","web-performance","debugging","ssr"]
 headerImage: "https://picsum.photos/seed/react-19-hydration-deep-dive-diagnostic-strategies-for-mismatch-errors-7169/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

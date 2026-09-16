@@ -1,10 +1,10 @@
----
+﻿---
 title: "GPT-6 Astra Unleashes Autonomous AI: Redefining Software Engineering & Enterprise Data in Late 2026"
 date: "2026-09-16"
 description: "This Wednesday, Sept 16, 2026, OpenAI's GPT-6 Astra is powering self-evolving software agents and democratizing data insights. Deep dive into the implications for developers."
 tags: ["AI","GPT-6 Astra","Agentic AI","Software Development","Enterprise AI","Data Analytics","OpenAI","Google AI","TechSheet"]
 headerImage: "https://picsum.photos/seed/gpt-6-astra-unleashes-autonomous-ai-redefining-software-engineering-enterprise-data-in-late-2026-50829/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

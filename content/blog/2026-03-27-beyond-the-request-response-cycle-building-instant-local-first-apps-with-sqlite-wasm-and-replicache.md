@@ -1,10 +1,10 @@
----
+﻿---
 title: "Beyond the Request-Response Cycle: Building Instant Local-First Apps with SQLite-WASM and Replicache"
 date: "2026-03-27"
 description: "Discover the paradigm shift of local-first development. Learn how to eliminate loading states by leveraging SQLite-WASM and synchronized mutation logs for ultra-low latency web applications."
 tags: ["Local-First","WebAssembly","SQLite","Performance","Software Architecture"]
 headerImage: "https://picsum.photos/seed/beyond-the-request-response-cycle-building-instant-local-first-apps-with-sqlite-wasm-and-replicache-90451/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

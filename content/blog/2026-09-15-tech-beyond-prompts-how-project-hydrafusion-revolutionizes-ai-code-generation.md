@@ -1,10 +1,10 @@
----
+﻿---
 title: "Beyond Prompts: How Project HydraFusion Revolutionizes AI Code Generation"
 date: "2026-09-15"
 description: "GitHub Copilot's Project HydraFusion is changing the game for AI code generation. Discover how multi-model orchestration delivers superior code quality, cuts costs, and shifts the focus from prompt engineering to workflow design for senior developers."
 tags: ["AI Development","GitHub Copilot","LLM Orchestration","Code Generation","Software Architecture","Developer Tools","Cost Optimization","Front-End Architecture"]
 headerImage: "https://picsum.photos/seed/beyond-prompts-how-project-hydrafusion-revolutionizes-ai-code-generation-98486/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

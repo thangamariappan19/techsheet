@@ -1,10 +1,10 @@
----
+﻿---
 title: "Beyond the Distributed Cache: Mastering the Sidecar State Pattern for Local-First Backend Architectures"
 date: "2026-03-29"
 description: "Explore the Sidecar State pattern, an emerging architectural strategy that leverages co-located caches and WASM-based filters to eliminate network latency in high-scale microservices."
 tags: ["Software Architecture","Microservices","Performance","WebAssembly","Backend"]
 headerImage: "https://picsum.photos/seed/beyond-the-distributed-cache-mastering-the-sidecar-state-pattern-for-local-first-backend-architectures-61652/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

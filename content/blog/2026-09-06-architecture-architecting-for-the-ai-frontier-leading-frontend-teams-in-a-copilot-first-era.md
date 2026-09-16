@@ -1,10 +1,10 @@
----
+﻿---
 title: "Architecting for the AI Frontier: Leading Frontend Teams in a Copilot-First Era"
 date: "2026-09-06"
 description: "The AI revolution is here. Senior Frontend Architects must adapt, moving from coding to orchestrating AI agents for scalable, high-quality systems. Learn how."
 tags: ["Frontend Architecture","AI in Development","Copilot","Engineering Leadership","Technical Debt","Scaling Frontend"]
 headerImage: "https://picsum.photos/seed/architecting-for-the-ai-frontier-leading-frontend-teams-in-a-copilot-first-era-91284/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

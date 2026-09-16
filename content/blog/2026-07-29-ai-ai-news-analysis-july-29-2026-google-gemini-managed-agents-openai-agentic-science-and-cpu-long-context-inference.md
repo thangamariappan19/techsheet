@@ -1,10 +1,10 @@
----
+﻿---
 title: "AI News Analysis (July 29, 2026): Google Gemini Managed Agents, OpenAI Agentic Science, and CPU Long-Context Inference"
 date: "2026-07-29"
 description: "Deep technical analysis of July 29, 2026 AI news: Google Gemini 3.6 Flash Managed Agents, OpenAI scientific agentic workflows, and HF LFM2.5 CPU encoders."
 tags: ["AI News","Gemini API","OpenAI","Agentic AI","Hugging Face","Web Architecture"]
 headerImage: "https://picsum.photos/seed/ai-news-analysis-july-29-2026-google-gemini-managed-agents-openai-agentic-science-and-cpu-long-context-inference-80030/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

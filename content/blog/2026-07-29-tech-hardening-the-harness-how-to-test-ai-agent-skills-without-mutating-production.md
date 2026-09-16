@@ -1,10 +1,10 @@
----
+﻿---
 title: "Hardening the Harness: How to Test AI Agent Skills Without Mutating Production"
 date: "2026-07-29"
 description: "Learn how to build Agent Experience (AX) evals, mock MCP tools locally, and evaluate AI agent workflows safely without burning API credits."
 tags: ["AI Architecture","Developer Tools","Testing","TypeScript"]
 headerImage: "https://picsum.photos/seed/hardening-the-harness-how-to-test-ai-agent-skills-without-mutating-production-47608/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

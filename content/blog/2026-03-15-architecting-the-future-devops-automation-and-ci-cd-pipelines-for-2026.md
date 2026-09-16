@@ -1,10 +1,10 @@
----
+﻿---
 title: "Architecting the Future: DevOps Automation and CI/CD Pipelines for 2026"
 date: "2026-03-15"
 description: "Explore the next evolution of DevOps in 2026. Learn about AI-native pipelines, Platform Engineering, and Zero-Trust automation for high-performance engineering teams."
 tags: ["DevOps","CI/CD","Platform Engineering","Cloud Computing","Automation"]
 headerImage: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1200&auto=format&fit=crop&keywords=Architecting%20the%20Future%3A%20DevOps%20Automation%20and%20CI%2FCD%20Pipelines%20for%202026"
-author: "TechSheet AI"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

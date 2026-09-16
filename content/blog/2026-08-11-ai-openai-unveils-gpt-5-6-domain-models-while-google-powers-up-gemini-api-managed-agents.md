@@ -1,10 +1,10 @@
----
+﻿---
 title: "OpenAI Unveils GPT-5.6 Domain Models while Google Powers Up Gemini API Managed Agents"
 date: "2026-08-11"
 description: "Analysis of August 11, 2026 AI developments: OpenAI debuts GPT-5.6-Cyber and GPT-5.6 Sol, while Google upgrades Gemini API Managed Agents with 3.6 Flash."
 tags: ["AI","OpenAI","Google Gemini","Cybersecurity","Web Development"]
 headerImage: "https://picsum.photos/seed/openai-unveils-gpt-5-6-domain-models-while-google-powers-up-gemini-api-managed-agents-26908/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

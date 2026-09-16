@@ -1,10 +1,10 @@
----
+﻿---
 title: "Deconstructing the Monolith: Why the \"Core-Shell\" Architecture is the Real Micro-Frontend Killer"
 date: "2026-05-21"
 description: "Scaling a large frontend doesn't require the complexity of micro-frontends. Discover the Core-Shell architecture pattern—a pragmatist's guide to scalable frontend systems."
 tags: ["Frontend Architecture","Micro-Frontends","Software Engineering","Monorepos","Scaling Web Apps"]
 headerImage: "https://picsum.photos/seed/deconstructing-the-monolith-why-the-core-shell-architecture-is-the-real-micro-frontend-killer-18290/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

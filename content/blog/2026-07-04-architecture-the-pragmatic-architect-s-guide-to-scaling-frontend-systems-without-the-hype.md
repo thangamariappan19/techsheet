@@ -1,10 +1,10 @@
----
+﻿---
 title: "The Pragmatic Architect’s Guide to Scaling Frontend Systems Without the Hype"
 date: "2026-07-04"
 description: "An expert-level guide to scaling frontend architectures. Learn when to use micro-frontends, how to design modular monorepos, manage state cleanly, and lead technical teams without over-engineering."
 tags: ["Frontend Architecture","Micro-Frontends","Web Performance","Technical Leadership"]
 headerImage: "https://picsum.photos/seed/the-pragmatic-architect-s-guide-to-scaling-frontend-systems-without-the-hype-30121/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

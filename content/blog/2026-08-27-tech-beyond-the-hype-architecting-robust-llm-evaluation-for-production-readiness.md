@@ -1,10 +1,10 @@
----
+﻿---
 title: "Beyond the Hype: Architecting Robust LLM Evaluation for Production Readiness"
 date: "2026-08-27"
 description: "Don't ship risky LLMs. Dive deep into multi-dimensional evaluation strategies for production readiness, covering correctness, safety, performance, and AX."
 tags: ["LLM","Evaluation","AI","Production Readiness","Testing","Machine Learning","DevOps","Technical Deep-Dive"]
 headerImage: "https://picsum.photos/seed/beyond-the-hype-architecting-robust-llm-evaluation-for-production-readiness-85086/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

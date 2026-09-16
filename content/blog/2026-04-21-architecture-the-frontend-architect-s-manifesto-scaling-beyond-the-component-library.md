@@ -1,10 +1,10 @@
----
+﻿---
 title: "The Frontend Architect’s Manifesto: Scaling Beyond the Component Library"
 date: "2026-04-21"
 description: "Master the art of frontend systems thinking. Learn how to design scalable architectures, manage state effectively, and lead engineering teams through technical debt."
 tags: ["FrontendArchitecture","SoftwareEngineering","Scalability","WebDevelopment","TechnicalLeadership"]
 headerImage: "https://picsum.photos/seed/the-frontend-architect-s-manifesto-scaling-beyond-the-component-library-71490/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

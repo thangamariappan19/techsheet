@@ -1,10 +1,10 @@
----
+﻿---
 title: "Beyond the Monolith: Architecting Resilient Frontend Systems for 2025"
 date: "2026-05-01"
 description: "Learn how to scale frontend architecture from 1 to 100 developers using micro-frontends, domain-driven design, and strategic state management."
 tags: ["Frontend Architecture","Micro-Frontends","Web Development","Software Engineering","Tech Leadership"]
 headerImage: "https://picsum.photos/seed/beyond-the-monolith-architecting-resilient-frontend-systems-for-2025-91892/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

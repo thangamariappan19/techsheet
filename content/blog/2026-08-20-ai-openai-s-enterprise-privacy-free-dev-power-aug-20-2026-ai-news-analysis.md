@@ -1,10 +1,10 @@
----
+﻿---
 title: "OpenAI's Enterprise Privacy & Free Dev Power: Aug 20, 2026 AI News Analysis"
 date: "2026-08-20"
 description: "TechSheet breaks down OpenAI's Zero Data Retention for enterprise and Replit's GPT-5.6 Luna Free Mode, shaping dev workflows and AI trust on Aug 20, 2026."
 tags: ["AI News","OpenAI","Google AI","Developer Tools","Data Privacy","GPT-5.6 Luna","Replit","Enterprise AI","AI Ethics","TechSheet"]
 headerImage: "https://picsum.photos/seed/openai-s-enterprise-privacy-free-dev-power-aug-20-2026-ai-news-analysis-1807/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

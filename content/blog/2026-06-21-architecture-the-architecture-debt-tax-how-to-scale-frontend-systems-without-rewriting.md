@@ -1,10 +1,10 @@
----
+﻿---
 title: "The Architecture Debt Tax: How to Scale Frontend Systems Without Rewriting"
 date: "2026-06-21"
 description: "Learn how to scale your frontend architecture, balance state management, evaluate micro-frontends responsibly, and avoid the devastating two-year rewrite cycle."
 tags: ["Frontend Architecture","Software Engineering","Micro Frontends","Technical Leadership"]
 headerImage: "https://picsum.photos/seed/the-architecture-debt-tax-how-to-scale-frontend-systems-without-rewriting-33985/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

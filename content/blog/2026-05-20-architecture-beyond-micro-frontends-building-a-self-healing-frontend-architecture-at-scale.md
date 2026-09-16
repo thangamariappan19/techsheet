@@ -1,10 +1,10 @@
----
+﻿---
 title: "Beyond Micro-Frontends: Building a \"Self-Healing\" Frontend Architecture at Scale"
 date: "2026-05-20"
 description: "Learn how to design a resilient, high-performance micro-frontend architecture using dependency sharing, event-driven state, and error boundaries without the runtime tax."
 tags: ["FrontendArchitecture","MicroFrontends","WebPerformance","SoftwareEngineering"]
 headerImage: "https://picsum.photos/seed/beyond-micro-frontends-building-a-self-healing-frontend-architecture-at-scale-90220/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

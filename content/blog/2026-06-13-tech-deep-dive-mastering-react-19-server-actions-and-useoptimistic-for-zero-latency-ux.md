@@ -1,10 +1,10 @@
----
+﻿---
 title: "Deep-Dive: Mastering React 19 Server Actions and useOptimistic for Zero-Latency UX"
 date: "2026-06-13"
 description: "Learn how to leverage React 19 Server Actions and the useOptimistic hook to build blazing-fast, state-syncing UI without the boilerplate of Redux or global state."
 tags: ["React 19","Web Development","Frontend Performance","JavaScript"]
 headerImage: "https://picsum.photos/seed/deep-dive-mastering-react-19-server-actions-and-useoptimistic-for-zero-latency-ux-55539/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

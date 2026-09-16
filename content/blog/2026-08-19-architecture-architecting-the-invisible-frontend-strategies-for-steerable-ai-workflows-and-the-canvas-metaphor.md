@@ -1,10 +1,10 @@
----
+﻿---
 title: "Architecting the Invisible: Frontend Strategies for Steerable AI Workflows and the Canvas Metaphor"
 date: "2026-08-19"
 description: "As AI agents proliferate, traditional UIs fall short. Learn how frontend architects can design steerable, visible AI workflows using the 'canvas' metaphor, addressing critical design decisions, scalability, and technical debt in the AI era."
 tags: ["Frontend Architecture","AI","Agentic Workflows","UI/UX","System Design","Technical Debt","Scalability","Engineering Leadership"]
 headerImage: "https://picsum.photos/seed/architecting-the-invisible-frontend-strategies-for-steerable-ai-workflows-and-the-canvas-metaphor-35021/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

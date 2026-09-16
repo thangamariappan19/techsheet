@@ -1,10 +1,10 @@
----
+﻿---
 title: "TechSheet Analysis: Google Gemini 3.6 Flash Managed Agents, OpenAI GPT-Live Voice Architecture, and Edge Agent Economics"
 date: "2026-08-06"
 description: "An architectural deep dive into August 2026 AI news: OpenAI GPT-Live turnless voice, Google Gemini Managed Agents with 3.6 Flash, and edge compute economics."
 tags: ["AI Architecture","OpenAI","Gemini API","Web Development","Edge AI"]
 headerImage: "https://picsum.photos/seed/techsheet-analysis-google-gemini-3-6-flash-managed-agents-openai-gpt-live-voice-architecture-and-edge-agent-economics-44871/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

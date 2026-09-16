@@ -1,10 +1,10 @@
----
+﻿---
 title: "Beyond useEffect: Mastering Browser State with useSyncExternalStore in React 19"
 date: "2026-05-12"
 description: "Stop fighting race conditions and stale state. Learn how to use the useSyncExternalStore hook to synchronize external browser APIs and global stores with React's concurrent renderer."
 tags: ["React","Web APIs","Performance","Frontend Architecture"]
 headerImage: "https://picsum.photos/seed/beyond-useeffect-mastering-browser-state-with-usesyncexternalstore-in-react-19-59235/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

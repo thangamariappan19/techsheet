@@ -1,10 +1,10 @@
----
+﻿---
 title: "Beyond Micro-frontends: The Architect's Guide to Building Resilient Modular Monoliths"
 date: "2026-04-13"
 description: "Discover why the Modular Monolith is the secret to scaling frontend systems without the complexity of micro-frontends. A deep dive into patterns, state management, and technical leadership."
 tags: ["Frontend Architecture","Software Engineering","Scaling Web Apps","Tech Leadership"]
 headerImage: "https://picsum.photos/seed/beyond-micro-frontends-the-architect-s-guide-to-building-resilient-modular-monoliths-92942/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

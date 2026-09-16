@@ -1,10 +1,10 @@
----
+﻿---
 title: "Architecting for Agent Experience (AX): Why Your Latest LLM Upgrade Broke the Codebase"
 date: "2026-07-21"
 description: "An architectural deep-dive into Agent Experience (AX), model regression in AI coding agents, and why newer models like Sonnet 5 can burn 12x more tokens on the same tasks."
 tags: ["AI Agents","Agent Experience (AX)","Software Architecture","LLM Evals","TypeScript"]
 headerImage: "https://picsum.photos/seed/architecting-for-agent-experience-ax-why-your-latest-llm-upgrade-broke-the-codebase-25090/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

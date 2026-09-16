@@ -1,10 +1,10 @@
----
+﻿---
 title: "Mastering React 19 Actions: Architecting Zero-Boilerplate Async UI Workflows"
 date: "2026-06-05"
 description: "Stop writing redundant loading and error states. Discover how React 19's new Actions API, useActionState, and useOptimistic simplify asynchronous state management."
 tags: ["React 19","Frontend Architecture","Web Performance","JavaScript"]
 headerImage: "https://picsum.photos/seed/mastering-react-19-actions-architecting-zero-boilerplate-async-ui-workflows-22766/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

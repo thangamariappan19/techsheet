@@ -1,10 +1,10 @@
----
+﻿---
 title: "The Gravity of Sprawl: Designing Scalable Frontend Architectures for 100+ Engineer Teams"
 date: "2026-06-03"
 description: "Learn how to scale frontend web applications past the tipping point. Discover patterns for managing micro-frontends, domain-driven design in frontends, state isolation, and organizational alignment."
 tags: ["Frontend Architecture","Micro Frontends","Technical Leadership","Scale"]
 headerImage: "https://picsum.photos/seed/the-gravity-of-sprawl-designing-scalable-frontend-architectures-for-100-engineer-teams-11252/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

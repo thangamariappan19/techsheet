@@ -1,10 +1,10 @@
----
+﻿---
 title: "Demystifying INP: How to Use scheduler.yield() to Build Ultra-Responsive Web Apps"
 date: "2026-06-22"
 description: "Learn how to optimize your Interaction to Next Paint (INP) score using the revolutionary new scheduler.yield() API. Dive into real-world code examples for React and Vanilla JS."
 tags: ["Web Performance","JavaScript","React","Core Web Vitals"]
 headerImage: "https://picsum.photos/seed/demystifying-inp-how-to-use-scheduler-yield-to-build-ultra-responsive-web-apps-5177/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

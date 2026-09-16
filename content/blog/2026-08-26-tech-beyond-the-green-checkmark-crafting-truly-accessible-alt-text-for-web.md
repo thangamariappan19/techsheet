@@ -1,10 +1,10 @@
----
+﻿---
 title: "Beyond the Green Checkmark: Crafting Truly Accessible Alt Text for Web"
 date: "2026-08-26"
 description: "Automated alt text checks often give a false sense of security. Learn how to write truly accessible, contextual alt text for all image types."
 tags: ["Accessibility","Front-End","Web Development","SEO","Best Practices","UI/UX","Inclusive Design"]
 headerImage: "https://picsum.photos/seed/beyond-the-green-checkmark-crafting-truly-accessible-alt-text-for-web-82434/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

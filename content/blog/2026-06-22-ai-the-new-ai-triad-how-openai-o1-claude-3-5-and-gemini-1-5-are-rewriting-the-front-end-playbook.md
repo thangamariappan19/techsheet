@@ -1,10 +1,10 @@
----
+﻿---
 title: "The New AI Triad: How OpenAI o1, Claude 3.5, and Gemini 1.5 are Rewriting the Front-End Playbook"
 date: "2026-06-22"
 description: "Discover how the latest updates from OpenAI (o1), Anthropic (Claude 3.5), and Google (Gemini 1.5 Pro) are shifting developers from writing raw code to orchestrating complex, agentic front-end architectures."
 tags: ["AI Trends","Front-End Architecture","OpenAI o1","Claude 3.5","Web Development"]
 headerImage: "https://picsum.photos/seed/the-new-ai-triad-how-openai-o1-claude-3-5-and-gemini-1-5-are-rewriting-the-front-end-playbook-30157/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

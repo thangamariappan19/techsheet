@@ -1,10 +1,10 @@
----
+﻿---
 title: "The 2025 AI Shift: How OpenAI o1, Claude's Computer Use, and Gemini 2.0 Change Frontend Engineering Forever"
 date: "2026-06-03"
 description: "Discover how the latest updates from OpenAI, Anthropic, and Google Gemini are shifting frontend development from simple code generation to autonomous agentic architectures."
 tags: ["AI Trends","Frontend Architecture","Web Development","NextJS","Tech Innovation"]
 headerImage: "https://picsum.photos/seed/the-2025-ai-shift-how-openai-o1-claude-s-computer-use-and-gemini-2-0-change-frontend-engineering-forever-45950/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

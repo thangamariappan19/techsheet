@@ -1,10 +1,10 @@
----
+﻿---
 title: "The Cost of Writing Code Dropped. Ownership Didn't: Frontend Architecture for the AI Era"
 date: "2026-07-27"
 description: "AI tools make code generation trivial, but frontend technical debt and supply chain risks are skyrocketing. Here is how to architect for long-term ownership."
 tags: ["Frontend Architecture","Engineering Leadership","Technical Debt","Supply Chain"]
 headerImage: "https://picsum.photos/seed/the-cost-of-writing-code-dropped-ownership-didn-t-frontend-architecture-for-the-ai-era-15703/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

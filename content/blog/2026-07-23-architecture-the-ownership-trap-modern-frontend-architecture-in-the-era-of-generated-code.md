@@ -1,10 +1,10 @@
----
+﻿---
 title: "The Ownership Trap: Modern Frontend Architecture in the Era of Generated Code"
 date: "2026-07-23"
 description: "AI made writing frontend code nearly free, but maintaining it has never been more expensive. Here is how architects manage code ownership in 2026."
 tags: ["Frontend Architecture","Engineering Leadership","System Design","Technical Debt"]
 headerImage: "https://picsum.photos/seed/the-ownership-trap-modern-frontend-architecture-in-the-era-of-generated-code-47266/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

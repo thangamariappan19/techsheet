@@ -1,10 +1,10 @@
----
+﻿---
 title: "The Architecture Debt Trap: Building Scalable Frontend Systems Without Losing Your Mind"
 date: "2026-04-16"
 description: "Discover the blueprint for modern frontend architecture. Learn why modular monoliths often beat micro-frontends and how to manage state at scale."
 tags: ["Frontend Architecture","Software Engineering","Micro Frontends","Web Development"]
 headerImage: "https://picsum.photos/seed/the-architecture-debt-trap-building-scalable-frontend-systems-without-losing-your-mind-51271/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

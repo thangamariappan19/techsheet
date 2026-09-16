@@ -1,10 +1,10 @@
----
+﻿---
 title: "The Harness Architecture: Building Frontend Systems for AI Agents and Supply-Chain Reality"
 date: "2026-07-28"
 description: "Learn how to structure enterprise frontend architectures for agentic AI tools, deterministic UI contracts, and modern supply-chain security constraints."
 tags: ["Frontend Architecture","AI Workflows","Design Systems","Security"]
 headerImage: "https://picsum.photos/seed/the-harness-architecture-building-frontend-systems-for-ai-agents-and-supply-chain-reality-86423/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

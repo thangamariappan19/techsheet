@@ -1,10 +1,10 @@
----
+﻿---
 title: "AI Engineering Is The New Frontend: Navigating The 2024 Late-Year Tech Shift"
 date: "2026-04-16"
 description: "A deep dive into OpenAI o1, Claude 3.5 Computer Use, and Gemini 1.5 Pro updates. Learn how these AI trends are reshaping frontend architecture and developer workflows."
 tags: ["AI Trends","Frontend Architecture","OpenAI","Claude 3.5","Software Development"]
 headerImage: "https://picsum.photos/seed/ai-engineering-is-the-new-frontend-navigating-the-2024-late-year-tech-shift-81802/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

@@ -1,10 +1,10 @@
----
+﻿---
 title: "The Frontend Revolution: How OpenAI o1, Claude 3.5 Sonnet, and Gemini 1.5 Pro are Redefining Web Architecture"
 date: "2026-06-08"
 description: "Discover how the latest reasoning models, Artifacts, and massive context windows from OpenAI, Anthropic, and Google are transforming frontend architecture. Learn how to build AI-native interfaces."
 tags: ["AI in Frontend","Claude 3.5 Sonnet","OpenAI o1","Web Architecture","Tech Trends"]
 headerImage: "https://picsum.photos/seed/the-frontend-revolution-how-openai-o1-claude-3-5-sonnet-and-gemini-1-5-pro-are-redefining-web-architecture-70374/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

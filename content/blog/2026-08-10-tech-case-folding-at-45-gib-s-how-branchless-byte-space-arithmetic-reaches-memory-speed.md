@@ -1,10 +1,10 @@
----
+﻿---
 title: "Case-Folding at 45 GiB/s: How Branchless Byte-Space Arithmetic Reaches Memory Speed"
 date: "2026-08-10"
 description: "Discover how GitHub eliminated CPU branch mispredictions and achieved 45+ GiB/s single-core case-folding throughput using SIMD, SWAR, and byte-space arithmetic."
 tags: ["Performance Engineering","Systems Architecture","Algorithms","Rust","Optimization"]
 headerImage: "https://picsum.photos/seed/case-folding-at-45-gib-s-how-branchless-byte-space-arithmetic-reaches-memory-speed-24743/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

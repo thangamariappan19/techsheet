@@ -1,10 +1,10 @@
----
+﻿---
 title: "Frontend Architecture as Code: Building Verifiable, Scalable Systems with AI"
 date: "2026-09-13"
 description: "Discover how codifying frontend architecture ensures consistency, reduces technical debt, and leverages AI for future-proof, scalable systems."
 tags: ["frontend architecture","scaling","technical debt","developer experience","AI","automation","architecture as code"]
 headerImage: "https://picsum.photos/seed/frontend-architecture-as-code-building-verifiable-scalable-systems-with-ai-96525/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

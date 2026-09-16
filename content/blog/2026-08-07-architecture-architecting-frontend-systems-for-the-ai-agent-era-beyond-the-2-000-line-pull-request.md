@@ -1,10 +1,10 @@
----
+﻿---
 title: "Architecting Frontend Systems for the AI Agent Era: Beyond the 2,000-Line Pull Request"
 date: "2026-08-07"
 description: "Learn how to evolve your frontend architecture for AI agent workflows using vertical slice design, stacked pull requests, and automated boundary guardrails."
 tags: ["Frontend Engineering","Architecture","DevOps","AI Workflows","Code Review"]
 headerImage: "https://picsum.photos/seed/architecting-frontend-systems-for-the-ai-agent-era-beyond-the-2-000-line-pull-request-64779/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

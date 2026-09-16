@@ -1,10 +1,10 @@
----
+﻿---
 title: "Local-First Architecture: Implementing ElectricSQL and SQLite for Zero-Latency Mobile Experiences"
 date: "2026-03-29"
 description: "Ditch the loading spinner. Learn how to architect high-performance local-first mobile applications using ElectricSQL, SQLite, and React Native to achieve real-time sync and seamless offline capabilities."
 tags: ["Mobile Development","React Native","Local-First","Database Sync","SQLite"]
 headerImage: "https://picsum.photos/seed/local-first-architecture-implementing-electricsql-and-sqlite-for-zero-latency-mobile-experiences-88113/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

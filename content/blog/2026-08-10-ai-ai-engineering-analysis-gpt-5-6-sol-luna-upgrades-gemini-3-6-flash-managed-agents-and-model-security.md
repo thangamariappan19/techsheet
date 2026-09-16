@@ -1,10 +1,10 @@
----
+﻿---
 title: "AI Engineering Analysis: GPT-5.6 Sol & Luna Upgrades, Gemini 3.6 Flash Managed Agents, and Model Security"
 date: "2026-08-10"
 description: "Deep architectural analysis of August 2026 AI news: OpenAI GPT-5.6 Sol/Luna updates, Gemini 3.6 Flash Managed Agent hooks, and model cybersecurity evaluations."
 tags: ["Artificial Intelligence","Frontend Architecture","OpenAI","Google Gemini","Web Development"]
 headerImage: "https://picsum.photos/seed/ai-engineering-analysis-gpt-5-6-sol-luna-upgrades-gemini-3-6-flash-managed-agents-and-model-security-94473/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

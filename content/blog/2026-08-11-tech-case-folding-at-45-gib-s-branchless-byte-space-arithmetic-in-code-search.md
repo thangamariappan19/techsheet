@@ -1,10 +1,10 @@
----
+﻿---
 title: "Case-Folding at 45 GiB/s: Branchless Byte-Space Arithmetic in Code Search"
 date: "2026-08-11"
 description: "How branch-free byte-space arithmetic lets code search engines case-fold text at CPU memory bandwidth limits on a single core."
 tags: ["performance","systems","rust","optimization"]
 headerImage: "https://picsum.photos/seed/case-folding-at-45-gib-s-branchless-byte-space-arithmetic-in-code-search-60294/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

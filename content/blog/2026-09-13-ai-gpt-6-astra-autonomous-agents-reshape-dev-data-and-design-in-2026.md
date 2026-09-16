@@ -1,10 +1,10 @@
----
+﻿---
 title: "GPT-6 Astra: Autonomous Agents Reshape Dev, Data, and Design in 2026"
 date: "2026-09-13"
 description: "GPT-6 Astra enables autonomous dev, data insights, and creative tools. Discover how OpenAI and Google's latest AI shifts are transforming the IT landscape on Sep 13, 2026."
 tags: ["AI Agents","GPT-6 Astra","Autonomous Development","Data Agent","Google Pics","Front-End Architecture","TechSheet"]
 headerImage: "https://picsum.photos/seed/gpt-6-astra-autonomous-agents-reshape-dev-data-and-design-in-2026-73464/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

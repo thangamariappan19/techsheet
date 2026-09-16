@@ -1,10 +1,10 @@
----
+﻿---
 title: "Escaping the Heisenbug: Building Bulletproof Distributed Backends with Deterministic Simulation Testing (DST)"
 date: "2026-03-24"
 description: "Discover how Deterministic Simulation Testing (DST) transforms backend reliability by simulating years of distributed system chaos in minutes, allowing you to reproduce the rarest race conditions."
 tags: ["Distributed Systems","Testing Strategy","Backend Architecture","Fault Tolerance","Software Reliability"]
 headerImage: "https://picsum.photos/seed/escaping-the-heisenbug-building-bulletproof-distributed-backends-with-deterministic-simulation-testing-dst-82248/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

@@ -1,10 +1,10 @@
----
+﻿---
 title: "Breaking AI: OpenAI's Agents, GPT-6 Astra & Google Pics Reshape Dev Workflows (Sept 2026)"
 date: "2026-09-08"
 description: "On Sept 8, 2026, OpenAI's coding agents accelerate research, GPT-6 Astra boosts enterprise efficiency, and Google Pics simplifies image creation. Analysis for developers."
 tags: ["AI","Generative AI","Developer Productivity","OpenAI","Google AI","GPT-6 Astra","Coding Agents","Google Workspace","Front-End Development","TechSheet Analysis"]
 headerImage: "https://picsum.photos/seed/breaking-ai-openai-s-agents-gpt-6-astra-google-pics-reshape-dev-workflows-sept-2026-92734/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

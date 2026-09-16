@@ -1,10 +1,10 @@
----
+﻿---
 title: "Architecting for the Agentic Era: Analyzing Google's Gemini Remote MCP and OpenAI's GPT-Red Security Framework"
 date: "2026-07-20"
 description: "An architectural deep-dive into Google's Remote MCP support in Gemini API and OpenAI's GPT-Red safety framework for enterprise agent deployments."
 tags: ["AI Architecture","Model Context Protocol","OpenAI","Google Gemini API","AI Security"]
 headerImage: "https://picsum.photos/seed/architecting-for-the-agentic-era-analyzing-google-s-gemini-remote-mcp-and-openai-s-gpt-red-security-framework-41275/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

@@ -1,10 +1,10 @@
----
+﻿---
 title: "Going Zoneless: A Deep-Dive into Angular's New Signals-Driven Architecture"
 date: "2026-05-23"
 description: "Discover how to eliminate Zone.js from your Angular applications using Signals. Learn how zoneless rendering improves performance, reduces bundle size, and simplifies debugging with real-world code examples."
 tags: ["Angular","Web Performance","Signals","Software Architecture"]
 headerImage: "https://picsum.photos/seed/going-zoneless-a-deep-dive-into-angular-s-new-signals-driven-architecture-11530/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

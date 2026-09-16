@@ -1,10 +1,10 @@
----
+﻿---
 title: "Architecting Frontend Systems for AI Agents: How to Prevent Semantic Drift in 2026"
 date: "2026-08-16"
 description: "Learn how Staff engineers use contract-driven boundaries, strict state machines, and AST gates to maintain frontend architectural integrity in the AI era."
 tags: ["frontend-architecture","system-design","ai-engineering","typescript","software-engineering"]
 headerImage: "https://picsum.photos/seed/architecting-frontend-systems-for-ai-agents-how-to-prevent-semantic-drift-in-2026-30689/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

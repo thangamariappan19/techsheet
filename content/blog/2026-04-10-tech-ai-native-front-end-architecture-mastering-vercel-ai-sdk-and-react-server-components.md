@@ -1,10 +1,10 @@
----
+﻿---
 title: "AI-Native Front-End Architecture: Mastering Vercel AI SDK and React Server Components"
 date: "2026-04-10"
 description: "A deep dive into building production-ready AI interfaces using React Server Components, streaming protocols, and the Vercel AI SDK for high-performance generative UI."
 tags: ["React","Next.js","Generative AI","Performance","TypeScript"]
 headerImage: "https://picsum.photos/seed/ai-native-front-end-architecture-mastering-vercel-ai-sdk-and-react-server-components-49930/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

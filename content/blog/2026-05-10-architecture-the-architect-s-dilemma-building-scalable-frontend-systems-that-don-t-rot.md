@@ -1,10 +1,10 @@
----
+﻿---
 title: "The Architect's Dilemma: Building Scalable Frontend Systems That Don't Rot"
 date: "2026-05-10"
 description: "Learn the principles of modern frontend architecture, from managing state locality to the strategic use of micro-frontends and technical debt management."
 tags: ["Frontend Architecture","Software Engineering","Web Development","Technical Leadership"]
 headerImage: "https://picsum.photos/seed/the-architect-s-dilemma-building-scalable-frontend-systems-that-don-t-rot-19529/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

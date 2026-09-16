@@ -1,10 +1,10 @@
----
+﻿---
 title: "Future-Proofing Your Stack: Top 5 Software Engineering Trends for 2024–2026"
 date: "2026-03-19"
 description: "A deep dive into the next two years of software engineering, covering Agentic AI, Platform Engineering, the Rust revolution, and the expansion of WebAssembly."
 tags: ["Software Architecture","Platform Engineering","Artificial Intelligence","Rust","WebAssembly"]
 headerImage: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1200&auto=format&fit=crop&keywords=Future-Proofing%20Your%20Stack%3A%20Top%205%20Software%20Engineering%20Trends%20for%202024%E2%80%932026"
-author: "TechSheet AI"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

@@ -1,10 +1,10 @@
----
+﻿---
 title: "Enterprise Agent Infrastructure Takeover: OpenAI Presence, Gemini Managed Agents, and 4-Bit Quantization"
 date: "2026-07-27"
 description: "Analysis of news from OpenAI, Google AI, and Hugging Face for July 27, 2026. Discover what OpenAI Presence, Remote MCP, and Nunchaku mean for dev teams."
 tags: ["AI Agents","OpenAI","Google AI","Hugging Face","Model Context Protocol"]
 headerImage: "https://picsum.photos/seed/enterprise-agent-infrastructure-takeover-openai-presence-gemini-managed-agents-and-4-bit-quantization-7909/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

@@ -1,10 +1,10 @@
----
+﻿---
 title: "Case-Folding Code at 45 GiB/s: Branch-Free Arithmetic and SIMD Search"
 date: "2026-08-03"
 description: "Learn how branch-free byte-space arithmetic and SIMD vectorization push case-insensitive code search to the physical limits of memory bandwidth."
 tags: ["Performance","Algorithms","SIMD","Rust","C++"]
 headerImage: "https://picsum.photos/seed/case-folding-code-at-45-gib-s-branch-free-arithmetic-and-simd-search-94920/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

@@ -1,10 +1,10 @@
----
+﻿---
 title: "Beyond State Managers: Architecting Local-First UIs with CRDTs and Reactive Signals"
 date: "2026-03-23"
 description: "Shift your frontend paradigm from server-dependent state to local-first architectures. Learn how to leverage CRDTs, RxDB, and Signal-based reactivity to build hyper-resilient, offline-capable applications."
 tags: ["Frontend Architecture","Local-First","CRDT","Signals","Performance"]
 headerImage: "https://picsum.photos/seed/beyond-state-managers-architecting-local-first-uis-with-crdts-and-reactive-signals-51365/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

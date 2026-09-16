@@ -1,10 +1,10 @@
----
+﻿---
 title: "Architecting for Scale: How to Transition from Component Thinking to Systemic Frontend Design"
 date: "2026-05-02"
 description: "Master frontend architecture by learning when to use Micro-Frontends, how to manage state at scale, and why designing for deletability is the ultimate technical leadership skill."
 tags: ["Frontend Architecture","Micro-Frontends","Software Engineering","Technical Leadership","Scalable Web Apps"]
 headerImage: "https://picsum.photos/seed/architecting-for-scale-how-to-transition-from-component-thinking-to-systemic-frontend-design-20436/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

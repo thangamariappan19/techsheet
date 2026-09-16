@@ -1,10 +1,10 @@
----
+﻿---
 title: "GPT-6 Astra Powers Autonomous Agents, OpenAI Scales to a Billion Users: The Future of AI Development Today"
 date: "2026-09-15"
 description: "GPT-6 Astra enables AI agents like Perplexity and Devin to manage software and systems, while Habitat scales ChatGPT to a billion users. Analyze the implications for developers on September 15, 2026."
 tags: ["AI Agents","GPT-6 Astra","OpenAI","AI Infrastructure","Devin","Perplexity","ChatGPT","Scaling AI","Future of Development","TechSheet Analysis"]
 headerImage: "https://picsum.photos/seed/gpt-6-astra-powers-autonomous-agents-openai-scales-to-a-billion-users-the-future-of-ai-development-today-22862/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

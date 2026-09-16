@@ -1,10 +1,10 @@
----
+﻿---
 title: "Beyond the Hype: Designing a Pragmatic Micro-Frontend Architecture That Actually Scales"
 date: "2026-07-11"
 description: "Learn how to architect scalable micro-frontends without the common pitfalls of over-engineering, shared state entanglement, and high cognitive load."
 tags: ["frontend-architecture","micro-frontends","state-management","software-engineering","technical-leadership"]
 headerImage: "https://picsum.photos/seed/beyond-the-hype-designing-a-pragmatic-micro-frontend-architecture-that-actually-scales-45035/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

@@ -1,10 +1,10 @@
----
+﻿---
 title: "Beyond Code Generation: Architecting Frontend Systems for True AI Augmentation"
 date: "2026-09-14"
 description: "As AI tools redefine development, senior frontend architects must evolve systems to truly leverage automation. Explore practical strategies for integrating AI, managing debt, and empowering teams."
 tags: ["Frontend Architecture","AI in Development","Developer Experience","Automation","Technical Debt","Design Systems","Scaling"]
 headerImage: "https://picsum.photos/seed/beyond-code-generation-architecting-frontend-systems-for-true-ai-augmentation-16221/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

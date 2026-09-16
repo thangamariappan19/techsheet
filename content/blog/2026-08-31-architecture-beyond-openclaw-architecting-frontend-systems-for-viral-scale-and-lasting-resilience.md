@@ -1,10 +1,10 @@
----
+﻿---
 title: "Beyond OpenClaw: Architecting Frontend Systems for Viral Scale and Lasting Resilience"
 date: "2026-08-31"
 description: "From OpenClaw's explosive growth to GitHub outages, learn how senior architects build resilient, scalable frontend systems, manage tech debt, and leverage automation for future-proof web experiences."
 tags: ["Frontend Architecture","Scaling","Technical Debt","Resilience","DevOps","AI in Frontend","Engineering Leadership","Micro-Frontends"]
 headerImage: "https://picsum.photos/seed/beyond-openclaw-architecting-frontend-systems-for-viral-scale-and-lasting-resilience-65093/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

@@ -1,10 +1,10 @@
----
+﻿---
 title: "Cracking the Code on SPA Memory Leaks: Hunting Detached DOM Nodes and Closure Clutter"
 date: "2026-05-21"
 description: "Master the art of debugging JavaScript memory leaks. Learn how to identify, trace, and resolve detached DOM nodes and closure leaks in React and Angular using Chrome DevTools."
 tags: ["javascript","performance","react","debugging","web-development"]
 headerImage: "https://picsum.photos/seed/cracking-the-code-on-spa-memory-leaks-hunting-detached-dom-nodes-and-closure-clutter-29827/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

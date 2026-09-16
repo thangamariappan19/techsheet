@@ -1,10 +1,10 @@
----
+﻿---
 title: "OpenAI's GPT-5.6, Zero Data Retention, Google Sheets Canvas: A Pivotal Week for AI Developers"
 date: "2026-08-25"
 description: "On August 25, 2026, OpenAI's GPT-5.6 boosts dev workflows and privacy. Google's Sheets canvas revolutionizes data. Deep dive into AI's crucial week for developers."
 tags: ["AI Development","OpenAI","Google AI","GPT-5.6","Data Privacy","Developer Tools","Generative AI","TechSheet Analysis","Front-End Architecture"]
 headerImage: "https://picsum.photos/seed/openai-s-gpt-5-6-zero-data-retention-google-sheets-canvas-a-pivotal-week-for-ai-developers-3413/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

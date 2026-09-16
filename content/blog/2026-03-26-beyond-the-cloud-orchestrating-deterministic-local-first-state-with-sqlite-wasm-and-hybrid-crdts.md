@@ -1,10 +1,10 @@
----
+﻿---
 title: "Beyond the Cloud: Orchestrating Deterministic Local-First State with SQLite-WASM and Hybrid CRDTs"
 date: "2026-03-26"
 description: "A deep dive into building ultra-responsive, offline-capable web applications using SQLite-WASM and Hybrid CRDTs for seamless conflict-free state synchronization."
 tags: ["Local-First","WebAssembly","CRDT","SQLite","Distributed Systems"]
 headerImage: "https://picsum.photos/seed/beyond-the-cloud-orchestrating-deterministic-local-first-state-with-sqlite-wasm-and-hybrid-crdts-84076/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

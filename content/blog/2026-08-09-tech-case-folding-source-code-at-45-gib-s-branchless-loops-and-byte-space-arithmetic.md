@@ -1,10 +1,10 @@
----
+﻿---
 title: "Case-Folding Source Code at 45+ GiB/s: Branchless Loops and Byte-Space Arithmetic"
 date: "2026-08-09"
 description: "An architectural deep-dive into how modern search engines case-fold billions of bytes of source code at hardware memory limits using branch-free SWAR and byte-space arithmetic."
 tags: ["Performance","Systems Architecture","Algorithms","Code Search"]
 headerImage: "https://picsum.photos/seed/case-folding-source-code-at-45-gib-s-branchless-loops-and-byte-space-arithmetic-6289/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

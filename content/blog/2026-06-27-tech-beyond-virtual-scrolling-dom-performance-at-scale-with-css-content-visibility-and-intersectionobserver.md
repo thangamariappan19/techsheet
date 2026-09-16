@@ -1,10 +1,10 @@
----
+﻿---
 title: "Beyond Virtual Scrolling: DOM Performance at Scale with CSS content-visibility and IntersectionObserver"
 date: "2026-06-27"
 description: "Discover how to render 100,000+ DOM nodes at 60fps without heavy JavaScript virtualization libraries. A technical deep-dive into content-visibility and IntersectionObserver."
 tags: ["frontend","performance","css","javascript","web-architecture"]
 headerImage: "https://picsum.photos/seed/beyond-virtual-scrolling-dom-performance-at-scale-with-css-content-visibility-and-intersectionobserver-99462/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

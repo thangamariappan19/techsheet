@@ -1,10 +1,10 @@
----
+﻿---
 title: "Architecting the Un-Breakable Frontend: Boundaries, State Traps, and the Myth of Micro-Frontends"
 date: "2026-06-17"
 description: "Explore the realities of scaling frontend systems. Learn how to design robust architectural boundaries, manage distributed state, and decide if micro-frontends are truly worth the operational tax."
 tags: ["Frontend Architecture","Software Engineering","Micro-Frontends","Web Development"]
 headerImage: "https://picsum.photos/seed/architecting-the-un-breakable-frontend-boundaries-state-traps-and-the-myth-of-micro-frontends-61268/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

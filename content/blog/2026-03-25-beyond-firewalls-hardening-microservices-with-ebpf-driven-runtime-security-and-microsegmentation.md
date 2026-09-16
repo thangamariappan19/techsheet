@@ -1,10 +1,10 @@
----
+﻿---
 title: "Beyond Firewalls: Hardening Microservices with eBPF-Driven Runtime Security and Microsegmentation"
 date: "2026-03-25"
 description: "Discover how to leverage eBPF for kernel-level security observability and fine-grained microsegmentation, bypassing the performance bottlenecks of traditional iptables."
 tags: ["eBPF","CloudNative","CyberSecurity","Kubernetes","DevSecOps"]
 headerImage: "https://picsum.photos/seed/beyond-firewalls-hardening-microservices-with-ebpf-driven-runtime-security-and-microsegmentation-39983/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

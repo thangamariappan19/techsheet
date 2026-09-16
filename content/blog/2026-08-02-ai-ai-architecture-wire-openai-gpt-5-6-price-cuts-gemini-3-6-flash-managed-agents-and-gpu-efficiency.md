@@ -1,10 +1,10 @@
----
+﻿---
 title: "AI Architecture Wire: OpenAI GPT-5.6 Price Cuts, Gemini 3.6 Flash Managed Agents, and GPU Efficiency"
 date: "2026-08-02"
 description: "Deep technical analysis of OpenAI GPT-5.6 Luna/Terra pricing, Google Gemini API Managed Agents with 3.6 Flash hooks, and GPU infrastructure optimization."
 tags: ["OpenAI","Gemini API","AI Agents","LLM Architecture","Cloud Infrastructure"]
 headerImage: "https://picsum.photos/seed/ai-architecture-wire-openai-gpt-5-6-price-cuts-gemini-3-6-flash-managed-agents-and-gpu-efficiency-54912/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

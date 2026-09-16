@@ -1,10 +1,10 @@
----
+﻿---
 title: "Mastering React Performance: Render Orchestration and Advanced State Partitioning Patterns"
 date: "2026-04-17"
 description: "Learn how to optimize large-scale React applications using state partitioning and render orchestration. Move beyond React.memo to build truly scalable front-end architectures."
 tags: ["React","Performance","Frontend Architecture","JavaScript"]
 headerImage: "https://picsum.photos/seed/mastering-react-performance-render-orchestration-and-advanced-state-partitioning-patterns-97680/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

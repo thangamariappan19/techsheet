@@ -1,10 +1,10 @@
----
+﻿---
 title: "The AI Velocity Trap: Why Frontend Ownership and Supply Chain Are Your Real Bottlenecks"
 date: "2026-07-26"
 description: "AI reduced the cost of writing UI code to zero, but multiplied maintenance costs. Here is how modern frontend architects maintain governance and stability."
 tags: ["Frontend Architecture","Engineering Leadership","Web Security","Software Supply Chain","TypeScript"]
 headerImage: "https://picsum.photos/seed/the-ai-velocity-trap-why-frontend-ownership-and-supply-chain-are-your-real-bottlenecks-30793/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

@@ -1,10 +1,10 @@
----
+﻿---
 title: "Astra's Ascent: GPT-6 Astra Powers Autonomous Systems and Data Agents, Reshaping Development on September 14, 2026"
 date: "2026-09-14"
 description: "On September 14, 2026, OpenAI's GPT-6 Astra makes headlines by powering autonomous end-to-end systems for Perplexity and self-testing for Devin, alongside new data and financial services agents. This analysis explores the developer implications of AI moving from co-pilot to co-worker, democratizing data access, and the critical shift towards agent orchestration and validation."
 tags: ["AI Agents","GPT-6 Astra","OpenAI","ChatGPT Work","DevOps","Data Science","Front-End Development","TechSheet","News Analysis"]
 headerImage: "https://picsum.photos/seed/astra-s-ascent-gpt-6-astra-powers-autonomous-systems-and-data-agents-reshaping-development-on-september-14-2026-28970/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

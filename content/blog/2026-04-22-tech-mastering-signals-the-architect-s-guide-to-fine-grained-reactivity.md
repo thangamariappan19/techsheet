@@ -1,10 +1,10 @@
----
+﻿---
 title: "Mastering Signals: The Architect's Guide to Fine-Grained Reactivity"
 date: "2026-04-22"
 description: "A deep-dive into Signals in Angular and React. Learn why fine-grained reactivity is replacing the Virtual DOM as the standard for high-performance web applications."
 tags: ["Web Performance","Angular","React","Frontend Architecture","Signals"]
 headerImage: "https://picsum.photos/seed/mastering-signals-the-architect-s-guide-to-fine-grained-reactivity-10970/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

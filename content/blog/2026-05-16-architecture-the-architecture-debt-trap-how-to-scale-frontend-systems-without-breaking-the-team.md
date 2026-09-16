@@ -1,10 +1,10 @@
----
+﻿---
 title: "The Architecture Debt Trap: How to Scale Frontend Systems Without Breaking the Team"
 date: "2026-05-16"
 description: "Learn the secrets of scalable frontend architecture, from domain-driven state management to the strategic implementation of micro-frontends for senior engineers and architects."
 tags: ["Frontend Architecture","Scalability","Web Development","Technical Leadership"]
 headerImage: "https://picsum.photos/seed/the-architecture-debt-trap-how-to-scale-frontend-systems-without-breaking-the-team-10461/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

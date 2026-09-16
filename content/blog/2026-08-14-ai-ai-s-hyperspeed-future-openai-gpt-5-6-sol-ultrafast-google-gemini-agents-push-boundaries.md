@@ -1,10 +1,10 @@
----
+﻿---
 title: "AI's Hyperspeed Future: OpenAI GPT-5.6 Sol Ultrafast & Google Gemini Agents Push Boundaries"
 date: "2026-08-14"
 description: "This week's AI news analysis: OpenAI's GPT-5.6 Sol Ultrafast mode delivers 14x speed, alongside major Google Gemini API agent enhancements. The race for production-ready, high-performance agentic AI is accelerating, fundamentally changing how developers build."
 tags: ["AI Agents","OpenAI GPT-5.6","Google Gemini API","Ultrafast AI","Developer Tools","AI Performance","TechSheet Analysis"]
 headerImage: "https://picsum.photos/seed/ai-s-hyperspeed-future-openai-gpt-5-6-sol-ultrafast-google-gemini-agents-push-boundaries-29603/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

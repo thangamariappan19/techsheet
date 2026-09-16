@@ -1,10 +1,10 @@
----
+﻿---
 title: "Beyond Code Generation: How Agentic AI is Rewriting the Front-End Architecture Playbook"
 date: "2026-05-21"
 description: "Discover how the latest updates from OpenAI o1, Claude 3.5, and Gemini 2.0 are shifting front-end development from static code autocomplete to autonomous agentic canvases and generative UI."
 tags: ["AI-Trends","Frontend-Architecture","Web-Development","Generative-UI"]
 headerImage: "https://picsum.photos/seed/beyond-code-generation-how-agentic-ai-is-rewriting-the-front-end-architecture-playbook-61049/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

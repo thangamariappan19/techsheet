@@ -1,10 +1,10 @@
----
+﻿---
 title: "Beyond Chatbots: Google’s Managed Agents, OpenAI’s GPT-Red, and the Shift to Autonomous Production Architecture"
 date: "2026-07-21"
 description: "An architectural breakdown of Google's Managed Agents (MCP) and OpenAI's GPT-Red, analyzing the shift to long-horizon agentic systems."
 tags: ["AI Agents","API Design","Web Architecture","Security"]
 headerImage: "https://picsum.photos/seed/beyond-chatbots-google-s-managed-agents-openai-s-gpt-red-and-the-shift-to-autonomous-production-architecture-70379/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

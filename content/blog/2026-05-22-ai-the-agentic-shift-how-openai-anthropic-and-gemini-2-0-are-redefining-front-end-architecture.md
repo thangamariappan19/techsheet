@@ -1,10 +1,10 @@
----
+﻿---
 title: "The Agentic Shift: How OpenAI, Anthropic, and Gemini 2.0 are Redefining Front-End Architecture"
 date: "2026-05-22"
 description: "Explore how the newest AI models from OpenAI, Anthropic, and Google Gemini are shifting front-end development from simple API wrappers to real-time Generative UI and agentic client-side architectures."
 tags: ["AI News","Front-End Architecture","Generative UI","NextJS"]
 headerImage: "https://picsum.photos/seed/the-agentic-shift-how-openai-anthropic-and-gemini-2-0-are-redefining-front-end-architecture-3255/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

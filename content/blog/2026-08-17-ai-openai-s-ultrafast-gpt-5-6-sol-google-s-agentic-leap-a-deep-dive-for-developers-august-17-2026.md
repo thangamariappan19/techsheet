@@ -1,10 +1,10 @@
----
+﻿---
 title: "OpenAI's Ultrafast GPT-5.6 Sol & Google's Agentic Leap: A Deep Dive for Developers (August 17, 2026)"
 date: "2026-08-17"
 description: "On August 17, 2026, OpenAI unveiled Ultrafast GPT-5.6 Sol and builder guides for agents. Google advanced Gemini API Managed Agents. Analysis for devs."
 tags: ["AI Development","OpenAI","Google AI","GPT-5.6","Gemini API","AI Agents","Frontend Architecture","TechSheet"]
 headerImage: "https://picsum.photos/seed/openai-s-ultrafast-gpt-5-6-sol-google-s-agentic-leap-a-deep-dive-for-developers-august-17-2026-50056/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

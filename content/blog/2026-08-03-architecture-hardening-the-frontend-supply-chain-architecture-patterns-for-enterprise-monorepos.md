@@ -1,10 +1,10 @@
----
+﻿---
 title: "Hardening the Frontend Supply Chain: Architecture Patterns for Enterprise Monorepos"
 date: "2026-08-03"
 description: "Learn how senior frontend architects isolate dependencies, mitigate npm supply chain risks, and maintain engineering velocity in large monorepos."
 tags: ["Frontend Architecture","Supply Chain Security","Monorepo","Engineering Leadership"]
 headerImage: "https://picsum.photos/seed/hardening-the-frontend-supply-chain-architecture-patterns-for-enterprise-monorepos-30901/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

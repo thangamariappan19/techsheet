@@ -1,10 +1,10 @@
----
+﻿---
 title: "The Architect's Blueprint: Building Resilient Frontend Systems for Scale"
 date: "2026-05-06"
 description: "An in-depth guide for senior engineers and architects on scaling frontend systems using domain-driven design, micro-frontends, and strategic state management."
 tags: ["Frontend Architecture","Software Engineering","Technical Leadership","Micro-frontends"]
 headerImage: "https://picsum.photos/seed/the-architect-s-blueprint-building-resilient-frontend-systems-for-scale-93335/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

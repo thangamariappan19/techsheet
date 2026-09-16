@@ -1,10 +1,10 @@
----
+﻿---
 title: "Demystifying the React Server Components Wire Format: A Deep-Dive into RSC Payloads"
 date: "2026-06-08"
 description: "Unpack the inner workings of React Server Components (RSC). Learn how the Flight protocol serializes components over the network, how to read RSC payloads, and how to debug streaming errors."
 tags: ["React","Next.js","Web Performance","Frontend Architecture"]
 headerImage: "https://picsum.photos/seed/demystifying-the-react-server-components-wire-format-a-deep-dive-into-rsc-payloads-64019/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

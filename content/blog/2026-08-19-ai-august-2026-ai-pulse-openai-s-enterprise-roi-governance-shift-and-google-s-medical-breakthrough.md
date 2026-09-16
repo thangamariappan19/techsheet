@@ -1,10 +1,10 @@
----
+﻿---
 title: "August 2026 AI Pulse: OpenAI's Enterprise ROI, Governance Shift, and Google's Medical Breakthrough"
 date: "2026-08-19"
 description: "This week's AI news reveals OpenAI's massive enterprise value, a new era of AI governance, and Google's groundbreaking medical AI. What developers need to know now."
 tags: ["AI News","OpenAI","Google AI","Enterprise AI","AI Safety","Medical AI","Developer Productivity","TechSheet"]
 headerImage: "https://picsum.photos/seed/august-2026-ai-pulse-openai-s-enterprise-roi-governance-shift-and-google-s-medical-breakthrough-38038/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

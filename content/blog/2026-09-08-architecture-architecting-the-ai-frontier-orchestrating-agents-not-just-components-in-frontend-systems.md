@@ -1,10 +1,10 @@
----
+﻿---
 title: "Architecting the AI Frontier: Orchestrating Agents, Not Just Components, in Frontend Systems"
 date: "2026-09-08"
 description: "The AI revolution demands a new frontend architecture mindset. Learn how to move beyond basic Copilot assistance to orchestrate AI agents for scalable, maintainable systems."
 tags: ["Frontend Architecture","AI in Frontend","Technical Debt","Scaling Systems","Engineering Leadership","GitHub Copilot","Agent Orchestration"]
 headerImage: "https://picsum.photos/seed/architecting-the-ai-frontier-orchestrating-agents-not-just-components-in-frontend-systems-66858/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

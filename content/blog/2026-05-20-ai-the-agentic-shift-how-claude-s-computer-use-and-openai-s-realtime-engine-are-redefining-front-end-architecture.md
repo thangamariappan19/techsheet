@@ -1,10 +1,10 @@
----
+﻿---
 title: "The Agentic Shift: How Claude's Computer Use and OpenAI's Realtime Engine are Redefining Front-End Architecture"
 date: "2026-05-20"
 description: "Discover how the latest updates from Anthropic, OpenAI, and Google Gemini are shifting front-end development from human-centric UIs to agent-ready applications."
 tags: ["AI-Trends","Web-Architecture","Anthropic-Claude","OpenAI","Front-End-Development"]
 headerImage: "https://picsum.photos/seed/the-agentic-shift-how-claude-s-computer-use-and-openai-s-realtime-engine-are-redefining-front-end-architecture-82989/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

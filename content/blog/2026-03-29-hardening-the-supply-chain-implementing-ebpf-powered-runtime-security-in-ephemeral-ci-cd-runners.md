@@ -1,10 +1,10 @@
----
+﻿---
 title: "Hardening the Supply Chain: Implementing eBPF-Powered Runtime Security in Ephemeral CI/CD Runners"
 date: "2026-03-29"
 description: "Discover how to leverage eBPF to monitor and secure ephemeral CI/CD environments in real-time, preventing supply chain attacks and credential exfiltration through granular kernel-level observability."
 tags: ["DevOps","eBPF","Cybersecurity","CI/CD","Cloud Native"]
 headerImage: "https://picsum.photos/seed/hardening-the-supply-chain-implementing-ebpf-powered-runtime-security-in-ephemeral-ci-cd-runners-59416/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

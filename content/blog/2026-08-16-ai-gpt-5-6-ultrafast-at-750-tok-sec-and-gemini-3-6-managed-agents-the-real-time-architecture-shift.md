@@ -1,10 +1,10 @@
----
+﻿---
 title: "GPT-5.6 Ultrafast at 750 Tok/Sec and Gemini 3.6 Managed Agents: The Real-Time Architecture Shift"
 date: "2026-08-16"
 description: "Analysis of OpenAI's GPT-5.6 Sol Ultrafast tier, Google's Gemini 3.6 Flash Managed Agents, and what these mid-August 2026 releases mean for AI system design."
 tags: ["OpenAI","Google AI","Gemini","GPT-5.6","System Architecture","AI Agents"]
 headerImage: "https://picsum.photos/seed/gpt-5-6-ultrafast-at-750-tok-sec-and-gemini-3-6-managed-agents-the-real-time-architecture-shift-33449/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

@@ -1,10 +1,10 @@
----
+﻿---
 title: "AI's Billion-Dollar Bets: ChatGPT's Financial Surge, Ecosystem Volatility, and the Rise of Prompt-Driven Productivity"
 date: "2026-09-01"
 description: "TechSheet analysis: OpenAI's ChatGPT Ads hits $1B ARR, a critical contract wind-down post-acquisition, and Google's Sheets canvas redefining data interaction. What it means for developers in September 2026."
 tags: ["AI News","OpenAI","Google AI","ChatGPT","Sheets Canvas","Developer Tools","AI Strategy","Front-End Architecture","TechSheet"]
 headerImage: "https://picsum.photos/seed/ai-s-billion-dollar-bets-chatgpt-s-financial-surge-ecosystem-volatility-and-the-rise-of-prompt-driven-productivity-37286/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

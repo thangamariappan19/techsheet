@@ -1,10 +1,10 @@
----
+﻿---
 title: "Mastering the React Compiler: Why You Might Never Need useMemo Again"
 date: "2026-05-17"
 description: "A technical deep-dive into the React Compiler (React Forget). Learn how automatic memoization works, explore real-world code comparisons, and understand the future of React performance."
 tags: ["React","Performance","Frontend Architecture","JavaScript"]
 headerImage: "https://picsum.photos/seed/mastering-the-react-compiler-why-you-might-never-need-usememo-again-95828/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

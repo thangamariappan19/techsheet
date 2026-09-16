@@ -1,10 +1,10 @@
----
+﻿---
 title: "Architectural Deep-Dive: Building Hermetic Test Harnesses for AI Agent Skills and MCP Servers"
 date: "2026-08-14"
 description: "Learn how to build transparent mock layers and deterministic AX evaluation suites for tool-calling AI agents and MCP servers without mutating production data."
 tags: ["ai-agents","testing","mcp","architecture","devops"]
 headerImage: "https://picsum.photos/seed/architectural-deep-dive-building-hermetic-test-harnesses-for-ai-agent-skills-and-mcp-servers-77388/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

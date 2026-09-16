@@ -1,10 +1,10 @@
----
+﻿---
 title: "Breaking: OpenAI GPT-5.6 Sol's Ultrafast Leap & Google AMIE Redefine Real-Time AI"
 date: "2026-08-18"
 description: "August 18, 2026. OpenAI's 14x faster GPT-5.6 Sol and the new Responses API, alongside Google's AMIE clinical AI, signal a new era for real-time, agentic AI development."
 tags: ["AI News","GPT-5.6","OpenAI","Google AI","Real-Time AI","AI Agents","Cerebras","AMIE","Cybersecurity AI","Developer Tools"]
 headerImage: "https://picsum.photos/seed/breaking-openai-gpt-5-6-sol-s-ultrafast-leap-google-amie-redefine-real-time-ai-78884/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

@@ -1,10 +1,10 @@
----
+﻿---
 title: "Mastering INP: A Deep Dive into Optimizing Interaction to Next Paint in React 18 & 19"
 date: "2026-07-04"
 description: "Stop losing users to sluggish UI interactions. Learn how to diagnose, profile, and optimize Interaction to Next Paint (INP) using React's concurrent rendering features."
 tags: ["React","Web Performance","Frontend Architecture","Core Web Vitals"]
 headerImage: "https://picsum.photos/seed/mastering-inp-a-deep-dive-into-optimizing-interaction-to-next-paint-in-react-18-19-46208/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

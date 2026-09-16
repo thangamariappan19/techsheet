@@ -1,10 +1,10 @@
----
+﻿---
 title: "The Cost of Saying Yes: Architecting Frontend Systems for the Age of Cheap Code"
 date: "2026-07-20"
 description: "In 2026, writing frontend code is virtually free, but maintaining it is more expensive than ever. Discover how to architect your systems for durable ownership."
 tags: ["frontend-architecture","engineering-leadership","monorepos","technical-debt"]
 headerImage: "https://picsum.photos/seed/the-cost-of-saying-yes-architecting-frontend-systems-for-the-age-of-cheap-code-82609/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

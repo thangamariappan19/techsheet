@@ -1,10 +1,10 @@
----
+﻿---
 title: "AI Agent Architecture Matures: Analyzing Google Gemini's Remote MCP, OpenAI Presence, and Nunchaku 4-Bit Diffusion"
 date: "2026-07-26"
 description: "July 2026 news analysis: Google adds Remote MCP to Gemini Managed Agents, OpenAI launches Presence, and Hugging Face integrates Nunchaku 4-bit inference."
 tags: ["AI Agents","Gemini API","OpenAI","Hugging Face","Web Development"]
 headerImage: "https://picsum.photos/seed/ai-agent-architecture-matures-analyzing-google-gemini-s-remote-mcp-openai-presence-and-nunchaku-4-bit-diffusion-4103/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

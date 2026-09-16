@@ -1,10 +1,10 @@
----
+﻿---
 title: "Beyond Transformers: Harnessing Liquid Neural Networks (LNNs) for Real-Time Edge Intelligence"
 date: "2026-03-30"
 description: "Explore the shift from static AI models to Liquid Neural Networks. Learn how ODE-based continuous-time models are redefining time-series analysis and edge computing efficiency."
 tags: ["Liquid Neural Networks","Machine Learning","Edge Computing","Neural Circuit Policies","AI Architecture"]
 headerImage: "https://picsum.photos/seed/beyond-transformers-harnessing-liquid-neural-networks-lnns-for-real-time-edge-intelligence-65115/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

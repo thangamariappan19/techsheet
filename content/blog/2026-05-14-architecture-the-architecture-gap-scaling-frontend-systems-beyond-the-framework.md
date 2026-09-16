@@ -1,10 +1,10 @@
----
+﻿---
 title: "The Architecture Gap: Scaling Frontend Systems Beyond the Framework"
 date: "2026-05-14"
 description: "Discover how senior architects build resilient, scalable frontend systems by moving beyond framework hype to focus on state orchestration, modularity, and technical debt management."
 tags: ["Frontend Architecture","Micro Frontends","Technical Leadership","System Design"]
 headerImage: "https://picsum.photos/seed/the-architecture-gap-scaling-frontend-systems-beyond-the-framework-9894/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

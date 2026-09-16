@@ -1,10 +1,10 @@
----
+﻿---
 title: "The Distributed Frontend: Why Micro-Frontends Fail and How to Build a Pragmatic Federated System"
 date: "2026-05-22"
 description: "Most micro-frontend migrations fail because of operational complexity. Discover how to build a pragmatic, federated frontend architecture that scales without the overhead."
 tags: ["Frontend Architecture","Micro-frontends","Software Engineering","Technical Leadership"]
 headerImage: "https://picsum.photos/seed/the-distributed-frontend-why-micro-frontends-fail-and-how-to-build-a-pragmatic-federated-system-46049/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

@@ -1,10 +1,10 @@
----
+﻿---
 title: "Beyond Micro-Frontends: The Clean-Slice Architecture for Enterprise Web Apps"
 date: "2026-06-07"
 description: "Learn how to scale enterprise frontend codebases without the operational overhead of micro-frontends. Discover the Clean-Slice Architecture pattern, domain state isolation, and strict boundaries."
 tags: ["frontend-architecture","software-engineering","micro-frontends","state-management"]
 headerImage: "https://picsum.photos/seed/beyond-micro-frontends-the-clean-slice-architecture-for-enterprise-web-apps-10642/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

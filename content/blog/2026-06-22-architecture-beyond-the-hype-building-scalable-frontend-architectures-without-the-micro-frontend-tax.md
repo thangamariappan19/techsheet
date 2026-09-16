@@ -1,10 +1,10 @@
----
+﻿---
 title: "Beyond the Hype: Building Scalable Frontend Architectures Without the Micro-Frontend Tax"
 date: "2026-06-22"
 description: "Learn how to design high-performance, scalable frontend architectures. Discover the pitfalls of micro-frontends, smarter state management patterns, and actionable steps to align your engineering teams."
 tags: ["Frontend Architecture","Micro Frontends","Software Engineering","Web Performance"]
 headerImage: "https://picsum.photos/seed/beyond-the-hype-building-scalable-frontend-architectures-without-the-micro-frontend-tax-51993/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

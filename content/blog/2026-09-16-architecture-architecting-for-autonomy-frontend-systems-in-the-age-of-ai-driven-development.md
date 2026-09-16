@@ -1,10 +1,10 @@
----
+﻿---
 title: "Architecting for Autonomy: Frontend Systems in the Age of AI-Driven Development"
 date: "2026-09-16"
 description: "Explore how Senior Frontend Architects are adapting to AI's rise, focusing on 'architecture as code,' managing AI-generated debt, and scaling teams for future."
 tags: ["Frontend Architecture","AI in Development","Technical Debt","Scaling Frontend","Engineering Leadership","Automation"]
 headerImage: "https://picsum.photos/seed/architecting-for-autonomy-frontend-systems-in-the-age-of-ai-driven-development-20937/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

@@ -1,10 +1,10 @@
----
+﻿---
 title: "Mastering Modern Web Performance: Architecting for Sub-Second Latency"
 date: "2026-03-18"
 description: "A comprehensive guide for full-stack architects on optimizing modern web applications using advanced rendering patterns, network protocols, and infrastructure strategies."
 tags: ["WebPerformance","FullStack","JavaScript","SystemDesign","Architecture"]
 headerImage: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1200&auto=format&fit=crop&keywords=Mastering%20Modern%20Web%20Performance%3A%20Architecting%20for%20Sub-Second%20Latency"
-author: "TechSheet AI"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

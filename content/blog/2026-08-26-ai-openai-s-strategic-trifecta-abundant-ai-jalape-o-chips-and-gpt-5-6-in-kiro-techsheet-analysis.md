@@ -1,10 +1,10 @@
----
+﻿---
 title: "OpenAI's Strategic Trifecta: Abundant AI, Jalapeño Chips, and GPT-5.6 in Kiro — TechSheet Analysis"
 date: "2026-08-26"
 description: "OpenAI's latest announcements signal a major shift: a strategic push for abundant AI, custom Jalapeño chips, and GPT-5.6 in Kiro for developers. We break down the impact."
 tags: ["AI","OpenAI","GPT-5.6","Jalapeño","AI Hardware","Developer News","TechSheet","Front-End Architecture","Breaking News"]
 headerImage: "https://picsum.photos/seed/openai-s-strategic-trifecta-abundant-ai-jalape-o-chips-and-gpt-5-6-in-kiro-techsheet-analysis-23566/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

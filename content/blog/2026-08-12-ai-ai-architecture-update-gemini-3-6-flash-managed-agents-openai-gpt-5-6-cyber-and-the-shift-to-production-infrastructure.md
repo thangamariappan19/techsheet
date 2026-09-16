@@ -1,10 +1,10 @@
----
+﻿---
 title: "AI Architecture Update: Gemini 3.6 Flash Managed Agents, OpenAI GPT-5.6-Cyber, and the Shift to Production Infrastructure"
 date: "2026-08-12"
 description: "An architectural breakdown of August 12, 2026 news: Google Gemini 3.6 Flash Managed Agents, OpenAI GPT-5.6 domain models, and ad-supported AI tiers."
 tags: ["AI Architecture","Gemini API","OpenAI","Cybersecurity","Agentic Workflows"]
 headerImage: "https://picsum.photos/seed/ai-architecture-update-gemini-3-6-flash-managed-agents-openai-gpt-5-6-cyber-and-the-shift-to-production-infrastructure-39505/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

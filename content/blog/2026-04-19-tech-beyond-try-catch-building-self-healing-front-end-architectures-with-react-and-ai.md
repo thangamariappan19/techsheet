@@ -1,10 +1,10 @@
----
+﻿---
 title: "Beyond Try-Catch: Building Self-Healing Front-End Architectures with React and AI"
 date: "2026-04-19"
 description: "Discover how to move beyond basic error boundaries to create self-healing UIs using React and AI-driven diagnostic agents. A deep dive into resilient front-end systems."
 tags: ["React","AI","Software Architecture","Frontend Development","JavaScript"]
 headerImage: "https://picsum.photos/seed/beyond-try-catch-building-self-healing-front-end-architectures-with-react-and-ai-20963/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

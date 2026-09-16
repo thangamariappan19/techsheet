@@ -1,10 +1,10 @@
----
+﻿---
 title: "Beyond the Hype: A Pragmatic Guide to Micro-Frontends and Federated State Architecture"
 date: "2026-05-23"
 description: "Scale your frontend architecture without losing your sanity. Learn the real-world trade-offs of micro-frontends, state federation, and why a modular monolith might be your best architectural choice."
 tags: ["Frontend Architecture","Micro Frontends","State Management","Software Engineering"]
 headerImage: "https://picsum.photos/seed/beyond-the-hype-a-pragmatic-guide-to-micro-frontends-and-federated-state-architecture-98009/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

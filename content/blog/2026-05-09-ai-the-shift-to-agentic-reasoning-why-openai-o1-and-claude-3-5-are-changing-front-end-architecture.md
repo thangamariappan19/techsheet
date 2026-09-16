@@ -1,10 +1,10 @@
----
+﻿---
 title: "The Shift to Agentic Reasoning: Why OpenAI o1 and Claude 3.5 are Changing Front-End Architecture"
 date: "2026-05-09"
 description: "Explore the latest AI trends from OpenAI, Anthropic, and Google. Learn how reasoning models and computer-use APIs are redefining the role of developers and architects in 2025."
 tags: ["AI Trends","Front-End Architecture","OpenAI","Anthropic","Developer Productivity"]
 headerImage: "https://picsum.photos/seed/the-shift-to-agentic-reasoning-why-openai-o1-and-claude-3-5-are-changing-front-end-architecture-45267/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

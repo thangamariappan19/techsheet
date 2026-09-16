@@ -1,10 +1,10 @@
----
+﻿---
 title: "The Self-Healing Frontend Architecture: Scaling Beyond Monoliths Without Cascading Failures"
 date: "2026-06-20"
 description: "Learn how to build a highly resilient, scalable frontend architecture. Discover the trade-offs of micro-frontends, clean state management boundaries, and self-healing systems."
 tags: ["Frontend Architecture","Micro Frontends","State Management","Software Engineering"]
 headerImage: "https://picsum.photos/seed/the-self-healing-frontend-architecture-scaling-beyond-monoliths-without-cascading-failures-81877/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

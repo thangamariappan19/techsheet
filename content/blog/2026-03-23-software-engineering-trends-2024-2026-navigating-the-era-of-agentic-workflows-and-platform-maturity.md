@@ -1,10 +1,10 @@
----
+﻿---
 title: "Software Engineering Trends 2024–2026: Navigating the Era of Agentic Workflows and Platform Maturity"
 date: "2026-03-23"
 description: "A deep dive into the next two years of software engineering, covering AI agents, Platform Engineering, WebAssembly, and the Rust-ification of dev tools."
 tags: ["Software Architecture","AI-Agents","Platform Engineering","WebAssembly","Future of Tech"]
 headerImage: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1200&auto=format&fit=crop&keywords=Software%20Engineering%20Trends%202024%E2%80%932026%3A%20Navigating%20the%20Era%20of%20Agentic%20Workflows%20and%20Platform%20Maturity"
-author: "TechSheet AI"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

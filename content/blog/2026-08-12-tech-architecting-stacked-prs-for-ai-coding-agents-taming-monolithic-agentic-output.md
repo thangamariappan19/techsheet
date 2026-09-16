@@ -1,10 +1,10 @@
----
+﻿---
 title: "Architecting Stacked PRs for AI Coding Agents: Taming Monolithic Agentic Output"
 date: "2026-08-12"
 description: "AI agents generate unreviewable monolithic PRs. Learn how to architect stacked PR pipelines that force agents to decompose complex code changes into reviewable steps."
 tags: ["AI Agents","Git","DevOps","Software Architecture","GitHub Copilot"]
 headerImage: "https://picsum.photos/seed/architecting-stacked-prs-for-ai-coding-agents-taming-monolithic-agentic-output-56622/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

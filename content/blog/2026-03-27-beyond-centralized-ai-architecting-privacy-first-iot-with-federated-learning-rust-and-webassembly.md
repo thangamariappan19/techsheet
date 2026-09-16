@@ -1,10 +1,10 @@
----
+﻿---
 title: "Beyond Centralized AI: Architecting Privacy-First IoT with Federated Learning, Rust, and WebAssembly"
 date: "2026-03-27"
 description: "Discover how to leverage Federated Learning and WebAssembly to build decentralized, privacy-preserving IoT systems that train machine learning models at the edge without exposing raw data."
 tags: ["IoT","Edge Computing","Federated Learning","Rust","WebAssembly"]
 headerImage: "https://picsum.photos/seed/beyond-centralized-ai-architecting-privacy-first-iot-with-federated-learning-rust-and-webassembly-57318/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

@@ -1,10 +1,10 @@
----
+﻿---
 title: "Mastering AI Agent Skill Testing: A Deep Dive into Mocking External APIs for Robust Evaluations"
 date: "2026-09-04"
 description: "Unlock the secrets to efficient and reliable AI agent skill development. This deep-dive explores advanced mocking strategies to test your agents against external APIs without cost, rate limits, or production data mutation, tailored for senior engineers."
 tags: ["AI Agents","LLM Development","API Testing","Mocking","Software Architecture","DevOps","Testing Strategy"]
 headerImage: "https://picsum.photos/seed/mastering-ai-agent-skill-testing-a-deep-dive-into-mocking-external-apis-for-robust-evaluations-74349/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

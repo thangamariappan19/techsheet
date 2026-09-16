@@ -1,10 +1,10 @@
----
+﻿---
 title: "AI's Shifting Alliances, Clinical Breakthroughs, and Global Reach: Week in Review (Aug 30, 2026)"
 date: "2026-08-30"
 description: "This week, OpenAI's unexpected move with Cursor, Google's AMIE's clinical debut, and strategic global AI expansion redefine developer priorities. Deep analysis for TechSheet."
 tags: ["AI News Analysis","OpenAI","Google AI","Developer Strategy","AI Partnerships","Healthcare AI","AI Education"]
 headerImage: "https://picsum.photos/seed/ai-s-shifting-alliances-clinical-breakthroughs-and-global-reach-week-in-review-aug-30-2026-3572/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

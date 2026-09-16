@@ -1,10 +1,10 @@
----
+﻿---
 title: "GPT-6 Astra and the 22M RPS Era: Architectural Analysis of OpenAI's Latest Breakthroughs"
 date: "2026-09-12"
 description: "Analysis of OpenAI's GPT-6 Astra integration into Devin and Perplexity, and the Habitat storage engine powering 1 billion users at 22M RPS."
 tags: ["Artificial Intelligence","System Architecture","OpenAI","DevOps","Software Engineering"]
 headerImage: "https://picsum.photos/seed/gpt-6-astra-and-the-22m-rps-era-architectural-analysis-of-openai-s-latest-breakthroughs-11613/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

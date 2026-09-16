@@ -1,10 +1,10 @@
----
+﻿---
 title: "AI Architecture Shift: OpenAI Drops GPT-5.6 Pricing, Google Unveils Gemini 3.6 Flash Hooks, and GPU Efficiency Takes Center Stage"
 date: "2026-08-03"
 description: "Analysis of August 3, 2026 AI news: GPT-5.6 Luna/Terra price drops, Google Gemini API Managed Agents updates, and Hugging Face GPU optimization."
 tags: ["AI","OpenAI","GoogleGemini","Architecture","DevOps"]
 headerImage: "https://picsum.photos/seed/ai-architecture-shift-openai-drops-gpt-5-6-pricing-google-unveils-gemini-3-6-flash-hooks-and-gpu-efficiency-takes-center-stage-1120/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

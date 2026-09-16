@@ -1,10 +1,10 @@
----
+﻿---
 title: "The AI Paradigm Shift: How o1, Claude 3.5, and Gemini 2.0 are Rewriting the Front-End Playbook"
 date: "2026-04-07"
 description: "Explore the latest AI breakthroughs from OpenAI, Anthropic, and Google. Learn how reasoning models and agentic features are transforming software architecture in 2024."
 tags: ["AI Trends","OpenAI","Anthropic","Web Architecture","Software Engineering"]
 headerImage: "https://picsum.photos/seed/the-ai-paradigm-shift-how-o1-claude-3-5-and-gemini-2-0-are-rewriting-the-front-end-playbook-45782/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

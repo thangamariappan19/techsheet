@@ -1,10 +1,10 @@
----
+﻿---
 title: "Architectural Guardrails for the Modern Frontend Monorepo"
 date: "2026-08-02"
 description: "Scale your frontend architecture safely. Learn how to manage supply chain risks, dependency fatigue, and AI-driven code expansion without losing performance."
 tags: ["Frontend Architecture","Monorepo","Security","Engineering Leadership","Performance"]
 headerImage: "https://picsum.photos/seed/architectural-guardrails-for-the-modern-frontend-monorepo-40551/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

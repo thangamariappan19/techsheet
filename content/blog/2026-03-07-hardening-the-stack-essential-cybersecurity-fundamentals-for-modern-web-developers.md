@@ -1,10 +1,10 @@
----
+﻿---
 title: "Hardening the Stack: Essential Cybersecurity Fundamentals for Modern Web Developers"
 date: "2026-03-07"
 description: "A comprehensive guide for web developers on cybersecurity fundamentals, covering OWASP Top 10, secure coding practices, and defensive architecture to build resilient applications."
 tags: ["Cybersecurity","Web Development","AppSec","Software Architecture"]
 headerImage: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1200&auto=format&fit=crop&keywords=Hardening%20the%20Stack%3A%20Essential%20Cybersecurity%20Fundamentals%20for%20Modern%20Web%20Developers"
-author: "TechSheet AI"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

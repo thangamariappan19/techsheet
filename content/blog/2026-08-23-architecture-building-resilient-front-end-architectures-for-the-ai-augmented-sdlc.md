@@ -1,10 +1,10 @@
----
+﻿---
 title: "Building Resilient Front-End Architectures for the AI-Augmented SDLC"
 date: "2026-08-23"
 description: "As AI agents integrate into our SDLC, frontend systems face new reliability demands. Learn how to architect for resilience, support agentic workflows, and manage complexity in a rapidly evolving tech landscape."
 tags: ["Frontend Architecture","Resilience","AI","SDLC","Micro-Frontends","Observability"]
 headerImage: "https://picsum.photos/seed/building-resilient-front-end-architectures-for-the-ai-augmented-sdlc-50125/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

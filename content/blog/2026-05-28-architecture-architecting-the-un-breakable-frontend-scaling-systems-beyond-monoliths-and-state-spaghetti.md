@@ -1,10 +1,10 @@
----
+﻿---
 title: "Architecting the Un-breakable Frontend: Scaling Systems Beyond Monoliths and State Spaghetti"
 date: "2026-05-28"
 description: "Discover how to design scalable, maintainable frontend systems that survive hyper-growth. Learn practical strategies for micro-frontends, state management boundaries, and developer experience."
 tags: ["Frontend Architecture","Software Engineering","Micro Frontends","Technical Leadership","Web Development"]
 headerImage: "https://picsum.photos/seed/architecting-the-un-breakable-frontend-scaling-systems-beyond-monoliths-and-state-spaghetti-55645/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

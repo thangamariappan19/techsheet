@@ -1,10 +1,10 @@
----
+﻿---
 title: "Architecting for Evolvability: Navigating Technical Debt in AI-Assisted Frontends"
 date: "2026-08-27"
 description: "Master frontend architecture by designing for change. Learn to manage technical debt, leverage AI responsibly, and build resilient, maintainable systems for the long haul."
 tags: ["Frontend Architecture","Technical Debt","Evolvability","AI in Frontend","Engineering Leadership","System Design"]
 headerImage: "https://picsum.photos/seed/architecting-for-evolvability-navigating-technical-debt-in-ai-assisted-frontends-49564/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

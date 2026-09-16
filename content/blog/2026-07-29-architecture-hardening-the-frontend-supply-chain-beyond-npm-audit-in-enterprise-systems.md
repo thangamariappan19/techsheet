@@ -1,10 +1,10 @@
----
+﻿---
 title: "Hardening the Frontend Supply Chain: Beyond 'npm audit' in Enterprise Systems"
 date: "2026-07-29"
 description: "Discover how frontend architects protect mission-critical web apps against software supply chain attacks through dependency cooldowns, strict lockfile gates, and edge CSP enforcement."
 tags: ["Frontend Architecture","Security","Web Development","DevOps","JavaScript"]
 headerImage: "https://picsum.photos/seed/hardening-the-frontend-supply-chain-beyond-npm-audit-in-enterprise-systems-36995/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

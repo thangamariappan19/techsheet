@@ -1,10 +1,10 @@
----
+﻿---
 title: "Architecture as a Product: Scaling Frontend Systems Beyond the Component Level"
 date: "2026-04-05"
 description: "A deep dive into modern frontend architecture, covering micro-frontend strategies, state management trade-offs, and how to lead engineering teams through technical debt."
 tags: ["Frontend Architecture","Software Engineering","Microfrontends","Technical Leadership"]
 headerImage: "https://picsum.photos/seed/architecture-as-a-product-scaling-frontend-systems-beyond-the-component-level-91761/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

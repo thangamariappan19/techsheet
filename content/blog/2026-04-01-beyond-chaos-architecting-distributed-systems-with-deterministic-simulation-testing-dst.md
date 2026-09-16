@@ -1,10 +1,10 @@
----
+﻿---
 title: "Beyond Chaos: Architecting Distributed Systems with Deterministic Simulation Testing (DST)"
 date: "2026-04-01"
 description: "Discover how to eliminate non-deterministic 'Heisenbugs' in distributed systems by implementing Deterministic Simulation Testing (DST), the secret weapon behind FoundationDB and TigerBeetle."
 tags: ["Distributed Systems","Backend Architecture","Reliability Engineering","System Design"]
 headerImage: "https://picsum.photos/seed/beyond-chaos-architecting-distributed-systems-with-deterministic-simulation-testing-dst-63883/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

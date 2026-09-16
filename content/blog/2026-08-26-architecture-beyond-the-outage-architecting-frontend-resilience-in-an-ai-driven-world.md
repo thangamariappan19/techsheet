@@ -1,10 +1,10 @@
----
+﻿---
 title: "Beyond the Outage: Architecting Frontend Resilience in an AI-Driven World"
 date: "2026-08-26"
 description: "An outage isn't a matter of 'if,' but 'when.' Learn how to architect resilient frontend systems, from proactive patterns to integrating AI safely, and turn failures into architectural wins."
 tags: ["Frontend Architecture","System Resilience","Technical Debt","Site Reliability","AI Integration","Engineering Leadership","Progressive Enhancement"]
 headerImage: "https://picsum.photos/seed/beyond-the-outage-architecting-frontend-resilience-in-an-ai-driven-world-68487/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

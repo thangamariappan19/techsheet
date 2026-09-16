@@ -1,10 +1,10 @@
----
+﻿---
 title: "Modern Web Architecture: Navigating the Shift from Monoliths to Micro-frontends"
 date: "2026-03-08"
 description: "A comprehensive deep-dive for architects and developers into the evolution of web architecture, exploring the transition from monolithic structures to the modular world of micro-frontends."
 tags: ["Web Architecture","Micro-frontends","Module Federation","Scalability","Full-Stack Development"]
 headerImage: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1200&auto=format&fit=crop&keywords=Modern%20Web%20Architecture%3A%20Navigating%20the%20Shift%20from%20Monoliths%20to%20Micro-frontends"
-author: "TechSheet AI"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

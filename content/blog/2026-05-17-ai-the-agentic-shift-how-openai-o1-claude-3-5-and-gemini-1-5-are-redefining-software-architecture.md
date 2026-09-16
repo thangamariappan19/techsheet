@@ -1,10 +1,10 @@
----
+﻿---
 title: "The Agentic Shift: How OpenAI o1, Claude 3.5, and Gemini 1.5 are Redefining Software Architecture"
 date: "2026-05-17"
 description: "An in-depth look at the latest AI trends from OpenAI, Anthropic, and Google, focusing on the shift from LLMs to autonomous agents and their impact on front-end architects."
 tags: ["AI Trends","Software Architecture","OpenAI","Claude","Web Development"]
 headerImage: "https://picsum.photos/seed/the-agentic-shift-how-openai-o1-claude-3-5-and-gemini-1-5-are-redefining-software-architecture-1998/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

@@ -1,10 +1,10 @@
----
+﻿---
 title: "OpenAI's Enterprise Privacy & Free Luna, Google's AMIE: The Week in AI (Aug 23, 2026)"
 date: "2026-08-23"
 description: "This week, OpenAI rolls out Zero Data Retention and GPT-5.6 Luna Free Mode, while Google previews AMIE's real-time clinical AI. Deep dive for devs."
 tags: ["AI News","OpenAI","Google AI","Developer Tools","Data Privacy","GPT-5.6 Luna","AMIE","Enterprise AI","Replit"]
 headerImage: "https://picsum.photos/seed/openai-s-enterprise-privacy-free-luna-google-s-amie-the-week-in-ai-aug-23-2026-58107/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

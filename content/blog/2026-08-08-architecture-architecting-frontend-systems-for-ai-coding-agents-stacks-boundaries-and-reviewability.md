@@ -1,10 +1,10 @@
----
+﻿---
 title: "Architecting Frontend Systems for AI Coding Agents: Stacks, Boundaries, and Reviewability"
 date: "2026-08-08"
 description: "Learn how to structure frontend architectures to safely absorb AI code velocity using vertical slicing, stacked PRs, and strict contract boundaries."
 tags: ["Frontend Architecture","AI Engineering","Software Engineering","Code Quality"]
 headerImage: "https://picsum.photos/seed/architecting-frontend-systems-for-ai-coding-agents-stacks-boundaries-and-reviewability-99071/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

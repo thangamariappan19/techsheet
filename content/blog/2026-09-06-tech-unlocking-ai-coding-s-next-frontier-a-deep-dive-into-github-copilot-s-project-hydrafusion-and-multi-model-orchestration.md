@@ -1,10 +1,10 @@
----
+﻿---
 title: "Unlocking AI Coding's Next Frontier: A Deep Dive into GitHub Copilot's Project HydraFusion and Multi-Model Orchestration"
 date: "2026-09-06"
 description: "Explore GitHub Copilot's Project HydraFusion: multi-model orchestration for superior, cost-efficient AI coding. Master selective workflows & next-gen agent architecture."
 tags: ["AI Coding","GitHub Copilot","HydraFusion","Multi-Model AI","Orchestration","LLM","Developer Tools","AI Agents","Cost Efficiency"]
 headerImage: "https://picsum.photos/seed/unlocking-ai-coding-s-next-frontier-a-deep-dive-into-github-copilot-s-project-hydrafusion-and-multi-model-orchestration-29167/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

@@ -1,10 +1,10 @@
----
+﻿---
 title: "Gemini 3.6 Flash Hooks & GPT-5.6 Sol Rollouts: The Shift to Production-Grade Agentic Systems"
 date: "2026-08-08"
 description: "An architectural breakdown of Google's Gemini Managed Agents updates, OpenAI's GPT-5.6 Sol/Luna tiering, and new AI cybersecurity benchmarks for August 2026."
 tags: ["AI","Google Gemini","OpenAI","Software Architecture","Agentic Workflow"]
 headerImage: "https://picsum.photos/seed/gemini-3-6-flash-hooks-gpt-5-6-sol-rollouts-the-shift-to-production-grade-agentic-systems-14781/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

@@ -1,10 +1,10 @@
----
+﻿---
 title: "Architecting for Failure: Reducing Frontend Blast Radius at Enterprise Scale"
 date: "2026-08-30"
 description: "Learn how Staff engineers design resilient frontend architectures with client-side circuit breakers, schema drift protection, and graceful degradation."
 tags: ["Frontend Architecture","System Design","Web Performance","Resilience Engineering","TypeScript"]
 headerImage: "https://picsum.photos/seed/architecting-for-failure-reducing-frontend-blast-radius-at-enterprise-scale-93674/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

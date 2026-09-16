@@ -1,10 +1,10 @@
----
+﻿---
 title: "The Gravity of Shared State: Architecting True Decoupling in Micro-Frontends"
 date: "2026-06-27"
 description: "Are your micro-frontends secretly a distributed monolith? Learn the architectural patterns, trade-offs, and strategies to decouple state and build highly scalable frontend systems."
 tags: ["frontend-architecture","micro-frontends","state-management","software-engineering"]
 headerImage: "https://picsum.photos/seed/the-gravity-of-shared-state-architecting-true-decoupling-in-micro-frontends-4463/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

@@ -1,10 +1,10 @@
----
+﻿---
 title: "Case-Folding Source Code at 45 GiB/s: Branchless Bitwise Arithmetic for Ultra-Fast Search"
 date: "2026-08-07"
 description: "Learn how branchless bit arithmetic and SIMD vectorization enable case-folding source code at memory bandwidth limits without CPU branch mispredictions."
 tags: ["Performance","Architecture","Algorithms","SIMD","Rust"]
 headerImage: "https://picsum.photos/seed/case-folding-source-code-at-45-gib-s-branchless-bitwise-arithmetic-for-ultra-fast-search-15642/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

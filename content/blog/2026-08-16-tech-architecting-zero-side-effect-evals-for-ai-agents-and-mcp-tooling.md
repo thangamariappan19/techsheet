@@ -1,10 +1,10 @@
----
+﻿---
 title: "Architecting Zero-Side-Effect Evals for AI Agents and MCP Tooling"
 date: "2026-08-16"
 description: "Learn how to build deterministic, zero-cost evaluation harnesses for AI agents and Model Context Protocol (MCP) servers without mutating production data."
 tags: ["AI Agents","MCP","Testing","Architecture","TypeScript","DevOps"]
 headerImage: "https://picsum.photos/seed/architecting-zero-side-effect-evals-for-ai-agents-and-mcp-tooling-37360/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

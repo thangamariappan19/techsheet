@@ -1,10 +1,10 @@
----
+﻿---
 title: "The Agentic Frontier: Architecting Frontends for AI-Driven Workflows"
 date: "2026-08-25"
 description: "As AI agents reshape development workflows, frontend architects must adapt. Discover how to design UIs that make agentic processes visible, steerable, and scalable, covering architectural patterns, state management, and team challenges."
 tags: ["Frontend Architecture","AI","Agentic Workflows","Design Systems","Scalability","Engineering Leadership","Technical Debt"]
 headerImage: "https://picsum.photos/seed/the-agentic-frontier-architecting-frontends-for-ai-driven-workflows-7332/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

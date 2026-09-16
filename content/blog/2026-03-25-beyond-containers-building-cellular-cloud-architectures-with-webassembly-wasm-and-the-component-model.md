@@ -1,10 +1,10 @@
----
+﻿---
 title: "Beyond Containers: Building Cellular Cloud Architectures with WebAssembly (Wasm) and the Component Model"
 date: "2026-03-25"
 description: "Explore the next evolution of cloud-native design: Cellular Architectures. Learn how WebAssembly (Wasm) components are replacing bulky containers to provide sub-millisecond cold starts and extreme multi-tenant isolation."
 tags: ["WebAssembly","Serverless","Cloud Architecture","Edge Computing","Wasm Components"]
 headerImage: "https://picsum.photos/seed/beyond-containers-building-cellular-cloud-architectures-with-webassembly-wasm-and-the-component-model-42460/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

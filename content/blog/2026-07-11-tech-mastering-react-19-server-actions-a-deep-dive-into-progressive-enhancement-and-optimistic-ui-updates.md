@@ -1,10 +1,10 @@
----
+﻿---
 title: "Mastering React 19 Server Actions: A Deep-Dive into Progressive Enhancement and Optimistic UI Updates"
 date: "2026-07-11"
 description: "Learn how to build zero-boilerplate, ultra-fast applications using React 19 Server Actions, useActionState, and useOptimistic hook with real-world examples."
 tags: ["React 19","Web Development","Frontend Architecture","Server Actions"]
 headerImage: "https://picsum.photos/seed/mastering-react-19-server-actions-a-deep-dive-into-progressive-enhancement-and-optimistic-ui-updates-68415/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

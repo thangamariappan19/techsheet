@@ -1,10 +1,10 @@
----
+﻿---
 title: "Beyond Rollups: Scaling Privacy with Zero-Knowledge State Channels (ZK-SC)"
 date: "2026-03-28"
 description: "An architectural deep-dive into ZK-State Channels, combining the throughput of state channels with the cryptographic privacy of ZK-SNARKs for high-frequency Web3 applications."
 tags: ["Blockchain","ZK-Proofs","Layer2","Cryptography","Ethereum"]
 headerImage: "https://picsum.photos/seed/beyond-rollups-scaling-privacy-with-zero-knowledge-state-channels-zk-sc-3883/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

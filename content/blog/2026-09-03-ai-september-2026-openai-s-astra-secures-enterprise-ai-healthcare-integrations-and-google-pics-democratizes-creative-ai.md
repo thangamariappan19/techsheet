@@ -1,10 +1,10 @@
----
+﻿---
 title: "September 2026: OpenAI's Astra Secures Enterprise AI, Healthcare Integrations, and Google Pics Democratizes Creative AI"
 date: "2026-09-03"
 description: "This week, OpenAI's Astra model reached critical cybersecurity status, enabling secure enterprise AI. ChatGPT now connects to EHRs, transforming healthcare. Google Pics with Nano Banana brings creative AI to Workspace users. Deep dive into what this means for front-end architects and developers."
 tags: ["AI Security","Healthcare AI","Generative AI","OpenAI","Google AI","Front-End Architecture","Enterprise AI","Developer Insights"]
 headerImage: "https://picsum.photos/seed/september-2026-openai-s-astra-secures-enterprise-ai-healthcare-integrations-and-google-pics-democratizes-creative-ai-42542/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

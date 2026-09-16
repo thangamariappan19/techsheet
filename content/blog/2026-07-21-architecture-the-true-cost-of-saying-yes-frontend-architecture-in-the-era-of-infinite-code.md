@@ -1,10 +1,10 @@
----
+﻿---
 title: "The True Cost of Saying Yes: Frontend Architecture in the Era of Infinite Code"
 date: "2026-07-21"
 description: "Generating frontend code is now virtually free, but maintenance is more expensive than ever. Learn how to architect your frontend for durable ownership."
 tags: ["Frontend Architecture","Software Engineering","Technical Debt","Engineering Leadership"]
 headerImage: "https://picsum.photos/seed/the-true-cost-of-saying-yes-frontend-architecture-in-the-era-of-infinite-code-6844/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

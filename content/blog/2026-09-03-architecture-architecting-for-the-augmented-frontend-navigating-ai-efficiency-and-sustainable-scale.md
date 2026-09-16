@@ -1,10 +1,10 @@
----
+﻿---
 title: "Architecting for the Augmented Frontend: Navigating AI, Efficiency, and Sustainable Scale"
 date: "2026-09-03"
 description: "As AI reshapes development, frontend architects must blend efficiency with sustainable scale. Learn how to design systems for augmentation, manage tech debt, and lead teams effectively."
 tags: ["Frontend Architecture","AI in Frontend","Scaling Frontend","Technical Debt","Engineering Leadership","Developer Experience","Modularity","System Design"]
 headerImage: "https://picsum.photos/seed/architecting-for-the-augmented-frontend-navigating-ai-efficiency-and-sustainable-scale-40046/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

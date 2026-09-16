@@ -1,10 +1,10 @@
----
+﻿---
 title: "Front-End Architecture in the Agentic Era: Managing 10x Code Velocity Without Degrading Your System"
 date: "2026-08-12"
 description: "AI agents are generating more front-end code than ever. Here is how lead architects build guardrails, stacked PRs, and strict contracts to preserve quality."
 tags: ["Frontend Architecture","AI Orchestration","Design Systems","Engineering Leadership"]
 headerImage: "https://picsum.photos/seed/front-end-architecture-in-the-agentic-era-managing-10x-code-velocity-without-degrading-your-system-79754/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

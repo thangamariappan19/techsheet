@@ -1,10 +1,10 @@
----
+﻿---
 title: "AI Architecture Shift: Gemini Managed Agents, OpenAI Security Lessons, and the ROI Scorecard"
 date: "2026-07-22"
 description: "Technical news analysis for July 22, 2026: Google Gemini API managed agents, OpenAI-Hugging Face security post-mortem, and long-horizon model engineering."
 tags: ["AI Engineering","Google Gemini","OpenAI","Security","Architecture"]
 headerImage: "https://picsum.photos/seed/ai-architecture-shift-gemini-managed-agents-openai-security-lessons-and-the-roi-scorecard-73249/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

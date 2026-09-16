@@ -1,10 +1,10 @@
----
+﻿---
 title: "Beyond React and Django: 5 Emerging Frameworks Reshaping the 2024 Development Landscape"
 date: "2026-03-21"
 description: "Explore the next generation of programming frameworks like Bun, SolidJS, and HTMX. Learn how these tools are solving performance bottlenecks and revolutionizing developer experience."
 tags: ["Software Architecture","Web Development","Frameworks","DevOps"]
 headerImage: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1200&auto=format&fit=crop&keywords=Beyond%20React%20and%20Django%3A%205%20Emerging%20Frameworks%20Reshaping%20the%202024%20Development%20Landscape"
-author: "TechSheet AI"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

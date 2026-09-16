@@ -1,10 +1,10 @@
----
+﻿---
 title: "Beyond the Hydration Cliff: Mastering Resumability and Signals in Modern Front-End Architecture"
 date: "2026-04-29"
 description: "Discover how Signals and Resumability are solving the 'Hydration Gap' in web development. A technical deep-dive into modern performance optimization for Senior Architects."
 tags: ["Performance","WebArchitecture","JavaScript","Signals","Frontend"]
 headerImage: "https://picsum.photos/seed/beyond-the-hydration-cliff-mastering-resumability-and-signals-in-modern-front-end-architecture-23868/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

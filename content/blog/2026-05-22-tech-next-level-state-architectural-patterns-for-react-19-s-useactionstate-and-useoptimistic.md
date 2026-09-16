@@ -1,10 +1,10 @@
----
+﻿---
 title: "Next-Level State: Architectural Patterns for React 19's useActionState and useOptimistic"
 date: "2026-05-22"
 description: "Master the brand-new React 19 async state paradigms. Learn how to implement useActionState and useOptimistic with real-world, production-ready code patterns that slash boilerplate and eliminate race conditions."
 tags: ["React 19","Web Development","Frontend Architecture","JavaScript"]
 headerImage: "https://picsum.photos/seed/next-level-state-architectural-patterns-for-react-19-s-useactionstate-and-useoptimistic-56504/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

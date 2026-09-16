@@ -1,10 +1,10 @@
----
+﻿---
 title: "The Cost of Saying Yes Has Changed: Architecting for Code Deletion in the AI Era"
 date: "2026-07-20"
 description: "AI made writing code virtually free, but maintaining it is more expensive than ever. Learn how to architect your codebase for aggressive code deletion."
 tags: ["Software Architecture","AI Coding Agents","Clean Code","Developer Productivity"]
 headerImage: "https://picsum.photos/seed/the-cost-of-saying-yes-has-changed-architecting-for-code-deletion-in-the-ai-era-34942/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

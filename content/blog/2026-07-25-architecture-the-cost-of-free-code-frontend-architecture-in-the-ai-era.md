@@ -1,10 +1,10 @@
----
+﻿---
 title: "The Cost of Free Code: Frontend Architecture in the AI Era"
 date: "2026-07-25"
 description: "AI dropped the cost of writing code to near zero, but frontend maintenance costs exploded. Here is how Staff Engineers build guardrails for lasting systems."
 tags: ["Frontend Architecture","Engineering Leadership","Design Systems","Web Performance"]
 headerImage: "https://picsum.photos/seed/the-cost-of-free-code-frontend-architecture-in-the-ai-era-21681/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

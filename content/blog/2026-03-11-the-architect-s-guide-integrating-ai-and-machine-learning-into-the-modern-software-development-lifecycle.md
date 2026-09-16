@@ -1,10 +1,10 @@
----
+﻿---
 title: "The Architect’s Guide: Integrating AI and Machine Learning into the Modern Software Development Lifecycle"
 date: "2026-03-11"
 description: "Explore how AI and Machine Learning are reshaping software engineering. From LLM-backed features to predictive DevOps, learn the practical strategies for building intelligent applications."
 tags: ["AI","Machine Learning","Software Architecture","DevOps","Full-Stack"]
 headerImage: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1200&auto=format&fit=crop&keywords=The%20Architect%E2%80%99s%20Guide%3A%20Integrating%20AI%20and%20Machine%20Learning%20into%20the%20Modern%20Software%20Development%20Lifecycle"
-author: "TechSheet AI"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

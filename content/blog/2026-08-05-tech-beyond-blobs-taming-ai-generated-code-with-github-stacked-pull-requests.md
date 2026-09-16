@@ -1,10 +1,10 @@
----
+﻿---
 title: "Beyond Blobs: Taming AI-Generated Code with GitHub Stacked Pull Requests"
 date: "2026-08-05"
 description: "AI-generated code often arrives as unreviewable monoliths. Discover how GitHub's Stacked Pull Requests can decompose these into manageable, reviewable layers, revolutionizing your AI-assisted development workflow."
 tags: ["AI Development","GitHub","Pull Requests","Stacked PRs","Code Review","Developer Workflow","Copilot","Technical Deep-Dive"]
 headerImage: "https://picsum.photos/seed/beyond-blobs-taming-ai-generated-code-with-github-stacked-pull-requests-7652/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

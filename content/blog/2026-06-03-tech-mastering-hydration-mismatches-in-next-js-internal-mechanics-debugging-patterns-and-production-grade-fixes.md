@@ -1,10 +1,10 @@
----
+﻿---
 title: "Mastering Hydration Mismatches in Next.js: Internal Mechanics, Debugging Patterns, and Production-Grade Fixes"
 date: "2026-06-03"
 description: "An in-depth technical guide exploring why React hydration mismatches happen in Next.js, how the reconciliation engine behaves under the hood, and how to debug and solve them using production-proven patterns."
 tags: ["nextjs","react","webperformance","debugging"]
 headerImage: "https://picsum.photos/seed/mastering-hydration-mismatches-in-next-js-internal-mechanics-debugging-patterns-and-production-grade-fixes-39245/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

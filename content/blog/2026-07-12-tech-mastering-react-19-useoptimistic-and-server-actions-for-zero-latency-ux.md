@@ -1,10 +1,10 @@
----
+﻿---
 title: "Mastering React 19 useOptimistic and Server Actions for Zero-Latency UX"
 date: "2026-07-12"
 description: "An architectural deep-dive into React 19's native optimistic UI primitives. Learn how to eliminate interface lag, manage asynchronous states, and gracefully handle server rollbacks."
 tags: ["React 19","Web Performance","Frontend Architecture","JavaScript"]
 headerImage: "https://picsum.photos/seed/mastering-react-19-useoptimistic-and-server-actions-for-zero-latency-ux-80291/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

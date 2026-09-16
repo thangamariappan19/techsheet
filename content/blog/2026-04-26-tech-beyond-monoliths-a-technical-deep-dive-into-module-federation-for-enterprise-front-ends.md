@@ -1,10 +1,10 @@
----
+﻿---
 title: "Beyond Monoliths: A Technical Deep-Dive into Module Federation for Enterprise Front-Ends"
 date: "2026-04-26"
 description: "Master the art of Micro-frontends with Module Federation. Learn how to decouple large applications, share dependencies efficiently, and scale your front-end architecture in 2024."
 tags: ["Micro-frontends","Module Federation","Web Performance","System Design","JavaScript"]
 headerImage: "https://picsum.photos/seed/beyond-monoliths-a-technical-deep-dive-into-module-federation-for-enterprise-front-ends-67726/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

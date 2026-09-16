@@ -1,10 +1,10 @@
----
+﻿---
 title: "This Week in AI: OpenAI Upgrades GPT-5.6 Sol, Google Gemini API Introduces 3.6 Flash Managed Agents, and Local Agent Deployments"
 date: "2026-08-07"
 description: "Deep analysis of OpenAI's GPT-5.6 Sol iteration, Google's Gemini API Managed Agents with 3.6 Flash hooks, and local agent execution trends as of August 2026."
 tags: ["AI","OpenAI","Google Gemini","Software Architecture","Agents"]
 headerImage: "https://picsum.photos/seed/this-week-in-ai-openai-upgrades-gpt-5-6-sol-google-gemini-api-introduces-3-6-flash-managed-agents-and-local-agent-deployments-82960/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

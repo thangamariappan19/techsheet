@@ -1,10 +1,10 @@
----
+﻿---
 title: "The Death of the Frontend Monolith: Architectural Patterns for Scaling to 100+ Engineers"
 date: "2026-06-13"
 description: "Discover how to scale your frontend architecture, transition from monoliths to micro-frontends safely, manage distributed state, and minimize technical debt without sacrificing developer velocity."
 tags: ["frontend-architecture","micro-frontends","monorepo","software-engineering"]
 headerImage: "https://picsum.photos/seed/the-death-of-the-frontend-monolith-architectural-patterns-for-scaling-to-100-engineers-18202/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

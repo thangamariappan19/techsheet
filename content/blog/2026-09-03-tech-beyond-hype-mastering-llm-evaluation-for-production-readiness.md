@@ -1,10 +1,10 @@
----
+﻿---
 title: "Beyond Hype: Mastering LLM Evaluation for Production Readiness"
 date: "2026-09-03"
 description: "Integrating LLMs? This deep dive reveals practical strategies, from golden datasets to agent skill mocking, ensuring your AI ships with confidence."
 tags: ["LLM","AI","Evaluation","Testing","Production Readiness","Agent Development","DevOps","Architect"]
 headerImage: "https://picsum.photos/seed/beyond-hype-mastering-llm-evaluation-for-production-readiness-81757/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

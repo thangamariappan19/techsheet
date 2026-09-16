@@ -1,10 +1,10 @@
----
+﻿---
 title: "AI Infrastructure Matures: Google's Remote MCP Agents, OpenAI Presence, and 4-Bit Diffusion"
 date: "2026-07-28"
 description: "Technical analysis of July 28, 2026 announcements from Google, OpenAI, and Hugging Face on remote MCP, agent infrastructure, and 4-bit diffusion."
 tags: ["Artificial Intelligence","Gemini API","OpenAI Presence","Model Context Protocol","System Architecture"]
 headerImage: "https://picsum.photos/seed/ai-infrastructure-matures-google-s-remote-mcp-agents-openai-presence-and-4-bit-diffusion-78130/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

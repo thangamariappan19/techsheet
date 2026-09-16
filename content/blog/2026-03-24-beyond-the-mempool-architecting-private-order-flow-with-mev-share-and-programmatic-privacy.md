@@ -1,10 +1,10 @@
----
+﻿---
 title: "Beyond the Mempool: Architecting Private Order Flow with MEV-Share and Programmatic Privacy"
 date: "2026-03-24"
 description: "Learn how to protect users from toxic MEV and frontrunning by implementing private order flows and MEV-Share integration in modern dApps."
 tags: ["Blockchain Architecture","MEV","Ethereum","Solidity","Privacy"]
 headerImage: "https://picsum.photos/seed/beyond-the-mempool-architecting-private-order-flow-with-mev-share-and-programmatic-privacy-37055/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

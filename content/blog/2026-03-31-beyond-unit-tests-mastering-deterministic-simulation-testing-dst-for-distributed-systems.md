@@ -1,10 +1,10 @@
----
+﻿---
 title: "Beyond Unit Tests: Mastering Deterministic Simulation Testing (DST) for Distributed Systems"
 date: "2026-03-31"
 description: "Explore Deterministic Simulation Testing (DST), the advanced backend engineering technique used by FoundationDB and TigerBeetle to build 'indestructible' distributed systems."
 tags: ["Distributed Systems","Backend Architecture","Testing Strategy","Reliability Engineering"]
 headerImage: "https://picsum.photos/seed/beyond-unit-tests-mastering-deterministic-simulation-testing-dst-for-distributed-systems-52252/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

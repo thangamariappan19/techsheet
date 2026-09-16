@@ -1,10 +1,10 @@
----
+﻿---
 title: "Beyond Hydration: How to Eliminate the JavaScript \"Double-Tax\" with React Server Components (RSC) and Streaming"
 date: "2026-05-20"
 description: "Discover how to eliminate the JavaScript hydration cost in modern React apps. Dive deep into React Server Components (RSC), Suspense streaming, and selective hydration with real-world code architecture."
 tags: ["React","Web Performance","System Design","NextJS","Frontend Architecture"]
 headerImage: "https://picsum.photos/seed/beyond-hydration-how-to-eliminate-the-javascript-double-tax-with-react-server-components-rsc-and-streaming-38334/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

@@ -1,10 +1,10 @@
----
+﻿---
 title: "Architecting for the AI-Augmented Frontend: Managing Code Velocity and System Integrity"
 date: "2026-08-05"
 description: "As AI accelerates frontend development, learn critical architectural strategies to manage code velocity, maintain system integrity, and tame technical debt. Essential insights for Staff Engineers."
 tags: ["Frontend Architecture","AI Development","Technical Debt","Scaling","Engineering Leadership","Design Systems","Developer Productivity","DevOps","Software Supply Chain"]
 headerImage: "https://picsum.photos/seed/architecting-for-the-ai-augmented-frontend-managing-code-velocity-and-system-integrity-72073/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

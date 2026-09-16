@@ -1,10 +1,10 @@
----
+﻿---
 title: "Mastering AI Agent Experience (AX) Evaluation for Production Readiness"
 date: "2026-09-01"
 description: "Unlock robust AI agent performance in production. Deep dive into advanced evaluation strategies, local sandboxing, and transparent API mocking for critical Agent Experience (AX) testing."
 tags: ["AI","LLM","Agent Experience","Testing","Evaluation","Production Readiness","DevOps","Frontend Architecture"]
 headerImage: "https://picsum.photos/seed/mastering-ai-agent-experience-ax-evaluation-for-production-readiness-81489/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

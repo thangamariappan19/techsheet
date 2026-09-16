@@ -1,10 +1,10 @@
----
+﻿---
 title: "Demystifying Web Workers in React: Building a Main-Thread-Free Polling Engine"
 date: "2026-06-07"
 description: "Learn how to offload heavy API polling to Web Workers in React. Prevent main-thread blocking, handle exponential backoff, and keep your UI buttery smooth."
 tags: ["React","Web Workers","Web Performance","TypeScript","Frontend Architecture"]
 headerImage: "https://picsum.photos/seed/demystifying-web-workers-in-react-building-a-main-thread-free-polling-engine-49435/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

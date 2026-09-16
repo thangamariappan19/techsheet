@@ -1,10 +1,10 @@
----
+﻿---
 title: "The Agentic Shift: Why OpenAI o1 and Claude 3.5 Sonnet are Redefining Front-End Architecture"
 date: "2026-05-03"
 description: "Deep dive into the latest AI updates from OpenAI, Anthropic, and Google. Discover how reasoning models and agentic tools are transforming the way developers build and architect UIs."
 tags: ["AI in Tech","FrontEnd Development","Software Architecture","Claude AI","OpenAI"]
 headerImage: "https://picsum.photos/seed/the-agentic-shift-why-openai-o1-and-claude-3-5-sonnet-are-redefining-front-end-architecture-36169/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

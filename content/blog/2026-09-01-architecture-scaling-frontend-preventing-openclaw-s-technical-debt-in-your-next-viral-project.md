@@ -1,10 +1,10 @@
----
+﻿---
 title: "Scaling Frontend: Preventing OpenClaw's Technical Debt in Your Next Viral Project"
 date: "2026-09-01"
 description: "Learn proactive frontend architectural strategies to scale rapidly without accumulating crippling technical debt, inspired by viral projects like OpenClaw. A guide for Staff+ engineers."
 tags: ["frontend architecture","scaling","technical debt","design decisions","team topology","modularity","engineering leadership"]
 headerImage: "https://picsum.photos/seed/scaling-frontend-preventing-openclaw-s-technical-debt-in-your-next-viral-project-38803/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

@@ -1,10 +1,10 @@
----
+﻿---
 title: "Beyond the Hype: Architecting Scale-Proof Frontend Systems in the Era of Complexity"
 date: "2026-04-22"
 description: "A deep dive into advanced frontend architecture, scaling web applications, and technical leadership for Senior Engineers and Architects."
 tags: ["Frontend Architecture","Micro-Frontends","Technical Leadership","Scalability","Web Development"]
 headerImage: "https://picsum.photos/seed/beyond-the-hype-architecting-scale-proof-frontend-systems-in-the-era-of-complexity-52589/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

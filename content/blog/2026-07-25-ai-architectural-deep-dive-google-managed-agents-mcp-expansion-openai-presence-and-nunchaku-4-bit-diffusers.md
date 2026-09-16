@@ -1,10 +1,10 @@
----
+﻿---
 title: "Architectural Deep Dive: Google Managed Agents MCP Expansion, OpenAI Presence, and Nunchaku 4-Bit Diffusers"
 date: "2026-07-25"
 description: "An architectural analysis of today's big announcements: Google Gemini API Managed Agents with remote MCP, OpenAI Presence platform, and Hugging Face 4-bit inference."
 tags: ["AI Architecture","Gemini API","OpenAI Presence","Model Context Protocol","Hugging Face"]
 headerImage: "https://picsum.photos/seed/architectural-deep-dive-google-managed-agents-mcp-expansion-openai-presence-and-nunchaku-4-bit-diffusers-14930/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

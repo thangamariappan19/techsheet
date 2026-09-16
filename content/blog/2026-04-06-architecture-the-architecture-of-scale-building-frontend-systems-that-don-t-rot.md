@@ -1,10 +1,10 @@
----
+﻿---
 title: "The Architecture of Scale: Building Frontend Systems That Don't Rot"
 date: "2026-04-06"
 description: "Discover how senior architects design scalable frontend systems by managing cognitive load, enforcing boundaries, and choosing the right state management patterns."
 tags: ["Frontend Architecture","Micro-frontends","Technical Leadership","Software Engineering","Web Performance"]
 headerImage: "https://picsum.photos/seed/the-architecture-of-scale-building-frontend-systems-that-don-t-rot-46069/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

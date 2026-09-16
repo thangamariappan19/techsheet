@@ -1,10 +1,10 @@
----
+﻿---
 title: "Case-Folding Source Code at Memory Speed: Branchless Loops and Byte-Space Arithmetic"
 date: "2026-08-06"
 description: "Learn how branch-free loops, bitwise arithmetic, and SWAR/SIMD vectorization enable source code case-folding at over 45 GiB/s on a single CPU core."
 tags: ["Performance","Algorithms","Systems Programming","Optimization","C++"]
 headerImage: "https://picsum.photos/seed/case-folding-source-code-at-memory-speed-branchless-loops-and-byte-space-arithmetic-40693/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

@@ -1,10 +1,10 @@
----
+﻿---
 title: "Beyond the EVM: Architecting High-Performance dApps with RISC Zero and ZK-VMs"
 date: "2026-03-31"
 description: "Explore the frontier of verifiable computation. Learn how to leverage RISC Zero to run complex Rust-based logic off-chain while securing results on-chain with Zero-Knowledge Proofs."
 tags: ["Blockchain","ZeroKnowledge","Rust","RISCZero","Web3"]
 headerImage: "https://picsum.photos/seed/beyond-the-evm-architecting-high-performance-dapps-with-risc-zero-and-zk-vms-36152/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

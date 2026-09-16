@@ -1,10 +1,10 @@
----
+﻿---
 title: "Mastering React Server Components: A Deep Dive into Streaming, Suspense, and Hydration Optimization"
 date: "2026-04-06"
 description: "Learn the architecture of React Server Components (RSC), how streaming works under the hood, and practical strategies to eliminate hydration bottlenecks in modern Next.js applications."
 tags: ["React","NextJS","Performance","Web Development","System Design"]
 headerImage: "https://picsum.photos/seed/mastering-react-server-components-a-deep-dive-into-streaming-suspense-and-hydration-optimization-62853/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

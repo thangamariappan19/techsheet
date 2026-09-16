@@ -1,10 +1,10 @@
----
+﻿---
 title: "The 2024 AI Triad: How GPT-4o, Claude 3.5 Sonnet, and Gemini 1.5 Pro are Redefining Front-End Architecture"
 date: "2026-07-12"
 description: "Discover how the latest breakthrough models from OpenAI, Anthropic, and Google Gemini are shifting front-end engineering from static component building to dynamic, agentic UI experiences."
 tags: ["ai-trends","frontend-architecture","claude-3-5","openai-gpt4o","web-development"]
 headerImage: "https://picsum.photos/seed/the-2024-ai-triad-how-gpt-4o-claude-3-5-sonnet-and-gemini-1-5-pro-are-redefining-front-end-architecture-43315/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

@@ -1,10 +1,10 @@
----
+﻿---
 title: "Beyond the Virtual DOM: A Deep-Dive into Fine-Grained Reactivity and Signals"
 date: "2026-04-04"
 description: "Discover how Signals and fine-grained reactivity are redefining front-end performance, comparing React's VDOM approach with Angular and SolidJS."
 tags: ["Web Development","React","Angular","Performance","JavaScript"]
 headerImage: "https://picsum.photos/seed/beyond-the-virtual-dom-a-deep-dive-into-fine-grained-reactivity-and-signals-535/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

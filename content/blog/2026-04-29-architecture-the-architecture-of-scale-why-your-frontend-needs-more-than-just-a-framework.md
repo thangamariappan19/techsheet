@@ -1,10 +1,10 @@
----
+﻿---
 title: "The Architecture of Scale: Why Your Frontend Needs More Than Just a Framework"
 date: "2026-04-29"
 description: "Stop chasing frameworks and start building systems. A deep dive into scalable frontend architecture, domain-driven design, and the real cost of micro-frontends."
 tags: ["FrontendArchitecture","SoftwareEngineering","MicroFrontends","TechnicalLeadership"]
 headerImage: "https://picsum.photos/seed/the-architecture-of-scale-why-your-frontend-needs-more-than-just-a-framework-558/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

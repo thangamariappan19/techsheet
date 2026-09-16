@@ -1,10 +1,10 @@
----
+﻿---
 title: "AI's Next Frontier: How Claude 3.5, OpenAI o1, and Gemini 1.5 Are Redefining Front-End Architecture"
 date: "2026-06-05"
 description: "Discover how the latest updates from OpenAI, Anthropic, and Google Gemini are shifting front-end development from simple chatbots to fully autonomous, agentic user interfaces."
 tags: ["AI-News","Front-End-Architecture","Generative-UI","Web-Development"]
 headerImage: "https://picsum.photos/seed/ai-s-next-frontier-how-claude-3-5-openai-o1-and-gemini-1-5-are-redefining-front-end-architecture-37024/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

@@ -1,10 +1,10 @@
----
+﻿---
 title: "The New AI Frontier: How Claude 3.5 Sonnet, OpenAI o1, and Gemini 1.5 Pro Redefine Front-End Architecture"
 date: "2026-07-04"
 description: "Discover how the latest updates from OpenAI, Anthropic, and Google Gemini are shifting front-end development from simple code completion to complex reasoning and automated system architecture."
 tags: ["AI in Web Dev","Front-End Architecture","Claude 3.5 Sonnet","OpenAI o1","Web Development Trends"]
 headerImage: "https://picsum.photos/seed/the-new-ai-frontier-how-claude-3-5-sonnet-openai-o1-and-gemini-1-5-pro-redefine-front-end-architecture-62606/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

@@ -1,10 +1,10 @@
----
+﻿---
 title: "The AI Reasoning Era: How o1, Claude 3.5, and Gemini 1.5 are Reshaping Frontend Architecture"
 date: "2026-05-02"
 description: "Discover how the latest breakthroughs from OpenAI, Anthropic, and Google are moving AI from simple chatbots to sophisticated reasoning agents and what it means for frontend architects."
 tags: ["Artificial Intelligence","Frontend Architecture","OpenAI","Anthropic","Web Development"]
 headerImage: "https://picsum.photos/seed/the-ai-reasoning-era-how-o1-claude-3-5-and-gemini-1-5-are-reshaping-frontend-architecture-96635/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

@@ -1,10 +1,10 @@
----
+﻿---
 title: "The Architect’s Dilemma: Building Scale-Proof Frontend Systems Without the Burnout"
 date: "2026-05-05"
 description: "Learn the strategic patterns for scaling frontend architecture, managing micro-frontends, and leading engineering teams toward long-term technical health."
 tags: ["FrontendArchitecture","MicroFrontends","SoftwareEngineering","WebPerformance","TechnicalLeadership"]
 headerImage: "https://picsum.photos/seed/the-architect-s-dilemma-building-scale-proof-frontend-systems-without-the-burnout-16847/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

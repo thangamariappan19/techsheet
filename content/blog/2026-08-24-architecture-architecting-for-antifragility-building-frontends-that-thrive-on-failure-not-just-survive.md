@@ -1,10 +1,10 @@
----
+﻿---
 title: "Architecting for Antifragility: Building Frontends That Thrive on Failure (Not Just Survive)"
 date: "2026-08-24"
 description: "Beyond graceful degradation: Learn how to engineer resilient frontends in an AI-driven, interconnected world, turning failures into architectural strengths."
 tags: ["frontend architecture","resilience","system design","technical debt","engineering leadership","micro-frontends","chaos engineering"]
 headerImage: "https://picsum.photos/seed/architecting-for-antifragility-building-frontends-that-thrive-on-failure-not-just-survive-74251/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

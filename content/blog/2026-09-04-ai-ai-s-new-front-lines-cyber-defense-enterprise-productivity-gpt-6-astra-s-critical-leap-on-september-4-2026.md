@@ -1,10 +1,10 @@
----
+﻿---
 title: "AI's New Front Lines: Cyber Defense, Enterprise Productivity & GPT-6 Astra's Critical Leap on September 4, 2026"
 date: "2026-09-04"
 description: "On Friday, Sept 4, 2026, we dissect OpenAI's Daybreak & Google's Fairwind in the AI cyber arms race, plus GPT-6 Astra's game-changing enterprise impact and critical security advancements."
 tags: ["AI","Cybersecurity","GPT-6 Astra","OpenAI","Google AI","Enterprise AI","Developer Tools","Tech News"]
 headerImage: "https://picsum.photos/seed/ai-s-new-front-lines-cyber-defense-enterprise-productivity-gpt-6-astra-s-critical-leap-on-september-4-2026-67922/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

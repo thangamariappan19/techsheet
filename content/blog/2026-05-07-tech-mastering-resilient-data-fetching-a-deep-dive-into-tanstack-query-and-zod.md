@@ -1,10 +1,10 @@
----
+﻿---
 title: "Mastering Resilient Data Fetching: A Deep Dive into TanStack Query and Zod"
 date: "2026-05-07"
 description: "Learn how to build a robust, type-safe data fetching layer in React. This guide explores using TanStack Query for state management and Zod for schema validation to eliminate runtime crashes."
 tags: ["React","TypeScript","TanStack Query","API Design","Frontend Performance"]
 headerImage: "https://picsum.photos/seed/mastering-resilient-data-fetching-a-deep-dive-into-tanstack-query-and-zod-91779/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

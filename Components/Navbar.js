@@ -9,6 +9,7 @@ import {
   Moon,
   Github,
   Info,
+  Mail,
   Menu,
   X,
   Zap,
@@ -88,6 +89,15 @@ function Navbar() {
               >
                 <Info className="w-3.5 h-3.5" />
                 <span className="text-sm font-semibold">About</span>
+                <span className="absolute bottom-0.5 left-4 right-4 h-px bg-primary scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
+              </Link>
+
+              <Link
+                href="/contact"
+                className="group flex items-center gap-1.5 px-4 py-2 rounded-lg text-muted-foreground hover:text-foreground transition-all duration-200 relative"
+              >
+                <Mail className="w-3.5 h-3.5" />
+                <span className="text-sm font-semibold">Contact</span>
                 <span className="absolute bottom-0.5 left-4 right-4 h-px bg-primary scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
               </Link>
 
@@ -174,6 +184,14 @@ function Navbar() {
                 >
                   <Info className="w-4 h-4 text-primary" />
                   <span className="font-semibold text-sm">About</span>
+                </Link>
+                <Link
+                  href="/contact"
+                  onClick={() => setIsMenuOpen(false)}
+                  className="flex items-center gap-3 p-3 rounded-xl hover:bg-muted transition-all"
+                >
+                  <Mail className="w-4 h-4 text-primary" />
+                  <span className="font-semibold text-sm">Contact</span>
                 </Link>
                 <a
                   href="https://github.com/thangamariappan19"

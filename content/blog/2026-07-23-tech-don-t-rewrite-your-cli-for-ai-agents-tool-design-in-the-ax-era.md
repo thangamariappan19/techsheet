@@ -1,10 +1,10 @@
----
+﻿---
 title: "Don't Rewrite Your CLI for AI Agents: Tool Design in the AX Era"
 date: "2026-07-23"
 description: "Why forcing single JSON payloads onto CLI tools breaks AI coding agents, and how to design robust Agent Experience (AX) interfaces that actually work."
 tags: ["AI","Agent Experience","CLI Design","Architecture"]
 headerImage: "https://picsum.photos/seed/don-t-rewrite-your-cli-for-ai-agents-tool-design-in-the-ax-era-87262/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

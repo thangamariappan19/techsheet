@@ -1,10 +1,10 @@
----
+﻿---
 title: "Beyond APIs: Architecting Deterministic Web Apps with Local-First State and CRDTs"
 date: "2026-03-24"
 description: "Discover the paradigm shift from traditional request-response architectures to Local-First development. Learn how CRDTs and synchronization engines enable seamless, offline-ready, and ultra-responsive web applications."
 tags: ["Local-First","CRDT","Web Architecture","TypeScript","State Management"]
 headerImage: "https://picsum.photos/seed/beyond-apis-architecting-deterministic-web-apps-with-local-first-state-and-crdts-57382/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

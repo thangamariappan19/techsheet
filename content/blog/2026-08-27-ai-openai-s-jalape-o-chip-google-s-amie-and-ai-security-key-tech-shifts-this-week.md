@@ -1,10 +1,10 @@
----
+﻿---
 title: "OpenAI's Jalapeño Chip, Google's AMIE, and AI Security: Key Tech Shifts This Week"
 date: "2026-08-27"
 description: "On Thursday, August 27, 2026, we dissect OpenAI's custom Jalapeño inference chip, Google's AMIE for clinical AI, and crucial lessons from the Hugging Face security incident. Essential insights for front-end architects and developers."
 tags: ["AI","Machine Learning","OpenAI","Google AI","AI Hardware","Healthcare AI","Cybersecurity","Developer Tools","TechSheet"]
 headerImage: "https://picsum.photos/seed/openai-s-jalape-o-chip-google-s-amie-and-ai-security-key-tech-shifts-this-week-55122/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

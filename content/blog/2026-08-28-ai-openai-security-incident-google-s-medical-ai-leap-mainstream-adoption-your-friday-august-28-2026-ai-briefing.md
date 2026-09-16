@@ -1,10 +1,10 @@
----
+﻿---
 title: "OpenAI Security Incident, Google's Medical AI Leap, & Mainstream Adoption: Your Friday, August 28, 2026 AI Briefing"
 date: "2026-08-28"
 description: "TechSheet breaks down critical AI news from OpenAI and Google on August 28, 2026: The Hugging Face security incident, Google's AMIE medical AI, and AI's expansion into education and internal development workflows. Essential insights for developers and architects."
 tags: ["AI security","Medical AI","OpenAI","Google AI","ChatGPT","Codex","AI in Education","TechSheet Analysis","LLM Security","Front-End Architecture"]
 headerImage: "https://picsum.photos/seed/openai-security-incident-google-s-medical-ai-leap-mainstream-adoption-your-friday-august-28-2026-ai-briefing-54385/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

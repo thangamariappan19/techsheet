@@ -1,10 +1,10 @@
----
+﻿---
 title: "Beyond the Hype: A Deep Dive into Robust LLM Evaluation for Production Readiness"
 date: "2026-08-28"
 description: "Don't deploy blind. Learn the critical strategies and methodologies for rigorously evaluating Large Language Models (LLMs) before production, inspired by real-world secret scanning challenges."
 tags: ["LLM Evaluation","AI in Production","Machine Learning Operations","Secret Scanning","AI Safety","Deep Dive"]
 headerImage: "https://picsum.photos/seed/beyond-the-hype-a-deep-dive-into-robust-llm-evaluation-for-production-readiness-99982/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

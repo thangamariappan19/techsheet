@@ -1,10 +1,10 @@
----
+﻿---
 title: "The AI Arms Race of 2024: What OpenAI, Claude, and Gemini Mean for Modern Software Architects"
 date: "2026-05-12"
 description: "Discover how the latest updates from GPT-4o, Claude 3.5 Sonnet, and Gemini 1.5 Pro are fundamentally shifting the role of frontend architects and developers."
 tags: ["Artificial Intelligence","Frontend Development","Software Architecture","Web Performance"]
 headerImage: "https://picsum.photos/seed/the-ai-arms-race-of-2024-what-openai-claude-and-gemini-mean-for-modern-software-architects-82585/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

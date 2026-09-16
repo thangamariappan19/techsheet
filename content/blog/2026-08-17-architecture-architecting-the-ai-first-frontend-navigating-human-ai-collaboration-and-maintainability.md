@@ -1,10 +1,10 @@
----
+﻿---
 title: "Architecting the AI-First Frontend: Navigating Human-AI Collaboration and Maintainability"
 date: "2026-08-17"
 description: "As AI becomes a core contributor, frontend architects must adapt. Learn to build resilient, maintainable systems that thrive with human-AI collaboration."
 tags: ["Frontend Architecture","AI in Development","Software Design","Maintainability","Technical Debt","GitHub Copilot"]
 headerImage: "https://picsum.photos/seed/architecting-the-ai-first-frontend-navigating-human-ai-collaboration-and-maintainability-52241/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

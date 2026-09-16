@@ -1,10 +1,10 @@
----
+﻿---
 title: "The Era of Reasoning: How OpenAI o1 and Claude 3.5 are Redefining Front-End Architecture"
 date: "2026-05-16"
 description: "Discover how the latest AI releases from OpenAI, Anthropic, and Google are transforming front-end development from simple coding to complex system orchestration."
 tags: ["AI Development","OpenAI o1","Claude 3.5","Software Architecture","Tech Trends"]
 headerImage: "https://picsum.photos/seed/the-era-of-reasoning-how-openai-o1-and-claude-3-5-are-redefining-front-end-architecture-19759/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

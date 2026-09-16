@@ -1,10 +1,10 @@
----
+﻿---
 title: "The Accidental Monolith: Designing Clean-Cut Boundaries in Large-Scale Frontend Systems"
 date: "2026-06-08"
 description: "Learn how to avoid the distributed monolith trap in frontend systems. This guide explores advanced architectural patterns for state management, runtime micro-frontends, and boundary isolation."
 tags: ["Frontend Architecture","Micro Frontends","Software Engineering","Web Performance"]
 headerImage: "https://picsum.photos/seed/the-accidental-monolith-designing-clean-cut-boundaries-in-large-scale-frontend-systems-47689/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

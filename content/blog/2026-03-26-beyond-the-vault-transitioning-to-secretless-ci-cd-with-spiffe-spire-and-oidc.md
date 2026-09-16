@@ -1,10 +1,10 @@
----
+﻿---
 title: "Beyond the Vault: Transitioning to Secretless CI/CD with SPIFFE/SPIRE and OIDC"
 date: "2026-03-26"
 description: "Discover how to eliminate static credentials and long-lived tokens in your DevOps pipelines using SPIFFE/SPIRE and OIDC-based identity attestation."
 tags: ["DevSecOps","SPIFFE","OIDC","Cloud Native","Security"]
 headerImage: "https://picsum.photos/seed/beyond-the-vault-transitioning-to-secretless-ci-cd-with-spiffe-spire-and-oidc-10521/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

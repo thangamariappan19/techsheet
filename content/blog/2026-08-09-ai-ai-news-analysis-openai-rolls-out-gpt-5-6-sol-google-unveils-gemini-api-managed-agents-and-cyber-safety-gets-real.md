@@ -1,10 +1,10 @@
----
+﻿---
 title: "AI News Analysis: OpenAI Rolls Out GPT-5.6 Sol, Google Unveils Gemini API Managed Agents, and Cyber Safety Gets Real"
 date: "2026-08-09"
 description: "An architectural deep-dive into the August 9, 2026 news from OpenAI and Google: GPT-5.6 Sol/Luna updates, Gemini 3.6 Flash Managed Agents, and AI safety audits."
 tags: ["AI","OpenAI","Google","Gemini","Software Architecture","Web Development"]
 headerImage: "https://picsum.photos/seed/ai-news-analysis-openai-rolls-out-gpt-5-6-sol-google-unveils-gemini-api-managed-agents-and-cyber-safety-gets-real-78444/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

@@ -1,10 +1,10 @@
----
+﻿---
 title: "The Frontend Architecture Playbook: Scaling Systems Without Breaking Teams"
 date: "2026-04-04"
 description: "Learn how to design scalable frontend systems using micro-frontends, strategic state management, and architectural patterns that reduce technical debt."
 tags: ["Frontend Architecture","Software Engineering","Microfrontends","Technical Leadership","JavaScript"]
 headerImage: "https://picsum.photos/seed/the-frontend-architecture-playbook-scaling-systems-without-breaking-teams-86846/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

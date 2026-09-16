@@ -1,10 +1,10 @@
----
+﻿---
 title: "The Rise of Agentic AI: How OpenAI, Claude, and Gemini Are Redefining Front-End Architecture"
 date: "2026-05-23"
 description: "Discover how recent AI agent updates from OpenAI, Anthropic, and Google Gemini are shifting front-end development from static components to dynamic, agentic user interfaces."
 tags: ["AI Trends","Front-End Architecture","Web Development","AI Agents"]
 headerImage: "https://picsum.photos/seed/the-rise-of-agentic-ai-how-openai-claude-and-gemini-are-redefining-front-end-architecture-42338/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

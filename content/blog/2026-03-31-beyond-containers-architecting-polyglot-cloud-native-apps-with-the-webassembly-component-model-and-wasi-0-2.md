@@ -1,10 +1,10 @@
----
+﻿---
 title: "Beyond Containers: Architecting Polyglot Cloud-Native Apps with the WebAssembly Component Model and WASI 0.2"
 date: "2026-03-31"
 description: "Explore how the WebAssembly (Wasm) Component Model and WASI 0.2 are creating a new era of cloud computing through sub-millisecond startup times, language interoperability, and high-density isolation."
 tags: ["WebAssembly","Cloud Computing","Serverless","WASI","Distributed Systems"]
 headerImage: "https://picsum.photos/seed/beyond-containers-architecting-polyglot-cloud-native-apps-with-the-webassembly-component-model-and-wasi-0-2-77188/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

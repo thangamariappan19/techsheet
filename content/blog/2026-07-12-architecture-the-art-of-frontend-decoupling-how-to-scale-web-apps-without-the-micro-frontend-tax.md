@@ -1,10 +1,10 @@
----
+﻿---
 title: "The Art of Frontend Decoupling: How to Scale Web Apps Without the Micro-Frontend Tax"
 date: "2026-07-12"
 description: "Learn why micro-frontends might be killing your productivity and how to build a highly scalable, maintainable modular monolith using domain-driven design principles."
 tags: ["Frontend Architecture","Software Engineering","Micro Frontends","State Management","Web Development"]
 headerImage: "https://picsum.photos/seed/the-art-of-frontend-decoupling-how-to-scale-web-apps-without-the-micro-frontend-tax-95679/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

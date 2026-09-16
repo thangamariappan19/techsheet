@@ -1,10 +1,10 @@
----
+﻿---
 title: "Mastering the Scheduler API: How to Stop Long Tasks from Ruining Your Core Web Vitals"
 date: "2026-06-21"
 description: "A deep-dive into the native Scheduler API and cooperative multitasking. Learn how to eliminate Interaction to Next Paint (INP) issues, optimize long-running JavaScript tasks, and keep your React/Angular apps running at 60 FPS."
 tags: ["WebPerformance","JavaScript","FrontendArchitecture","React","Angular"]
 headerImage: "https://picsum.photos/seed/mastering-the-scheduler-api-how-to-stop-long-tasks-from-ruining-your-core-web-vitals-89779/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

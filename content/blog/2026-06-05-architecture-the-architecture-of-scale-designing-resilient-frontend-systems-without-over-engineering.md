@@ -1,10 +1,10 @@
----
+﻿---
 title: "The Architecture of Scale: Designing Resilient Frontend Systems Without Over-Engineering"
 date: "2026-06-05"
 description: "Learn how to scale modern frontend architectures using pragmatic monorepo boundaries, clean state isolation, and dependency inversion without falling into the micro-frontend trap."
 tags: ["Frontend Architecture","Software Engineering","Micro Frontends","State Management"]
 headerImage: "https://picsum.photos/seed/the-architecture-of-scale-designing-resilient-frontend-systems-without-over-engineering-49091/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

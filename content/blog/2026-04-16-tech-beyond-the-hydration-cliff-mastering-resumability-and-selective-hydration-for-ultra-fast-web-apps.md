@@ -1,10 +1,10 @@
----
+﻿---
 title: "Beyond the Hydration Cliff: Mastering Resumability and Selective Hydration for Ultra-Fast Web Apps"
 date: "2026-04-16"
 description: "Stop shipping heavy JavaScript bundles just to make your HTML interactive. Explore the technical mechanics of hydration, selective loading, and the breakthrough of resumability."
 tags: ["Web Performance","React","JavaScript Architecture","Qwik","Frontend Engineering"]
 headerImage: "https://picsum.photos/seed/beyond-the-hydration-cliff-mastering-resumability-and-selective-hydration-for-ultra-fast-web-apps-60745/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

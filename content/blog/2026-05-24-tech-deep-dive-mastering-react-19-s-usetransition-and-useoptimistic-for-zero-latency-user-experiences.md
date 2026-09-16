@@ -1,10 +1,10 @@
----
+﻿---
 title: "Deep Dive: Mastering React 19's useTransition and useOptimistic for Zero-Latency User Experiences"
 date: "2026-05-24"
 description: "Learn how React 19's transition APIs and useOptimistic hook manage concurrent UI states under the hood. Build a high-performance, rollback-safe optimistic UI from scratch."
 tags: ["React","Web Development","Performance","Frontend Architecture","JavaScript"]
 headerImage: "https://picsum.photos/seed/deep-dive-mastering-react-19-s-usetransition-and-useoptimistic-for-zero-latency-user-experiences-5526/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

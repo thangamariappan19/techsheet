@@ -1,10 +1,10 @@
----
+﻿---
 title: "OpenAI's Triple Play: Securing Enterprise AI, Democratizing Code, and Boosting Dev Velocity in August 2026"
 date: "2026-08-24"
 description: "This Monday, August 24, 2026, OpenAI drops major news: Zero Data Retention for frontier models, Replit's GPT-5.6 Luna Free Mode, and Stampli's AI-driven 68% dev speedup. We analyze what this means for front-end architects and developers."
 tags: ["AI","OpenAI","Frontend Development","Data Privacy","Developer Productivity","GPT-5.6 Luna","ChatGPT Work","Enterprise AI"]
 headerImage: "https://picsum.photos/seed/openai-s-triple-play-securing-enterprise-ai-democratizing-code-and-boosting-dev-velocity-in-august-2026-80274/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

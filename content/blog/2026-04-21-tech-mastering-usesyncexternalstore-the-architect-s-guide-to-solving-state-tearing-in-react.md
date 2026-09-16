@@ -1,10 +1,10 @@
----
+﻿---
 title: "Mastering useSyncExternalStore: The Architect’s Guide to Solving State Tearing in React"
 date: "2026-04-21"
 description: "Stop overusing useEffect for external state. Learn how to use useSyncExternalStore to handle concurrent rendering, prevent state tearing, and build high-performance React applications."
 tags: ["React","Web Development","Performance","Frontend Architecture","JavaScript"]
 headerImage: "https://picsum.photos/seed/mastering-usesyncexternalstore-the-architect-s-guide-to-solving-state-tearing-in-react-77319/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

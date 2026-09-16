@@ -1,10 +1,10 @@
----
+﻿---
 title: "Project HydraFusion: Orchestrating AI Models for Elite Code Quality and Cost Efficiency"
 date: "2026-09-14"
 description: "Deep dive into GitHub Copilot's Project HydraFusion. Discover multi-model orchestration, selective workflows, and how it delivers superior AI-generated code at lower costs. A must-read for senior front-end architects."
 tags: ["AI Development","GitHub Copilot","Code Generation","Front-End Architecture","LLMOps","Developer Productivity"]
 headerImage: "https://picsum.photos/seed/project-hydrafusion-orchestrating-ai-models-for-elite-code-quality-and-cost-efficiency-92133/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

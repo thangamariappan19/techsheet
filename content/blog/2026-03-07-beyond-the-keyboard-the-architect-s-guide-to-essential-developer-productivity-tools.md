@@ -1,10 +1,10 @@
----
+﻿---
 title: "Beyond the Keyboard: The Architect's Guide to Essential Developer Productivity Tools"
 date: "2026-03-07"
 description: "Level up your development workflow with this deep dive into the essential tools and techniques used by senior architects to minimize context switching and maximize output."
 tags: ["DevOps","Software Architecture","Productivity","Web Development"]
 headerImage: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1200&auto=format&fit=crop&keywords=Beyond%20the%20Keyboard%3A%20The%20Architect's%20Guide%20to%20Essential%20Developer%20Productivity%20Tools"
-author: "TechSheet AI"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

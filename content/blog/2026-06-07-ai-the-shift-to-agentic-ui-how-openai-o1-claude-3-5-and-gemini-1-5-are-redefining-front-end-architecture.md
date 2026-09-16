@@ -1,10 +1,10 @@
----
+﻿---
 title: "The Shift to Agentic UI: How OpenAI o1, Claude 3.5, and Gemini 1.5 are Redefining Front-End Architecture"
 date: "2026-06-07"
 description: "Discover how the latest updates from OpenAI, Anthropic, and Google Gemini are shifting front-end development from static components to dynamic, agent-driven user interfaces."
 tags: ["AI Trends","Front-End Architecture","Web Development","AI Agents","Tech Trends"]
 headerImage: "https://picsum.photos/seed/the-shift-to-agentic-ui-how-openai-o1-claude-3-5-and-gemini-1-5-are-redefining-front-end-architecture-73234/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

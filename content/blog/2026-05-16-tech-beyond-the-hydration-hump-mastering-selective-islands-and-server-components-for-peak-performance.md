@@ -1,10 +1,10 @@
----
+﻿---
 title: "Beyond the Hydration Hump: Mastering Selective Islands and Server Components for Peak Performance"
 date: "2026-05-16"
 description: "Discover how to eliminate the 'uncanny valley' of web performance by shifting from full hydration to Selective Islands and React Server Components."
 tags: ["React","Web Performance","Architecture","JavaScript","Frontend"]
 headerImage: "https://picsum.photos/seed/beyond-the-hydration-hump-mastering-selective-islands-and-server-components-for-peak-performance-7637/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

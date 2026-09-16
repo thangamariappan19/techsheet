@@ -1,10 +1,10 @@
----
+﻿---
 title: "The Code Generation Trap: Architecting Frontends for Ownership in the AI Era"
 date: "2026-07-22"
 description: "Writing UI code is cheaper than ever, but owning it is expensive. Learn how senior frontend architects govern AI sprawl, design boundaries, and ownership."
 tags: ["Frontend Architecture","Engineering Leadership","Design Systems","Web Development","AI Strategy"]
 headerImage: "https://picsum.photos/seed/the-code-generation-trap-architecting-frontends-for-ownership-in-the-ai-era-71631/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

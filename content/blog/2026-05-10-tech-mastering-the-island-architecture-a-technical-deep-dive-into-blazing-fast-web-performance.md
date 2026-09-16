@@ -1,10 +1,10 @@
----
+﻿---
 title: "Mastering the Island Architecture: A Technical Deep-Dive into Blazing Fast Web Performance"
 date: "2026-05-10"
 description: "Discover how Island Architecture solves the hydration tax problem. A technical guide for React and Angular developers on optimizing Core Web Vitals using partial hydration."
 tags: ["Web Performance","React","Island Architecture","Frontend Architecture","Astro"]
 headerImage: "https://picsum.photos/seed/mastering-the-island-architecture-a-technical-deep-dive-into-blazing-fast-web-performance-30779/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

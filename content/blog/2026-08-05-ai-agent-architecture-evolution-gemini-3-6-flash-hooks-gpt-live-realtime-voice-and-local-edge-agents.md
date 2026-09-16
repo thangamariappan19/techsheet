@@ -1,10 +1,10 @@
----
+﻿---
 title: "Agent Architecture Evolution: Gemini 3.6 Flash Hooks, GPT-Live Realtime Voice, and Local Edge Agents"
 date: "2026-08-05"
 description: "August 5, 2026 news analysis: Google updates Gemini Managed Agents, OpenAI details GPT-Live realtime voice architecture, and local agent models hit edge devices."
 tags: ["AI","Gemini","OpenAI","Web Development","Architecture"]
 headerImage: "https://picsum.photos/seed/agent-architecture-evolution-gemini-3-6-flash-hooks-gpt-live-realtime-voice-and-local-edge-agents-98564/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

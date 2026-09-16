@@ -1,10 +1,10 @@
----
+﻿---
 title: "The AI Reasoning Era: How OpenAI o1, Claude 3.5, and Gemini 1.5 are Redefining Modern Web Architecture"
 date: "2026-05-10"
 description: "Discover the latest shifts in AI with OpenAI's reasoning models, Claude's coding dominance, and Gemini's massive context. A deep dive for developers and architects into the new era of agentic workflows."
 tags: ["Generative AI","Software Architecture","OpenAI o1","Claude 3.5","Web Development"]
 headerImage: "https://picsum.photos/seed/the-ai-reasoning-era-how-openai-o1-claude-3-5-and-gemini-1-5-are-redefining-modern-web-architecture-59523/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

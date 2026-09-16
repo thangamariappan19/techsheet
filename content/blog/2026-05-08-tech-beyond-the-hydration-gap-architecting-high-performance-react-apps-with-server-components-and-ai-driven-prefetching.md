@@ -1,10 +1,10 @@
----
+﻿---
 title: "Beyond the Hydration Gap: Architecting High-Performance React Apps with Server Components and AI-Driven Prefetching"
 date: "2026-05-08"
 description: "Learn how to eliminate the 'Uncanny Valley' of interactivity using React Server Components (RSC) and AI-driven predictive prefetching to build lightning-fast web applications."
 tags: ["React","Performance","Next.js","AI","Frontend Architecture"]
 headerImage: "https://picsum.photos/seed/beyond-the-hydration-gap-architecting-high-performance-react-apps-with-server-components-and-ai-driven-prefetching-13384/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

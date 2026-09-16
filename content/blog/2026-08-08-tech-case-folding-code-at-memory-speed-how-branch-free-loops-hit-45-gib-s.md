@@ -1,10 +1,10 @@
----
+﻿---
 title: "Case-Folding Code at Memory Speed: How Branch-Free Loops Hit 45 GiB/s"
 date: "2026-08-08"
 description: "An architectural deep-dive into branchless byte-space arithmetic, SWAR, and SIMD techniques for ultra-high-throughput string normalization."
 tags: ["Performance","Systems Architecture","Algorithms","C++","WebAssembly"]
 headerImage: "https://picsum.photos/seed/case-folding-code-at-memory-speed-how-branch-free-loops-hit-45-gib-s-51669/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

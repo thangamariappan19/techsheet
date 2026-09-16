@@ -1,10 +1,10 @@
----
+﻿---
 title: "Engineering for Change: The Architect’s Guide to Resilient Frontend Systems"
 date: "2026-05-12"
 description: "An in-depth guide for senior engineers on building scalable frontend architectures, navigating the trade-offs of micro-frontends, and managing long-term technical debt."
 tags: ["frontend-architecture","web-performance","software-engineering","micro-frontends","technical-leadership"]
 headerImage: "https://picsum.photos/seed/engineering-for-change-the-architect-s-guide-to-resilient-frontend-systems-36567/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

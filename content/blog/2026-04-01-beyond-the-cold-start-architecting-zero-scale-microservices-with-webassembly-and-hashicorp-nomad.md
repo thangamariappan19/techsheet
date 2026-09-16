@@ -1,10 +1,10 @@
----
+﻿---
 title: "Beyond the Cold Start: Architecting Zero-Scale Microservices with WebAssembly and HashiCorp Nomad"
 date: "2026-04-01"
 description: "Discover how WebAssembly (Wasm) and Nomad are revolutionizing cloud computing by eliminating cold starts and enabling high-density, sub-millisecond microservice execution."
 tags: ["WebAssembly","Cloud Architecture","Serverless","Edge Computing","DevOps"]
 headerImage: "https://picsum.photos/seed/beyond-the-cold-start-architecting-zero-scale-microservices-with-webassembly-and-hashicorp-nomad-14734/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

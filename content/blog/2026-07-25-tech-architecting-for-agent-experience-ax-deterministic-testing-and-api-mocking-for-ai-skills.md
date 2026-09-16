@@ -1,10 +1,10 @@
----
+﻿---
 title: "Architecting for Agent Experience (AX): Deterministic Testing and API Mocking for AI Skills"
 date: "2026-07-25"
 description: "Learn how to build deterministic evaluation harnesses and transparent API mocks for AI agent skills without burning API credits or mutating production data."
 tags: ["AI","Architecture","Testing","TypeScript","DevOps"]
 headerImage: "https://picsum.photos/seed/architecting-for-agent-experience-ax-deterministic-testing-and-api-mocking-for-ai-skills-27711/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

@@ -1,10 +1,10 @@
----
+﻿---
 title: "Beyond the Chatbot: Why the New AI Reasoning Models Change Everything for Front-End Architects"
 date: "2026-04-04"
 description: "Discover how OpenAI o1, Claude 3.5, and Gemini 1.5 are shifting the landscape from simple chat to complex reasoning agents. A guide for developers and architects."
 tags: ["Generative AI","Web Architecture","OpenAI","Claude AI","Software Engineering"]
 headerImage: "https://picsum.photos/seed/beyond-the-chatbot-why-the-new-ai-reasoning-models-change-everything-for-front-end-architects-5834/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

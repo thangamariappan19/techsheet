@@ -1,10 +1,10 @@
----
+﻿---
 title: "Architecting Canvas UIs for AI Agents: Beyond the Chat Window"
 date: "2026-07-22"
 description: "Learn how to build canvas-based interactive workspaces for AI agents. Explore front-end architecture, state synchronization, and UI streaming primitives."
 tags: ["Frontend Architecture","React","AI Agents","User Experience","TypeScript"]
 headerImage: "https://picsum.photos/seed/architecting-canvas-uis-for-ai-agents-beyond-the-chat-window-73774/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 

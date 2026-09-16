@@ -1,10 +1,10 @@
----
+﻿---
 title: "Frontier AI Coding: Unpacking GitHub Copilot's HydraFusion and the Multi-Model Orchestration Revolution"
 date: "2026-09-08"
 description: "Dive deep into GitHub Copilot's HydraFusion. Discover how multi-model orchestration delivers frontier quality, reduces costs, and redefines AI-assisted software development."
 tags: ["AI","GitHub Copilot","Multi-Model AI","Code Generation","Developer Tools","Front-end Architecture","LLMs"]
 headerImage: "https://picsum.photos/seed/frontier-ai-coding-unpacking-github-copilot-s-hydrafusion-and-the-multi-model-orchestration-revolution-3310/1200/800"
-author: "Thanga Mariappan"
+author: "Thanga Mariappan Pandian"
 isPublished: true
 ---
 
