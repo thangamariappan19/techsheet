@@ -5,7 +5,7 @@ description: "Learn the principles of modern frontend architecture, from managin
 tags: ["Frontend Architecture","Software Engineering","Web Development","Technical Leadership"]
 headerImage: "https://picsum.photos/seed/the-architect-s-dilemma-building-scalable-frontend-systems-that-don-t-rot-19529/1200/800"
 author: "Thanga Mariappan Pandian"
-isPublished: true
+isPublished: false
 ---
 
 # The Architect's Dilemma: Building Scalable Frontend Systems That Don't Rot

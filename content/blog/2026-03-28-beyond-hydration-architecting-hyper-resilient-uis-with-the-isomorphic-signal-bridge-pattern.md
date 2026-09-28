@@ -5,7 +5,7 @@ description: "Discover how the Isomorphic Signal-Bridge pattern eliminates the '
 tags: ["Frontend Architecture","Signals","Resumability","Performance Tuning"]
 headerImage: "https://picsum.photos/seed/beyond-hydration-architecting-hyper-resilient-uis-with-the-isomorphic-signal-bridge-pattern-34796/1200/800"
 author: "Thanga Mariappan Pandian"
-isPublished: true
+isPublished: false
 ---
 
 ## The Hydration Gap: Why Current Frameworks Still Stumble

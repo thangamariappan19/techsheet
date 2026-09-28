@@ -5,7 +5,7 @@ description: "Learn the strategic patterns for scaling frontend architecture, ma
 tags: ["FrontendArchitecture","MicroFrontends","SoftwareEngineering","WebPerformance","TechnicalLeadership"]
 headerImage: "https://picsum.photos/seed/the-architect-s-dilemma-building-scale-proof-frontend-systems-without-the-burnout-16847/1200/800"
 author: "Thanga Mariappan Pandian"
-isPublished: true
+isPublished: false
 ---
 
 # The Architect’s Dilemma: Building Scale-Proof Frontend Systems Without the Burnout

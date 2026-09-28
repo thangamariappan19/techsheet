@@ -5,7 +5,7 @@ description: "Scaling a large frontend doesn't require the complexity of micro-f
 tags: ["Frontend Architecture","Micro-Frontends","Software Engineering","Monorepos","Scaling Web Apps"]
 headerImage: "https://picsum.photos/seed/deconstructing-the-monolith-why-the-core-shell-architecture-is-the-real-micro-frontend-killer-18290/1200/800"
 author: "Thanga Mariappan Pandian"
-isPublished: true
+isPublished: false
 ---
 
 Most frontend scaling issues aren't caused by your framework; they are caused by the lack of physical boundaries in your codebase. When everyone owns everything, nobody owns anything, and your clean application quickly devolves into a ball of distributed mud.

@@ -5,7 +5,7 @@ description: "An in-depth guide for senior engineers and architects on scaling f
 tags: ["Frontend Architecture","Software Engineering","Technical Leadership","Micro-frontends"]
 headerImage: "https://picsum.photos/seed/the-architect-s-blueprint-building-resilient-frontend-systems-for-scale-93335/1200/800"
 author: "Thanga Mariappan Pandian"
-isPublished: true
+isPublished: false
 ---
 
 # The Architect's Blueprint: Building Resilient Frontend Systems for Scale

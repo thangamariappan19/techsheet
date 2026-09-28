@@ -70,7 +70,7 @@ export default async function BlogPost({ params }) {
     const { slug } = await params;
     const post = await getBlogPostBySlug(slug);
 
-    if (!post) {
+    if (!post || post.data.isPublished === false) {
         notFound();
     }
 

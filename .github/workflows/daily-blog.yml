@@ -2,51 +2,59 @@ name: Daily Tech Blog Automation
 
 on:
   schedule:
-    # Runs at 12:00 AM UTC once daily to generate all 3 blogs
-    - cron: '0 0 * * *'
+    # Runs at 9:00 AM UTC Monday–Friday (weekdays only)
+    - cron: '0 9 * * 1-5'
   workflow_dispatch: # Allows manual triggering from GitHub UI
 
 jobs:
-  generate-and-publish:
+  generate-draft:
     runs-on: ubuntu-latest
     permissions:
-      contents: write # Important for pushing back to repo
+      contents: write
+      pull-requests: write
+
     steps:
-      - name: 🛡️ Checkout Repository
+      - name: Checkout Repository
         uses: actions/checkout@v4
         with:
-          # Fetch all history so rebase works correctly
           fetch-depth: 0
 
-      - name: ⚙️ Setup Node.js
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
           cache: 'npm'
 
-      - name: 📦 Install Dependencies
+      - name: Install Dependencies
         run: npm install --legacy-peer-deps
 
-      - name: 🤖 Generate Blog Post via Gemini AI
+      - name: Generate Draft Blog Post
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: node scripts/generateBlog.js
 
-      - name: 🚀 Commit and Push Changes
-        run: |
-          git config --global user.name "Thanga Mariappan"
-          git config --global user.email "thangamariappancse@gmail.com"
-          
-          # Add all changes (including package-lock.json if updated)
-          git add .
-          
-          # Only proceed if there are actual changes to commit
-          if [ -n "$(git status --porcelain)" ]; then
-            git commit -m "${{ env.BLOG_COMMIT_MSG || 'chore(blog): auto-post blog and update logs' }}" -m "Automated daily blog post update [skip ci]"
-            
-            # Pull latest changes from remote to avoid conflicts, then push
-            git pull --rebase origin main
-            git push origin main
-          else
-            echo "No changes detected."
-          fi
+      - name: Create Pull Request for Review
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "draft: new blog post for review"
+          branch: "blog/draft-${{ github.run_id }}"
+          delete-branch: true
+          title: "Draft: New Blog Post — Review Before Publishing"
+          body: |
+            ## Blog Draft Ready for Review
+
+            A new draft blog post has been generated. **Do not merge without reviewing.**
+
+            ### Review checklist before merging:
+            - [ ] Read the full post — does it add genuine value?
+            - [ ] Remove or rewrite any generic/templated-sounding sections
+            - [ ] Add a personal anecdote, real-world example, or opinion that only you could write
+            - [ ] Check the title is unique (not a near-duplicate of existing posts)
+            - [ ] Verify all code examples compile/run correctly
+            - [ ] Change `isPublished: false` → `isPublished: true` only after editing
+            - [ ] Update the description to be specific, not generic
+
+            > Posts merge with `isPublished: false` — they won't go live until you manually set it to `true`.
+          labels: "blog-draft,needs-review"
+          draft: false

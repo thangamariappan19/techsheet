@@ -13,6 +13,7 @@ import {
   Menu,
   X,
   Zap,
+  Wrench,
 } from "lucide-react";
 import { auth } from "../Firebase/Firebase";
 import Alert from "./Alert";
@@ -83,6 +84,15 @@ function Navbar() {
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center gap-1">
+              <Link
+                href="/tools"
+                className="group flex items-center gap-1.5 px-4 py-2 rounded-lg text-muted-foreground hover:text-foreground transition-all duration-200 relative"
+              >
+                <Wrench className="w-3.5 h-3.5" />
+                <span className="text-sm font-semibold">Tools</span>
+                <span className="absolute bottom-0.5 left-4 right-4 h-px bg-primary scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
+              </Link>
+
               <Link
                 href="/about"
                 className="group flex items-center gap-1.5 px-4 py-2 rounded-lg text-muted-foreground hover:text-foreground transition-all duration-200 relative"
@@ -178,6 +188,14 @@ function Navbar() {
             >
               <div className="container mx-auto px-4 py-4 flex flex-col gap-1">
                 <Link
+                  href="/tools"
+                  onClick={() => setIsMenuOpen(false)}
+                  className="flex items-center gap-3 p-3 rounded-xl hover:bg-muted transition-all"
+                >
+                  <Wrench className="w-4 h-4 text-primary" />
+                  <span className="font-semibold text-sm">Tools</span>
+                </Link>
+                <Link
                   href="/about"
                   onClick={() => setIsMenuOpen(false)}
                   className="flex items-center gap-3 p-3 rounded-xl hover:bg-muted transition-all"
@@ -208,7 +226,7 @@ function Navbar() {
                     <span className="animate-ping-slow absolute inline-flex h-full w-full rounded-full bg-accent opacity-75" />
                     <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-accent" />
                   </span>
-                  Updated daily · Gemini AI · Next.js
+                  Frontend · AI · Architecture · Next.js
                 </div>
               </div>
             </motion.div>

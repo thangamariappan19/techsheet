@@ -5,7 +5,7 @@ description: "Most micro-frontend migrations fail because of operational complex
 tags: ["Frontend Architecture","Micro-frontends","Software Engineering","Technical Leadership"]
 headerImage: "https://picsum.photos/seed/the-distributed-frontend-why-micro-frontends-fail-and-how-to-build-a-pragmatic-federated-system-46049/1200/800"
 author: "Thanga Mariappan Pandian"
-isPublished: true
+isPublished: false
 ---
 
 Most engineering organizations adopt micro-frontends for the wrong reasons, only to realize they have traded a monolithic codebase for a distributed nightmare. If your team is struggling to ship features because of shared dependency hell, fragmented state, or deployment bottlenecks, this guide is for you.

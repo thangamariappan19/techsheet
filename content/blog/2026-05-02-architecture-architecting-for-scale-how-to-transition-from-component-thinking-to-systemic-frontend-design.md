@@ -5,7 +5,7 @@ description: "Master frontend architecture by learning when to use Micro-Fronten
 tags: ["Frontend Architecture","Micro-Frontends","Software Engineering","Technical Leadership","Scalable Web Apps"]
 headerImage: "https://picsum.photos/seed/architecting-for-scale-how-to-transition-from-component-thinking-to-systemic-frontend-design-20436/1200/800"
 author: "Thanga Mariappan Pandian"
-isPublished: true
+isPublished: false
 ---
 
 Most developers spend their careers arguing about whether React is better than Vue or if Tailwind is superior to CSS Modules. But as your application grows from 10,000 to 1,000,000 lines of code, these choices become secondary. The real challenge shifts from "how do I build this feature?" to "how do I prevent this system from collapsing under its own weight?"

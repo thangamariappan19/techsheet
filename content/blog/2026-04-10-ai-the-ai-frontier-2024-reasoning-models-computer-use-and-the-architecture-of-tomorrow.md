@@ -5,7 +5,7 @@ description: "A deep dive into the latest AI shifts from OpenAI, Anthropic, and 
 tags: ["Artificial Intelligence","Software Architecture","OpenAI","Claude","Web Development"]
 headerImage: "https://picsum.photos/seed/the-ai-frontier-2024-reasoning-models-computer-use-and-the-architecture-of-tomorrow-22239/1200/800"
 author: "Thanga Mariappan Pandian"
-isPublished: true
+isPublished: false
 ---
 
 # The AI Frontier 2024: Reasoning Models, Computer Use, and the Architecture of Tomorrow

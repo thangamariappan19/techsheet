@@ -5,7 +5,7 @@ description: "Discover the paradigm shift from traditional request-response arch
 tags: ["Local-First","CRDT","Web Architecture","TypeScript","State Management"]
 headerImage: "https://picsum.photos/seed/beyond-apis-architecting-deterministic-web-apps-with-local-first-state-and-crdts-57382/1200/800"
 author: "Thanga Mariappan Pandian"
-isPublished: true
+isPublished: false
 ---
 
 # Beyond APIs: Architecting Deterministic Web Apps with Local-First State and CRDTs

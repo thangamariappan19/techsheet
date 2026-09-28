@@ -5,7 +5,7 @@ description: "Discover how the latest updates from OpenAI o1, Claude 3.5, and Ge
 tags: ["AI-Trends","Frontend-Architecture","Web-Development","Generative-UI"]
 headerImage: "https://picsum.photos/seed/beyond-code-generation-how-agentic-ai-is-rewriting-the-front-end-architecture-playbook-61049/1200/800"
 author: "Thanga Mariappan Pandian"
-isPublished: true
+isPublished: false
 ---
 
 The era of the basic code-autocomplete is officially dead.

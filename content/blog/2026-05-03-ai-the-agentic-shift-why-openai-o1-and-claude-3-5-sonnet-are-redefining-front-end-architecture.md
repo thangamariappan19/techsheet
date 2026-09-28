@@ -5,7 +5,7 @@ description: "Deep dive into the latest AI updates from OpenAI, Anthropic, and G
 tags: ["AI in Tech","FrontEnd Development","Software Architecture","Claude AI","OpenAI"]
 headerImage: "https://picsum.photos/seed/the-agentic-shift-why-openai-o1-and-claude-3-5-sonnet-are-redefining-front-end-architecture-36169/1200/800"
 author: "Thanga Mariappan Pandian"
-isPublished: true
+isPublished: false
 ---
 
 ## The AI Hype Cycle Just Hit Second Gear

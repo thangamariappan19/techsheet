@@ -5,7 +5,7 @@ description: "Discover the paradigm shift of local-first development. Learn how 
 tags: ["Local-First","WebAssembly","SQLite","Performance","Software Architecture"]
 headerImage: "https://picsum.photos/seed/beyond-the-request-response-cycle-building-instant-local-first-apps-with-sqlite-wasm-and-replicache-90451/1200/800"
 author: "Thanga Mariappan Pandian"
-isPublished: true
+isPublished: false
 ---
 
 # Beyond the Request-Response Cycle: Building "Instant" Local-First Apps with SQLite-WASM and Replicache

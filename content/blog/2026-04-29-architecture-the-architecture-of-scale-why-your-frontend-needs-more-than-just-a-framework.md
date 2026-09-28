@@ -5,7 +5,7 @@ description: "Stop chasing frameworks and start building systems. A deep dive in
 tags: ["FrontendArchitecture","SoftwareEngineering","MicroFrontends","TechnicalLeadership"]
 headerImage: "https://picsum.photos/seed/the-architecture-of-scale-why-your-frontend-needs-more-than-just-a-framework-558/1200/800"
 author: "Thanga Mariappan Pandian"
-isPublished: true
+isPublished: false
 ---
 
 # The Architecture of Scale: Why Your Frontend Needs More Than Just a Framework

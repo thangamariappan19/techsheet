@@ -5,7 +5,7 @@ description: "Master the art of frontend systems thinking. Learn how to design s
 tags: ["FrontendArchitecture","SoftwareEngineering","Scalability","WebDevelopment","TechnicalLeadership"]
 headerImage: "https://picsum.photos/seed/the-frontend-architect-s-manifesto-scaling-beyond-the-component-library-71490/1200/800"
 author: "Thanga Mariappan Pandian"
-isPublished: true
+isPublished: false
 ---
 
 # The Frontend Architect’s Manifesto: Scaling Beyond the Component Library

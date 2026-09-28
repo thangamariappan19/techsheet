@@ -5,7 +5,7 @@ description: "Explore the Sidecar State pattern, an emerging architectural strat
 tags: ["Software Architecture","Microservices","Performance","WebAssembly","Backend"]
 headerImage: "https://picsum.photos/seed/beyond-the-distributed-cache-mastering-the-sidecar-state-pattern-for-local-first-backend-architectures-61652/1200/800"
 author: "Thanga Mariappan Pandian"
-isPublished: true
+isPublished: false
 ---
 
 # Beyond the Distributed Cache: Mastering the Sidecar State Pattern for Local-First Backend Architectures

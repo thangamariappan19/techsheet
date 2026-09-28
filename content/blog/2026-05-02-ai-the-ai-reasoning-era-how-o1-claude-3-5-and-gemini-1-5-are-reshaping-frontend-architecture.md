@@ -5,7 +5,7 @@ description: "Discover how the latest breakthroughs from OpenAI, Anthropic, and 
 tags: ["Artificial Intelligence","Frontend Architecture","OpenAI","Anthropic","Web Development"]
 headerImage: "https://picsum.photos/seed/the-ai-reasoning-era-how-o1-claude-3-5-and-gemini-1-5-are-reshaping-frontend-architecture-96635/1200/800"
 author: "Thanga Mariappan Pandian"
-isPublished: true
+isPublished: false
 ---
 
 # The AI Reasoning Era: How o1, Claude 3.5, and Gemini 1.5 are Reshaping Frontend Architecture

@@ -5,7 +5,7 @@ description: "Explore the next evolution of cloud-native design: Cellular Archit
 tags: ["WebAssembly","Serverless","Cloud Architecture","Edge Computing","Wasm Components"]
 headerImage: "https://picsum.photos/seed/beyond-containers-building-cellular-cloud-architectures-with-webassembly-wasm-and-the-component-model-42460/1200/800"
 author: "Thanga Mariappan Pandian"
-isPublished: true
+isPublished: false
 ---
 
 # Beyond Containers: Building Cellular Cloud Architectures with WebAssembly (Wasm) and the Component Model

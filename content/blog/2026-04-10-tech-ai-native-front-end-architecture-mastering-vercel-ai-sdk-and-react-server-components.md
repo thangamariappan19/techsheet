@@ -5,7 +5,7 @@ description: "A deep dive into building production-ready AI interfaces using Rea
 tags: ["React","Next.js","Generative AI","Performance","TypeScript"]
 headerImage: "https://picsum.photos/seed/ai-native-front-end-architecture-mastering-vercel-ai-sdk-and-react-server-components-49930/1200/800"
 author: "Thanga Mariappan Pandian"
-isPublished: true
+isPublished: false
 ---
 
 # AI-Native Front-End Architecture: Mastering Vercel AI SDK and React Server Components

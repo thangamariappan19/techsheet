@@ -5,7 +5,7 @@ description: "Discover the blueprint for modern frontend architecture. Learn why
 tags: ["Frontend Architecture","Software Engineering","Micro Frontends","Web Development"]
 headerImage: "https://picsum.photos/seed/the-architecture-debt-trap-building-scalable-frontend-systems-without-losing-your-mind-51271/1200/800"
 author: "Thanga Mariappan Pandian"
-isPublished: true
+isPublished: false
 ---
 
 # The Architecture Debt Trap: Building Scalable Frontend Systems Without Losing Your Mind

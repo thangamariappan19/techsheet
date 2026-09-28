@@ -5,7 +5,7 @@ description: "Discover how the latest updates from Anthropic, OpenAI, and Google
 tags: ["AI-Trends","Web-Architecture","Anthropic-Claude","OpenAI","Front-End-Development"]
 headerImage: "https://picsum.photos/seed/the-agentic-shift-how-claude-s-computer-use-and-openai-s-realtime-engine-are-redefining-front-end-architecture-82989/1200/800"
 author: "Thanga Mariappan Pandian"
-isPublished: true
+isPublished: false
 ---
 
 # The Agentic Shift: How Claude's Computer Use and OpenAI's Realtime Engine are Redefining Front-End Architecture

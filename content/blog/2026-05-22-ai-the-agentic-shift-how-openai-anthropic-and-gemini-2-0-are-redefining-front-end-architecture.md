@@ -5,7 +5,7 @@ description: "Explore how the newest AI models from OpenAI, Anthropic, and Googl
 tags: ["AI News","Front-End Architecture","Generative UI","NextJS"]
 headerImage: "https://picsum.photos/seed/the-agentic-shift-how-openai-anthropic-and-gemini-2-0-are-redefining-front-end-architecture-3255/1200/800"
 author: "Thanga Mariappan Pandian"
-isPublished: true
+isPublished: false
 ---
 
 The line between front-end user interfaces and artificial intelligence has completely vanished.

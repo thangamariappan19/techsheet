@@ -5,7 +5,7 @@ description: "Discover how Signals and fine-grained reactivity are redefining fr
 tags: ["Web Development","React","Angular","Performance","JavaScript"]
 headerImage: "https://picsum.photos/seed/beyond-the-virtual-dom-a-deep-dive-into-fine-grained-reactivity-and-signals-535/1200/800"
 author: "Thanga Mariappan Pandian"
-isPublished: true
+isPublished: false
 ---
 
 ## The Death of the 'Rerender Everything' Era

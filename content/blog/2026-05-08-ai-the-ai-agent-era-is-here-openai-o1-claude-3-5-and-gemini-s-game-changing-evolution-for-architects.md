@@ -5,7 +5,7 @@ description: "Explore how OpenAI o1, Claude 3.5, and Gemini 1.5 are shifting AI 
 tags: ["AI News","Web Architecture","OpenAI","Anthropic","Google Gemini"]
 headerImage: "https://picsum.photos/seed/the-ai-agent-era-is-here-openai-o1-claude-3-5-and-gemini-s-game-changing-evolution-for-architects-66005/1200/800"
 author: "Thanga Mariappan Pandian"
-isPublished: true
+isPublished: false
 ---
 
 The landscape of Artificial Intelligence just shifted from "generating text" to "reasoning through logic." If you are still treating Large Language Models (LLMs) like fancy search engines, you are missing the architectural revolution occurring right now.

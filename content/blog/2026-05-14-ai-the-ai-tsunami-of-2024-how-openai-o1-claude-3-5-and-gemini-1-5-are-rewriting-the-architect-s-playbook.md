@@ -5,7 +5,7 @@ description: "Stay ahead of the curve with our deep dive into the latest AI upda
 tags: ["AI Trends","OpenAI o1","Anthropic Claude","Software Architecture","Web Development"]
 headerImage: "https://picsum.photos/seed/the-ai-tsunami-of-2024-how-openai-o1-claude-3-5-and-gemini-1-5-are-rewriting-the-architect-s-playbook-16427/1200/800"
 author: "Thanga Mariappan Pandian"
-isPublished: true
+isPublished: false
 ---
 
 # The AI Tsunami of 2024: How OpenAI o1, Claude 3.5, and Gemini 1.5 are Rewriting the Architect's Playbook

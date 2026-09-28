@@ -5,7 +5,7 @@ description: "Master the art of frontend architecture. Learn about micro-fronten
 tags: ["FrontendArchitecture","WebDevelopment","SoftwareEngineering","Scalability","SystemDesign"]
 headerImage: "https://picsum.photos/seed/beyond-the-framework-a-senior-architect-s-guide-to-scalable-frontend-systems-90703/1200/800"
 author: "Thanga Mariappan Pandian"
-isPublished: true
+isPublished: false
 ---
 
 # Beyond the Framework: A Senior Architect’s Guide to Scalable Frontend Systems

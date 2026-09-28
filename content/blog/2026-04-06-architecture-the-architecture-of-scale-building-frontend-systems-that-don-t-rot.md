@@ -5,7 +5,7 @@ description: "Discover how senior architects design scalable frontend systems by
 tags: ["Frontend Architecture","Micro-frontends","Technical Leadership","Software Engineering","Web Performance"]
 headerImage: "https://picsum.photos/seed/the-architecture-of-scale-building-frontend-systems-that-don-t-rot-46069/1200/800"
 author: "Thanga Mariappan Pandian"
-isPublished: true
+isPublished: false
 ---
 
 # The Architecture of Scale: Building Frontend Systems That Don't Rot

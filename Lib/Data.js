@@ -33,7 +33,7 @@ export const getAllBlogPosts = async () => {
       };
     });
 
-  return allBlogs;
+  return allBlogs.filter(b => b.data.isPublished !== false);
 };
 
 // Lightweight version — reads only frontmatter + 300-char excerpt.

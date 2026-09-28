@@ -5,7 +5,7 @@ description: "Learn how to design a resilient, high-performance micro-frontend a
 tags: ["FrontendArchitecture","MicroFrontends","WebPerformance","SoftwareEngineering"]
 headerImage: "https://picsum.photos/seed/beyond-micro-frontends-building-a-self-healing-frontend-architecture-at-scale-90220/1200/800"
 author: "Thanga Mariappan Pandian"
-isPublished: true
+isPublished: false
 ---
 
 You split your monolith into micro-frontends, and now your users are downloading 15MB of redundant React runtimes. Worse, your team spends half their sprint chasing race conditions across decoupled state stores.

@@ -5,7 +5,7 @@ description: "The AI revolution is here. Senior Frontend Architects must adapt, 
 tags: ["Frontend Architecture","AI in Development","Copilot","Engineering Leadership","Technical Debt","Scaling Frontend"]
 headerImage: "https://picsum.photos/seed/architecting-for-the-ai-frontier-leading-frontend-teams-in-a-copilot-first-era-91284/1200/800"
 author: "Thanga Mariappan Pandian"
-isPublished: true
+isPublished: false
 ---
 
 The landscape of frontend development is shifting at an unprecedented pace. Just a few short years ago, AI-assisted coding was a novel concept. Today, with advancements like GitHub’s HydraFusion orchestrating multi-model agents for frontier-quality code and the seamless integration of Copilot for everything from boilerplate generation to Dependabot triage, the role of the frontend architect is undergoing a profound transformation. We are moving from mere code craftsmanship to intelligence orchestration.

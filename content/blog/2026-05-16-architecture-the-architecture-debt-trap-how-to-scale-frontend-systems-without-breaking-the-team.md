@@ -5,7 +5,7 @@ description: "Learn the secrets of scalable frontend architecture, from domain-d
 tags: ["Frontend Architecture","Scalability","Web Development","Technical Leadership"]
 headerImage: "https://picsum.photos/seed/the-architecture-debt-trap-how-to-scale-frontend-systems-without-breaking-the-team-10461/1200/800"
 author: "Thanga Mariappan Pandian"
-isPublished: true
+isPublished: false
 ---
 
 # The Architecture Debt Trap: How to Scale Frontend Systems Without Breaking the Team

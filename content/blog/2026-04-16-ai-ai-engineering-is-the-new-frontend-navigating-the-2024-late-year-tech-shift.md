@@ -5,7 +5,7 @@ description: "A deep dive into OpenAI o1, Claude 3.5 Computer Use, and Gemini 1.
 tags: ["AI Trends","Frontend Architecture","OpenAI","Claude 3.5","Software Development"]
 headerImage: "https://picsum.photos/seed/ai-engineering-is-the-new-frontend-navigating-the-2024-late-year-tech-shift-81802/1200/800"
 author: "Thanga Mariappan Pandian"
-isPublished: true
+isPublished: false
 ---
 
 The era of "just adding a chatbot" to your sidebar is officially dead. We have entered the age of the Agentic Web, where AI isn't just a feature—it is the runtime.

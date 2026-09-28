@@ -5,7 +5,7 @@ description: "Discover how recent AI agent updates from OpenAI, Anthropic, and G
 tags: ["AI Trends","Front-End Architecture","Web Development","AI Agents"]
 headerImage: "https://picsum.photos/seed/the-rise-of-agentic-ai-how-openai-claude-and-gemini-are-redefining-front-end-architecture-42338/1200/800"
 author: "Thanga Mariappan Pandian"
-isPublished: true
+isPublished: false
 ---
 
 # The Rise of Agentic AI: How OpenAI, Claude, and Gemini Are Redefining Front-End Architecture

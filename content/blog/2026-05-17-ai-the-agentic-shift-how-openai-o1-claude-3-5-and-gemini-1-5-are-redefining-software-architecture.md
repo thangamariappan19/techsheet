@@ -5,7 +5,7 @@ description: "An in-depth look at the latest AI trends from OpenAI, Anthropic, a
 tags: ["AI Trends","Software Architecture","OpenAI","Claude","Web Development"]
 headerImage: "https://picsum.photos/seed/the-agentic-shift-how-openai-o1-claude-3-5-and-gemini-1-5-are-redefining-software-architecture-1998/1200/800"
 author: "Thanga Mariappan Pandian"
-isPublished: true
+isPublished: false
 ---
 
 The era of the 'smart chatbot' is officially dead. We have entered the age of the autonomous reasoning agent, and your CI/CD pipeline will never be the same.

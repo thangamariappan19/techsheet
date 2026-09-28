@@ -5,7 +5,7 @@ description: "A deep dive into modern frontend architecture, covering micro-fron
 tags: ["Frontend Architecture","Software Engineering","Microfrontends","Technical Leadership"]
 headerImage: "https://picsum.photos/seed/architecture-as-a-product-scaling-frontend-systems-beyond-the-component-level-91761/1200/800"
 author: "Thanga Mariappan Pandian"
-isPublished: true
+isPublished: false
 ---
 
 # Architecture as a Product: Scaling Frontend Systems Beyond the Component Level

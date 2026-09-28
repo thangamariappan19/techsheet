@@ -5,7 +5,7 @@ description: "Discover how to design scalable, maintainable frontend systems tha
 tags: ["Frontend Architecture","Software Engineering","Micro Frontends","Technical Leadership","Web Development"]
 headerImage: "https://picsum.photos/seed/architecting-the-un-breakable-frontend-scaling-systems-beyond-monoliths-and-state-spaghetti-55645/1200/800"
 author: "Thanga Mariappan Pandian"
-isPublished: true
+isPublished: false
 ---
 
 Most front-end architectures do not break because of bad code. They break because of bad boundaries.

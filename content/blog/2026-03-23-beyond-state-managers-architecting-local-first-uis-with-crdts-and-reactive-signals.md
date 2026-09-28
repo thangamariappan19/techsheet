@@ -5,7 +5,7 @@ description: "Shift your frontend paradigm from server-dependent state to local-
 tags: ["Frontend Architecture","Local-First","CRDT","Signals","Performance"]
 headerImage: "https://picsum.photos/seed/beyond-state-managers-architecting-local-first-uis-with-crdts-and-reactive-signals-51365/1200/800"
 author: "Thanga Mariappan Pandian"
-isPublished: true
+isPublished: false
 ---
 
 # Beyond State Managers: Architecting Local-First UIs with CRDTs and Reactive Signals

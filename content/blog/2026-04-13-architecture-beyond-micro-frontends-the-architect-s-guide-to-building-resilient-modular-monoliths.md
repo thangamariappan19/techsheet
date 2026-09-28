@@ -5,7 +5,7 @@ description: "Discover why the Modular Monolith is the secret to scaling fronten
 tags: ["Frontend Architecture","Software Engineering","Scaling Web Apps","Tech Leadership"]
 headerImage: "https://picsum.photos/seed/beyond-micro-frontends-the-architect-s-guide-to-building-resilient-modular-monoliths-92942/1200/800"
 author: "Thanga Mariappan Pandian"
-isPublished: true
+isPublished: false
 ---
 
 # Beyond Micro-frontends: The Architect's Guide to Building Resilient Modular Monoliths

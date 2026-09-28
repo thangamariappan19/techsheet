@@ -5,7 +5,7 @@ description: "Explore the latest AI breakthroughs from OpenAI, Anthropic, and Go
 tags: ["AI Trends","OpenAI","Anthropic","Web Architecture","Software Engineering"]
 headerImage: "https://picsum.photos/seed/the-ai-paradigm-shift-how-o1-claude-3-5-and-gemini-2-0-are-rewriting-the-front-end-playbook-45782/1200/800"
 author: "Thanga Mariappan Pandian"
-isPublished: true
+isPublished: false
 ---
 
 The era of the simple AI chatbot is officially over. We have entered the age of the 'Reasoning Agent,' and if you are still using AI just for boilerplate code, you are already falling behind.

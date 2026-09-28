@@ -239,31 +239,52 @@ function humanCommitMessage(titles) {
     return pick();
 }
 
+// ─── Existing post titles loader (deduplication) ───────────────────────────────
+function loadRecentPostTitles(limit = 30) {
+    const contentDir = path.join(process.cwd(), 'content', 'blog');
+    if (!fs.existsSync(contentDir)) return [];
+    return fs.readdirSync(contentDir)
+        .filter(f => f.endsWith('.md'))
+        .sort().reverse()
+        .slice(0, limit)
+        .map(f => f.replace(/^\d{4}-\d{2}-\d{2}-[a-z]+-/, '').replace(/-/g, ' ').replace(/\.md$/, ''));
+}
+
 // ─── Blog Generator ────────────────────────────────────────────────────────────
 async function generateSingleBlog(blogConfig) {
     console.log(`\n🚀 Generating: ${blogConfig.type}...`);
 
-    const prompt = `
-You are a highly experienced Senior Front-End Architect and Technical Blogger writing for TechSheet.
+    const recentTitles = loadRecentPostTitles(30);
+    const recentTitlesList = recentTitles.slice(0, 15).map((t, i) => `${i + 1}. ${t}`).join('\n');
 
-TASK: Write a blog post for category: "${blogConfig.type}"
+    const prompt = `
+You are Thanga Mariappan Pandian — a Senior Front-End Architect with 10+ years of experience at enterprise scale, writing for your personal technical blog TechSheet (techsheet.vercel.app).
+
+TASK: Write ONE high-quality, original blog post.
+
+Category: "${blogConfig.type}"
 
 ${blogConfig.instructions}
 
+RECENTLY PUBLISHED TITLES (do NOT duplicate or closely repeat these topics):
+${recentTitlesList || 'None yet.'}
+
 OUTPUT FORMAT (strict JSON, no markdown fences):
 {
-  "title": "SEO-optimized title",
-  "description": "Compelling meta description (max 160 chars)",
+  "title": "Specific, non-generic title — no 'Beyond X' or 'Mastering X' patterns",
+  "description": "Compelling meta description (max 160 chars) — must be specific, not vague",
   "tags": ["tag1", "tag2", "tag3"],
   "content": "Full Markdown content"
 }
 
 CONTENT REQUIREMENTS:
-- Length: 900–1400 words
-- Style: Sharp, professional, viral readability. Simple English. No fluff.
-- Include H2 and H3 headings, real code snippets where applicable.
-- End with: "## Key Takeaways" and "## What You Should Do Today" sections.
-- CRITICAL MDX RULE: Never use bare < or > outside code blocks. Never use LaTeX math syntax ($$...$$). Never use {expression} patterns outside code blocks.
+- Length: 1200–1800 words
+- Originality: Write from DIRECT personal experience. Include a real scenario, a mistake you made and learned from, or a non-obvious opinion that might be controversial.
+- No generic "here are 5 tips" structures. Give ONE focused, deep insight.
+- Code must be real, runnable, and non-trivial. Show the actual problem AND the solution.
+- AVOID: vague statements, marketing buzzwords, "it's important to...", "in today's world..."
+- End with a single concrete action the reader can take TODAY, not a list of generic takeaways.
+- CRITICAL MDX RULE: Never use bare < or > outside code blocks. Never use LaTeX math syntax (\$\$...\$\$). Never use {expression} patterns outside code blocks.
 `;
 
     const possibleModels = ["gemini-flash-latest", "gemini-2.5-flash", "gemini-2.0-flash", "gemini-pro-latest"];
@@ -324,16 +345,14 @@ CONTENT REQUIREMENTS:
 
     if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true });
 
-    const seed = slug + '-' + Math.floor(Math.random() * 100000);
     const fileContent = `---
 title: "${blogData.title.replace(/"/g, '\\"')}"
 date: "${formattedDate}"
 description: "${blogData.description.replace(/"/g, '\\"')}"
 tags: ${JSON.stringify(blogData.tags)}
-headerImage: "https://picsum.photos/seed/${seed}/1200/800"
-author: "Thanga Mariappan"
-isPublished: true
----
+author: "Thanga Mariappan Pandian"
+isPublished: false
+---`;
 
 ${sanitizeMDXContent(blogData.content)}
 `;
@@ -344,91 +363,94 @@ ${sanitizeMDXContent(blogData.content)}
 
 // ─── Main ──────────────────────────────────────────────────────────────────────
 async function generateAllBlogs() {
-    console.log("🚀 TechSheet Daily Blog Engine v2 — News-Aware Generation");
+    console.log("🚀 TechSheet Blog Engine — Draft Generation (1 post/day)");
     if (!process.env.GEMINI_API_KEY) {
         console.error("❌ GEMINI_API_KEY is not set.");
         process.exit(1);
     }
 
-    // Step 1: Gather live news BEFORE calling Gemini
     const { aiItems, techItems } = await gatherLiveNews();
 
     const today = new Date().toLocaleDateString('en-US', {
         weekday: 'long', year: 'numeric', month: 'long', day: 'numeric',
     });
+    const dayOfWeek = new Date().getDay(); // 0=Sun, 1=Mon, ...
 
-    const noAINews = 'No live feeds available — use your knowledge of the latest AI releases, model updates, and industry moves as of today.';
-    const noTechNews = 'No live feeds available — choose a trending topic from React, TypeScript, Rust, Go, or system design.';
+    const noAINews = 'No live feeds available — use your knowledge of the latest AI releases and model updates.';
+    const noTechNews = 'No live feeds available — choose a specific trending topic from React, TypeScript, or systems design.';
 
-    const configurations = [
+    // Rotate category by day of week so no single topic dominates
+    const categories = [
         {
             type: "Technical Deep-Dive",
             prefix: "tech",
             instructions: `
 TODAY: ${today}
 
-WHAT IS TRENDING RIGHT NOW (live from Hacker News, GitHub Blog, Dev.to):
+TRENDING RIGHT NOW (Hacker News, GitHub Blog, Dev.to):
 ${formatNews(techItems, noTechNews)}
 
-PICK the single most interesting topic from above that senior developers would love.
-- If it covers a new tool, library, or release — explain what changed, why it matters, and show a migration or usage example.
-- If it covers a new pattern or approach — show real code, benchmarks, trade-offs.
-- Write as if you are the FIRST in-depth technical post about this. Don't just summarize — go deep.
-- Assume the reader is a senior engineer who has already seen the headline.`,
+Pick ONE specific topic from above. Requirements:
+- Write from personal experience — describe a specific production problem you solved using this technology
+- Show the actual bug/mistake FIRST, then the correct approach with real code
+- Include benchmarks or concrete metrics where possible
+- The reader is a senior engineer; skip basic explanations, go straight to the non-obvious insight
+- Do NOT write a "top 5 tools" or "intro to X" post — pick one specific technical problem and go deep`,
         },
         {
-            type: "Frontend Architecture & Systems",
+            type: "Architecture Decision Record",
             prefix: "architecture",
             instructions: `
 TODAY: ${today}
 
-INDUSTRY CONTEXT (recent discussions):
-${formatNews(techItems.slice(0, 6), noTechNews)}
+Write an Architecture Decision Record (ADR) style post — one real architectural decision, the context, the alternatives considered, and why you chose what you chose.
+Examples: why you moved from REST to GraphQL (or back), why you chose Zustand over Redux, why you stopped using micro-frontends.
+INDUSTRY CONTEXT: ${formatNews(techItems.slice(0, 4), noTechNews)}
 
-Write about advanced frontend architecture, scaling strategy, or engineering leadership.
-You may use the industry context above to make the post timely, or choose a timeless architecture topic.
-Focus on: design decisions, patterns, trade-offs, technical debt, team-level thinking.
-Write as a Staff/Principal Engineer sharing hard-won experience — not theory, but reality.`,
+Requirements:
+- Base this on a REAL decision with REAL trade-offs — not hypotheticals
+- Include the specific constraints that drove the decision (team size, traffic, deadlines)
+- Show what you would do differently with hindsight
+- Be honest about what didn't work — readers trust vulnerability more than perfection`,
         },
         {
-            type: "Breaking AI & IT News Analysis",
+            type: "AI Developer Tools Analysis",
             prefix: "ai",
             instructions: `
 TODAY: ${today}
 
-LIVE NEWS GATHERED RIGHT NOW from OpenAI, Google AI, Hugging Face, DeepMind, The Verge, Hacker News:
+LIVE NEWS from OpenAI, Google AI, Hugging Face, DeepMind, The Verge, Hacker News:
 ${formatNews(aiItems, noAINews)}
 
-THIS IS A NEWS ANALYSIS BLOG. Rules:
-1. You MUST write about the REAL news items listed above — do not invent stories.
-2. Pick the 2–3 most significant stories. Prioritize announcements from big companies (OpenAI, Anthropic, Google, Meta, Microsoft).
-3. For each story: What happened → Why it matters for developers → What should they do?
-4. Be the FIRST deep analysis — readers want signal, not hype. No marketing language.
-5. Name exact product names, model names, dates as given in the news above.
-6. End with a "Bottom Line" section: one paragraph on what this week means for the industry.
-7. Today's date is ${today} — make the timeliness obvious in the writing.`,
+Pick ONE specific development from above that materially affects how front-end engineers build software.
+Requirements:
+1. Write only about news items LISTED ABOVE — do not invent or extrapolate stories
+2. Explain exactly what changed technically — not just marketing language
+3. Show a concrete code example of how this changes a developer's workflow
+4. Give your honest opinion: is this actually useful, or is it hype?
+5. Name exact model versions, dates, and API endpoints as given in the news
+6. Do NOT write a roundup — pick one story and go deep on the technical implications`,
         },
     ];
 
-    try {
-        const titles = [];
-        for (let i = 0; i < configurations.length; i++) {
-            const title = await generateSingleBlog(configurations[i]);
-            titles.push(title);
+    // Rotate: Mon=tech, Tue=architecture, Wed=ai, Thu=tech, Fri=architecture
+    const rotation = [1, 2, 0, 1, 2]; // indexed Mon–Fri (dayOfWeek 1–5)
+    const configIndex = dayOfWeek >= 1 && dayOfWeek <= 5
+        ? rotation[dayOfWeek - 1]
+        : Math.floor(Math.random() * categories.length);
+    const config = categories[configIndex];
 
-            if (i < configurations.length - 1) {
-                console.log("\n⏳ Waiting 35s (free-tier rate limit)...\n");
-                await new Promise(resolve => setTimeout(resolve, 35000));
-            }
-        }
+    try {
+        const title = await generateSingleBlog(config);
 
         if (process.env.GITHUB_ENV) {
-            const msg = humanCommitMessage(titles);
-            fs.appendFileSync(process.env.GITHUB_ENV, `BLOG_COMMIT_MSG=${msg}\\n`);
+            const msg = humanCommitMessage([title]);
+            fs.appendFileSync(process.env.GITHUB_ENV, `BLOG_COMMIT_MSG=${msg}\n`);
             console.log(`\n📝 Commit message: ${msg}`);
         }
 
-        console.log(`\n🎉 Done! Generated ${titles.length} posts:\n${titles.map((t, i) => `  ${i + 1}. ${t}`).join('\n')}`);
+        console.log(`\n✅ Draft created: ${title}`);
+        console.log('⚠️  Post is set to isPublished: false — review and edit before publishing.');
     } catch (err) {
         console.error("❌ Fatal error:", err.message);
         process.exit(1);
